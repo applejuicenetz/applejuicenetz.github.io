@@ -1,0 +1,38 @@
+style: is-dark
+height: is-small
+items:
+    -   title: Core
+        icon: fa-apple-alt
+        icon_brand: false
+        call_to_action_name: zum Changelog
+        call_to_action_link: https://github.com/applejuicenet/core/blob/master/CHANGELOG.md
+
+    -   title: JavaGUI
+        icon: fa-java
+        icon_brand: true
+        call_to_action_name: zum Changelog
+        call_to_action_link: https://github.com/applejuicenet/gui-java/blob/master/CHANGELOG.md
+
+    -   title: Windows Setup
+        icon: fa-windows
+        icon_brand: true
+        call_to_action_name: zum Changelog
+        call_to_action_link: https://github.com/applejuicenet/setup/releases
+
+    -   title: Portable
+        icon: fa-usb
+        icon_brand: true
+        call_to_action_name: zum Changelog
+        call_to_action_link: https://github.com/applejuicenet/portable/releases
+
+    -   title: Browser Erweiterung
+        icon: fa-edge
+        icon_brand: true
+        call_to_action_name: zum Changelog
+        call_to_action_link: https://github.com/applejuicenet/browser-extension/blob/master/CHANGELOG.md
+
+    -   title: phpGUI
+        icon: fa-php
+        icon_brand: true
+        call_to_action_name: zum Changelog
+        call_to_action_link: https://github.com/applejuicenet/phpgui/blob/master/CHANGELOG.md

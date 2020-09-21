@@ -1,0 +1,71 @@
+---
+layout: page
+title: appleJuice phpGUI
+subtitle: ein GUI geschrieben in PHP
+menubar: downloads_menu
+---
+
+<h1 class="title">{{ page.title }}</h1>
+<p class="subtitle is-6">{{ page.subtitle }}</p>
+
+<div class="field is-grouped">
+    <div class="control">
+        <img alt="GitHub phpGUI release" src="https://img.shields.io/github/v/tag/{{ site.github_username }}/phpgui?label=version&style={{ site.shields_style }}">
+    </div>
+
+    <div class="control">
+        <img alt="GitHub phpGUI Downloads" src="https://img.shields.io/github/downloads/{{ site.github_username }}/gui-java/total?style={{ site.shields_style }}">
+    </div>
+
+    <div class="control">
+        <img alt="Docker Image Size" src="https://img.shields.io/docker/image-size/{{ site.github_username }}/phpgui?label=Docker%20Image&style={{ site.shields_style }}">
+    </div>
+</div>
+
+<div class="content is-medium">
+    <div class="columns">
+        <div class="column is-two-thirds">
+            <p>
+                Ein <span class="is-help" title="Graphical User Interface | Grafische Benutzeroberfläche">GUI</span> für den Core geschrieben in <code>PHP</code>.
+            </p>
+        </div>
+        <div class="column">
+            <figure class="image box is-pulled-right">
+                <a href="#" class="modal-button" data-target="modal-applejuice-phpgui">
+                    <img src="/assets/screenshots/applejuice_phpgui.png" width="200">
+                </a>
+            </figure>
+        </div>
+    </div>
+
+    <div class="columns">
+        <div class="column">
+            <a href="https://github.com/applejuicenet/phpgui/releases" class="button is-link is-success is-medium is-block">
+                <i class="fas fa-external-link-alt"></i>
+                &nbsp; zum download
+            </a>
+        </div>
+        <div class="column">
+            <a href="https://hub.docker.com/r/applejuicenet/phpgui" class="button is-link is-success is-medium is-block">
+                <i class="fab fa-docker"></i>
+                &nbsp; als Docker Image
+            </a>
+        </div>
+        <div class="column">
+            <a href="https://phpgui.knastbruder.applejuicenet.de" class="button is-link is-success is-medium is-block" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+                &nbsp; öffnen
+            </a>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-applejuice-phpgui">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <p class="image is-4by3">
+                <img src="/assets/screenshots/applejuice_phpgui.png" alt="appleJuice phpGUI">
+            </p>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+</div>
