@@ -1,0 +1,66 @@
+---
+layout: page
+title: appleJuice Browser Erweiterung
+subtitle: links ohne Umwege an den Core übergeben
+menubar: downloads_menu
+---
+
+<h1 class="title">{{ page.title }}</h1>
+<p class="subtitle is-6">{{ page.subtitle }}</p>
+
+<div class="field is-grouped is-grouped-multiline">
+    <div class="control">
+        <img alt="Chrome Store latest release" src="https://img.shields.io/chrome-web-store/v/kidjbmkomidijgbealkgeadgamkdgdch?style={{ site.shields_style }}">
+    </div>
+
+    <div class="control">
+        <img alt="Snapcraft latest GUI" src="https://img.shields.io/amo/v/applejuice-link-catcher?style={{ site.shields_style }}">
+    </div>
+</div>
+
+<div class="content is-medium">
+    <div class="columns">
+        <div class="column is-two-thirds">
+            <p>
+                Über das <span class="is-help" title="Rechtsklick / Sekundärklick">Kontextmenü</span> werden die <code>ajfsp://</code> Links direkt an den Core übergeben.
+            </p>
+        </div>
+
+        <div class="column">
+            <figure class="image box is-pulled-right">
+                <a href="#" class="modal-button" data-target="modal-applejuice-browser-erweiterung">
+                    <img src="/assets/screenshots/applejuice_browser_erweiterung.png" width="200">
+                </a>
+            </figure>
+        </div>
+    </div>
+
+    <div class="notification is-danger is-light">
+        Die Erweiterung muss <strong>einmalig</strong> konfiguriert werden!
+    </div>
+
+    <div class="columns">
+        <div class="column">
+            <a href="https://chrome.google.com/webstore/detail/applejuice-link-catcher/kidjbmkomidijgbealkgeadgamkdgdch" class="button is-link is-success is-medium is-block" target="_blank">
+                <i class="fab fa-chrome"></i>
+                &nbsp; zum Chrome Web Store
+            </a>
+        </div>
+        <div class="column">
+            <a href="https://addons.mozilla.org/de/firefox/addon/applejuice-link-catcher/" class="button is-link is-success is-medium is-block" target="_blank">
+                <i class="fab fa-firefox"></i>
+                &nbsp; zur Firefox Addon Datenbank
+            </a>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-applejuice-browser-erweiterung">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <p class="image is-4by3">
+                <img src="/assets/screenshots/applejuice_browser_erweiterung.png" alt="appleJuice Browser Erweiterung">
+            </p>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+</div>
