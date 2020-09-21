@@ -1,0 +1,29 @@
+style: is-light
+height: is-medium
+items:
+    -   title: Windows
+        subtitle: "&nbsp;"
+        icon: fa-windows
+        icon_brand: true
+        description: >
+           einfach installieren und starten!
+        call_to_action_name: zum download
+        call_to_action_link: /downloads/applejuice-windows
+
+    -   title: Linux
+        subtitle: "&nbsp;"
+        icon: fa-linux
+        icon_brand: true
+        description: >
+            verfügbar im Snapcraft Store!
+        call_to_action_name: zum download
+        call_to_action_link: /downloads/applejuice-linux
+
+    -   title: macOS
+        subtitle: "&nbsp;"
+        icon: fa-apple
+        icon_brand: true
+        description: >
+            verfügbar über Homebrew
+        call_to_action_name: zum download
+        call_to_action_link: /downloads/applejuice-macos

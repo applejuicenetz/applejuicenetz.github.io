@@ -1,0 +1,32 @@
+title: appleJuiceNET
+description: >- # this means to ignore newlines until "baseurl:"
+    appleJuiceNET -
+baseurl: ""
+url: "https://applejuicenet.github.io"
+favicon: favicon.png
+github_username: applejuicenet
+
+permalink: pretty
+timezone: Europe/Berlin
+
+shields_style: for-the-badge
+
+footer_menu: footer_menu
+
+# Build settings
+theme: bulma-clean-theme
+remote_theme: chrisrhymes/bulma-clean-theme
+markdown: kramdown
+plugins:
+    - github-pages
+
+defaults:
+    -   scope:
+            path: ""
+        values:
+            hero_image: /assets/images/apple-on-grass-red.jpg
+    -   scope:
+            path: "/downloads/*"
+        values:
+            hero_height: is-small
+

@@ -1,0 +1,80 @@
+---
+layout: page
+title: appleJuice für Windows
+subtitle: Core und GUI in einem installer, 32bit und 64bit.
+menubar: downloads_menu
+---
+
+<h1 class="title">{{ page.title }}</h1>
+<p class="subtitle is-6">{{ page.subtitle }}</p>
+
+<div class="field is-grouped is-grouped-multiline">
+    <div class="control">
+        <img alt="GitHub latest Core release" src="https://img.shields.io/github/v/release/{{ site.github_username }}/core?label=core&style={{ site.shields_style }}">
+    </div>
+
+    <div class="control">
+        <img alt="GitHub latest GUI release" src="https://img.shields.io/github/v/release/{{ site.github_username }}/gui-java?label=GUI&style={{ site.shields_style }}">
+    </div>
+
+    <div class="control">
+        <img alt="GitHub latest Setup release" src="https://img.shields.io/github/v/release/{{ site.github_username }}/setup?label=Setup&style={{ site.shields_style }}">
+    </div>
+
+    <div class="control">
+        <img alt="GitHub Setup Downloads" src="https://img.shields.io/github/downloads/{{ site.github_username }}/setup/total?style={{ site.shields_style }}">
+    </div>
+</div>
+
+<div class="content is-medium">
+    <div class="columns">
+        <div class="column is-two-thirds">
+            <p>
+                Einfaches Windows Setup mit folgenden Inhalt:
+            </p>
+
+            <ul>
+                <li>appleJuice Core 32bit</li>
+                <li>appleJuice Core 64bit</li>
+                <li>appleJuice Java GUI</li>
+            </ul>
+        </div>
+        <div class="column">
+            <figure class="image box is-pulled-right">
+                <a href="#" class="modal-button" data-target="modal-applejuice-windows">
+                    <img src="/assets/screenshots/applejuice_windows.png" width="200">
+                </a>
+            </figure>
+        </div>
+    </div>
+
+    <p>
+        Features:
+    </p>
+    <ul>
+        <li>32bit und 64bit können parallel installiert werden</li>
+        <li>Desktop- und Startmenüeinträge werden angelegt</li>
+        <li>das <code>ajfsp://</code> Protokoll wird mit dem GUI verknüpft</li>
+        <li>der Arbeitsspeicher für den Core wird automatisch berechnet (<code>-Xmx</code>)</li>
+        <li>und noch einiges <a href="https://github.com/{{ site.github_username }}/setup/blob/master/README.md" target="_blank">mehr</a></li>
+    </ul>
+
+    <div class="buttons">
+        <p>
+            <a href="https://github.com/{{ site.github_username }}/setup/releases/latest/download/appleJuice-setup.exe" class="button is-link is-success is-medium">
+                <i class="fas fa-download"></i>
+                &nbsp; jetzt herunterladen
+            </a>
+        </p>
+    </div>
+
+    <div class="modal" id="modal-applejuice-windows">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <p class="image is-4by3">
+                <img src="/assets/screenshots/applejuice_windows.png" alt="appleJuice Windows Setup">
+            </p>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+</div>
