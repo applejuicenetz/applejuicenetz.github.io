@@ -8,13 +8,9 @@ menubar: downloads_menu
 <h1 class="title">{{ page.title }}</h1>
 <p class="subtitle is-6">{{ page.subtitle }}</p>
 
-<div class="field is-grouped">
+<div class="field is-grouped aj-badges">
     <div class="control">
         <img alt="GitHub phpGUI release" src="https://img.shields.io/github/v/tag/{{ site.github_username }}/phpgui?label=version&style={{ site.shields_style }}">
-    </div>
-
-    <div class="control">
-        <img alt="GitHub phpGUI Downloads" src="https://img.shields.io/github/downloads/{{ site.github_username }}/gui-java/total?style={{ site.shields_style }}">
     </div>
 
     <div class="control">
@@ -26,10 +22,28 @@ menubar: downloads_menu
     <div class="columns">
         <div class="column is-two-thirds">
             <p>
-                Ein <span class="is-help" title="Graphical User Interface | Grafische Benutzeroberfläche">GUI</span> für den Core geschrieben in <code>PHP</code>.
+                Ein weiteres <span class="is-help" title="Graphical User Interface | Grafische Benutzeroberfläche">GUI</span> für den <a href="/downloads/applejuice-core">Core</a> geschrieben in <code>PHP</code>.
+            </p>
+
+            <p>
+                Kann bspw. auf dem <code>NAS</code> oder eigenen Webspace betrieben zu werden.
+            </p>
+
+            <p>
+                Es wird als Minimum <code>PHP 7.4.0</code> benötigt.
             </p>
         </div>
+
         <div class="column">
+            <a href="https://github.com/applejuicenet/phpgui/releases" class="button is-link is-success is-medium is-block">
+                <i class="fas fa-external-link-alt"></i>
+                &nbsp; zum download
+            </a>
+            <br>
+            <a href="https://hub.docker.com/r/applejuicenet/phpgui" class="button is-link is-info is-medium is-block">
+                <i class="fab fa-docker"></i>
+                &nbsp; als Docker Image
+            </a>
             <figure class="image box is-pulled-right">
                 <a href="#" class="modal-button" data-target="modal-applejuice-phpgui">
                     <img src="/assets/screenshots/applejuice_phpgui.png" width="200">
@@ -38,25 +52,8 @@ menubar: downloads_menu
         </div>
     </div>
 
-    <div class="columns">
-        <div class="column">
-            <a href="https://github.com/applejuicenet/phpgui/releases" class="button is-link is-success is-medium is-block">
-                <i class="fas fa-external-link-alt"></i>
-                &nbsp; zum download
-            </a>
-        </div>
-        <div class="column">
-            <a href="https://hub.docker.com/r/applejuicenet/phpgui" class="button is-link is-success is-medium is-block">
-                <i class="fab fa-docker"></i>
-                &nbsp; als Docker Image
-            </a>
-        </div>
-        <div class="column">
-            <a href="https://phpgui.knastbruder.applejuicenet.de" class="button is-link is-success is-medium is-block" target="_blank">
-                <i class="fas fa-external-link-alt"></i>
-                &nbsp; öffnen
-            </a>
-        </div>
+    <div class="notification is-small is-info is-light">
+        <i class="fas fa-fw fa-hand-point-right"></i> Alternativ kann die phpGUI auch direkt <a href="https://phpgui.knastbruder.applejuicenet.de" target="_blank">hier</a> geöffnet werden.
     </div>
 
     <div class="modal" id="modal-applejuice-phpgui">

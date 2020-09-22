@@ -1,13 +1,35 @@
 -   name: Lizenzrecht
-    link: /lizenzrecht
+    link: /lizenzrecht/
+    icon_brand: false
+    icon: fa-gavel
+
 -   name: Chat
     link: https://discord.gg/P252MBU
+    icon_brand: false
+    icon: fa-comments
 
 -   name: Serverliste
-    link: /serverliste
+    link: /serverliste/
+    icon_brand: false
+    icon: fa-list-ul
 
 -   name: Einstellungsrechner
-    link: /einstellungsrechner
+    link: /einstellungsrechner/
+    icon_brand: false
+    icon: fa-calculator
 
 -   name: Changelogs
-    link: /changelogs
+    link: /changelogs/
+    icon_brand: false
+    icon: fa-edit
+
+-   name: Roadmap
+    link: /roadmap/
+    icon_brand: false
+    icon: fa-road
+
+-   name: Spenden
+    link: https://paypal.me/pools/c/8ri9VrxZl9
+    icon_brand: true
+    icon: fa-paypal
+
