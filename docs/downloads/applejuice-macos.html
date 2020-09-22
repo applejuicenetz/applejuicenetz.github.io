@@ -4,11 +4,10 @@ title: appleJuice für macOS
 subtitle: herunterladen oder via Homebrew installieren
 menubar: downloads_menu
 ---
-
 <h1 class="title">{{ page.title }}</h1>
 <p class="subtitle is-6">{{ page.subtitle }}</p>
 
-<div class="field is-grouped is-grouped-multiline">
+<div class="field is-grouped aj-badges">
     <div class="control">
         <img alt="GitHub latest Core release" src="https://img.shields.io/github/v/release/{{ site.github_username }}/core?label=core&style={{ site.shields_style }}">
     </div>
@@ -19,24 +18,27 @@ menubar: downloads_menu
 </div>
 
 <div class="content is-medium">
-    <p>
-        Der appleJuice Core und das JavaGUI sind als native macOS Apps verfügbar.<br/>
-    </p>
-    <p>
-        Alternativ ist eine Installation mittels <a href="https://brew.sh/" target="_blank">Homebrew</a> möglich:
-        <a href="https://github.com/applejuicenet/homebrew-packages" target="_blank">zur Anleitung</a>.
-    </p>
+    <div class="columns">
+        <div class="column is-two-thirds">
+            <p>
+                <a href="/downloads/applejuice-core">Core</a> und das <a href="/downloads/applejuice-java-gui">JavaGUI</a> als native macOS Apps.
+            </p>
+        </div>
+        <div class="column">
+            <a href="https://github.com/{{ site.github_username }}/core/releases/latest/download/AJCore.macOS.zip" class="button is-link is-success is-medium is-block">
+                <i class="fas fa-download"></i>
+                &nbsp; Core für macOS
+            </a>
+            <br>
+            <a href="https://github.com/{{ site.github_username }}/gui-java/releases/latest/download/AJCoreGUI.macOS.zip" class="button is-link is-success is-medium is-block">
+                <i class="fas fa-download"></i>
+                &nbsp; JavaGUI für macOS
+            </a>
+        </div>
+    </div>
 
-    <div class="buttons">
-        <p>
-            <a href="https://github.com/{{ site.github_username }}/core/releases/latest/download/AJCore.macOS.zip" class="button is-link is-success is-medium">
-                <i class="fas fa-download"></i>
-                &nbsp; AjCore herunterladen
-            </a>
-            <a href="https://github.com/{{ site.github_username }}/gui-java/releases/latest/download/AJCoreGUI.macOS.zip" class="button is-link is-success is-medium">
-                <i class="fas fa-download"></i>
-                &nbsp; AJCoreGUI herunterladen
-            </a>
-        </p>
+    <div class="notification is-small is-info is-light">
+        <i class="fas fa-fw fa-hand-point-right"></i> Alternativ ist eine Installation mittels <a href="https://brew.sh/" target="_blank">Homebrew</a> möglich:
+        <a href="https://github.com/applejuicenet/homebrew-packages" target="_blank">zur Anleitung</a>.
     </div>
 </div>

@@ -8,7 +8,7 @@ menubar: downloads_menu
 <h1 class="title">{{ page.title }}</h1>
 <p class="subtitle is-6">{{ page.subtitle }}</p>
 
-<div class="field is-grouped is-grouped-multiline">
+<div class="field is-grouped aj-badges">
     <div class="control">
         <img alt="Chrome Store latest release" src="https://img.shields.io/chrome-web-store/v/kidjbmkomidijgbealkgeadgamkdgdch?style={{ site.shields_style }}">
     </div>
@@ -22,11 +22,28 @@ menubar: downloads_menu
     <div class="columns">
         <div class="column is-two-thirds">
             <p>
-                Über das <span class="is-help" title="Rechtsklick / Sekundärklick">Kontextmenü</span> werden die <code>ajfsp://</code> Links direkt an den Core übergeben.
+                Über das <span class="is-help" title="Rechtsklick / Sekundärklick">Kontextmenü</span> werden die <code>ajfsp://</code> Links direkt an den <a href="/downloads/applejuice-core">Core</a>
+                übergeben.
+            </p>
+            <p>
+                Die Browser Erweiterung richtet sich vorwiegend an <a href="/downloads/applejuice-linux">Linux</a> und <a href="/downloads/applejuice-macos">macOS</a> Nutzer, da dort die Übernahme der
+                <code>ajfsp://</code> Links fehlerhaft ist.
+                <br>
+                Selbstverständlich kann die Erweiterung auch unter <a href="/downloads/applejuice-windows">Windows</a> benutzt werden.
             </p>
         </div>
 
         <div class="column">
+            <a href="https://chrome.google.com/webstore/detail/applejuice-link-catcher/kidjbmkomidijgbealkgeadgamkdgdch" class="button is-link is-success is-medium is-block" target="_blank">
+                <i class="fab fa-chrome"></i>
+                &nbsp; Chrome Extension
+            </a>
+            <br>
+            <a href="https://addons.mozilla.org/de/firefox/addon/applejuice-link-catcher/" class="button is-link is-success is-medium is-block" target="_blank">
+                <i class="fab fa-firefox"></i>
+                &nbsp; Firefox Addon
+            </a>
+
             <figure class="image box is-pulled-right">
                 <a href="#" class="modal-button" data-target="modal-applejuice-browser-erweiterung">
                     <img src="/assets/screenshots/applejuice_browser_erweiterung.png" width="200">
@@ -37,21 +54,6 @@ menubar: downloads_menu
 
     <div class="notification is-danger is-light">
         Die Erweiterung muss <strong>einmalig</strong> konfiguriert werden!
-    </div>
-
-    <div class="columns">
-        <div class="column">
-            <a href="https://chrome.google.com/webstore/detail/applejuice-link-catcher/kidjbmkomidijgbealkgeadgamkdgdch" class="button is-link is-success is-medium is-block" target="_blank">
-                <i class="fab fa-chrome"></i>
-                &nbsp; zum Chrome Web Store
-            </a>
-        </div>
-        <div class="column">
-            <a href="https://addons.mozilla.org/de/firefox/addon/applejuice-link-catcher/" class="button is-link is-success is-medium is-block" target="_blank">
-                <i class="fab fa-firefox"></i>
-                &nbsp; zur Firefox Addon Datenbank
-            </a>
-        </div>
     </div>
 
     <div class="modal" id="modal-applejuice-browser-erweiterung">

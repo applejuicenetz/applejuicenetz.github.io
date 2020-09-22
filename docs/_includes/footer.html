@@ -6,7 +6,12 @@
             {% for item in site.data[site.footer_menu] %}
             <div class="column has-text-centered">
                 <div>
-                    <a href="{{ item.link | absolute_url }}" class="link">{{ item.name }}</a>
+                    <a href="{{ item.link | absolute_url }}" class="link">
+                        {% if item.icon %}
+                        <i class=" {% if item.icon_brand %} fab {% else %} fas {% endif %} fa-fw {{item.icon }}"></i>
+                        {% endif %}
+                        {{ item.name }}
+                    </a>
                 </div>
             </div>
             {% endfor %}
@@ -14,8 +19,10 @@
         {% endif %}
 
         <div class="content is-small has-text-centered">
+            Copyright &copy; 2002-2020 &middot; powered by <a href="//appleJuicenet.de">appleJuicenet.de</a>
+        </div>
+        <div class="content is-small has-text-centered">
             Site built using <a href="https://github.com/chrisrhymes/bulma-clean-theme" target="_blank">Bulma Clean Theme</a> by C.S. Rhymes
         </div>
     </div>
 </footer>
-<script src="/assets/js/main.js"></script>

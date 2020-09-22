@@ -1,45 +1,46 @@
 ---
 layout: page
 title: appleJuice Tools
+subtitle: die beliebten Helferlein
 menubar: downloads_menu
 ---
 
 <h1 class="title">{{ page.title }}</h1>
+<p class="subtitle is-6">{{ page.subtitle }}</p>
 
-<div class="field is-grouped is-grouped-multiline">
+<div class="field is-grouped aj-badges">
     <div class="control">
         <img alt="GitHub Tools Downloads" src="https://img.shields.io/github/downloads/{{ site.github_username }}/portable/total?style={{ site.shields_style }}">
     </div>
 </div>
 
 <div class="content is-medium">
-    <p>
-        die beliebten Helferlein:
-    </p>
-    <ul>
-        <li><code>catch_ajfsp.exe</code></li>
-        <li><code>fixajfsp.exe</code></li>
-        <li><code>AJLM.exe</code></li>
-    </ul>
+    <div class="content is-medium">
+        <div class="columns">
+            <div class="column is-two-thirds">
+                <ul>
+                    <li><code>catch_ajfsp.exe</code></li>
+                    <li><code>fixajfsp.exe</code></li>
+                    <li><code>AJLM.exe</code></li>
+                </ul>
+            </div>
 
-    <div class="columns">
-        <div class="column">
-            <a href="https://github.com/{{ site.github_username }}/tools/releases/latest/download/fixajfsp.exe" class="button is-link is-success is-medium is-block">
-                <i class="fas fa-download"></i>
-                &nbsp; fixajfsp.exe
-            </a>
-        </div>
-        <div class="column">
-            <a href="https://github.com/{{ site.github_username }}/tools/releases/latest/download/catch_ajfsp.exe" class="button is-link is-success is-medium is-block">
-                <i class="fas fa-download"></i>
-                &nbsp; catch_ajfsp.exe
-            </a>
-        </div>
-        <div class="column">
-            <a href="https://github.com/{{ site.github_username }}/tools/releases/latest/download/AJLM.exe" class="button is-link is-success is-medium is-block">
-                <i class="fas fa-download"></i>
-                &nbsp; AJLM.exe
-            </a>
+            <div class="column">
+                <a href="https://github.com/{{ site.github_username }}/tools/releases/latest/download/fixajfsp.exe" class="button is-link is-success is-medium is-block">
+                    <i class="fas fa-download"></i>
+                    &nbsp; fixajfsp.exe
+                </a>
+                <br>
+                <a href="https://github.com/{{ site.github_username }}/tools/releases/latest/download/catch_ajfsp.exe" class="button is-link is-success is-medium is-block">
+                    <i class="fas fa-download"></i>
+                    &nbsp; catch_ajfsp.exe
+                </a>
+                <br>
+                <a href="https://github.com/{{ site.github_username }}/tools/releases/latest/download/AJLM.exe" class="button is-link is-success is-medium is-block">
+                    <i class="fas fa-download"></i>
+                    &nbsp; AJLM.exe
+                </a>
+            </div>
         </div>
     </div>
 </div>

@@ -8,7 +8,7 @@ menubar: downloads_menu
 <h1 class="title">{{ page.title }}</h1>
 <p class="subtitle is-6">{{ page.subtitle }}</p>
 
-<div class="field is-grouped is-grouped-multiline">
+<div class="field is-grouped aj-badges">
     <div class="control">
         <img alt="Snapcraft latest GUI" src="https://snapcraft.io/applejuice-core/badge.svg">
     </div>
@@ -19,20 +19,26 @@ menubar: downloads_menu
 </div>
 
 <div class="content is-medium">
-    <p>
-        Der appleJuice Core und das JavaGUI sind als Snap Pakete im Snapcraft Store verfügbar.<br/>
-    </p>
+    <div class="columns">
+        <div class="column is-two-thirds">
+            <p>
+                <a href="/downloads/applejuice-core">Core</a> und das <a href="/downloads/applejuice-java-gui">JavaGUI</a> als Snap Packages.
+            </p>
+        </div>
+        <div class="column">
+            <a href="https://snapcraft.io/applejuice-core" class="button is-link is-success is-medium is-block" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+                &nbsp; Core für Linux
+            </a>
+            <br>
+            <a href="https://snapcraft.io/applejuice-gui" class="button is-link is-success is-medium is-block" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+                &nbsp; GUI für Linux
+            </a>
+        </div>
+    </div>
 
-    <div class="buttons">
-        <p>
-            <a href="https://snapcraft.io/applejuice-core" class="button is-link is-success is-medium" target="_blank">
-                <i class="fas fa-external-link-alt"></i>
-                &nbsp; appleJuice Core im Store
-            </a>
-            <a href="https://snapcraft.io/applejuice-gui" class="button is-link is-success is-medium" target="_blank">
-                <i class="fas fa-external-link-alt"></i>
-                &nbsp; appleJuice GUI im Store
-            </a>
-        </p>
+    <div class="notification is-small is-info is-light">
+        <i class="fas fa-fw fa-hand-point-right"></i> Alternativ können <a href="/downloads/applejuice-core/">Core</a> und <a href="/downloads/applejuice-java-gui/">JavaGUI</a> auch manuell installiert werden.
     </div>
 </div>

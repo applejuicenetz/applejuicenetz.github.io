@@ -1,57 +1,57 @@
 -   label: Pakete
     items:
         -   name: Windows Setup
-            link: /downloads/applejuice-windows
+            link: /downloads/applejuice-windows/
             icon_brand: true
             icon: fa-windows
 
         -   name: Windows Portable
-            link: /downloads/applejuice-portable
+            link: /downloads/applejuice-portable/
             icon_brand: true
             icon: fa-usb
 
         -   name: macOS Apps
-            link: /downloads/applejuice-macos
+            link: /downloads/applejuice-macos/
             icon_brand: true
             icon: fa-apple
 
         -   name: Linux Snap
-            link: /downloads/applejuice-linux
+            link: /downloads/applejuice-linux/
             icon_brand: true
             icon: fa-linux
 
         -   name: Docker Image
-            link: /downloads/applejuice-docker
+            link: /downloads/applejuice-docker/
             icon_brand: true
             icon: fa-docker
 
 -   label: Weiteres
     items:
         -   name: Core
-            link: /downloads/applejuice-core
+            link: /downloads/applejuice-core/
             icon: fa-apple-alt
 
         -   name: JavaGUI
-            link: /downloads/applejuice-java-gui
+            link: /downloads/applejuice-java-gui/
             icon_brand: true
             icon: fa-java
 
         -   name: phpGUI
-            link: /downloads/applejuice-php-gui
+            link: /downloads/applejuice-php-gui/
             icon_brand: true
             icon: fa-php
 
-        -   name: Biblitotheken
-            link: /downloads/applejuice-bibliotheken
-            icon: fa-file-code
-
         -   name: Browser Erweiterung
-            link: /downloads/applejuice-browser-erweiterung
+            link: /downloads/applejuice-browser-erweiterung/
             icon_brand: true
             icon: fa-edge
 
+        -   name: Biblitotheken
+            link: /downloads/applejuice-bibliotheken/
+            icon: fa-file-code
+
         -   name: Tools
-            link: /downloads/applejuice-tools
+            link: /downloads/applejuice-tools/
             icon_brand: false
             icon: fa-tools
 

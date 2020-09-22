@@ -1,10 +1,10 @@
 title: appleJuiceNET
-description: >- # this means to ignore newlines until "baseurl:"
-    appleJuiceNET -
-baseurl: ""
-url: "https://applejuicenet.github.io"
+description: >-
+    appleJuice - dein P2P Client aus Deutschland
+lang: de_DE
 favicon: favicon.png
 github_username: applejuicenet
+paypal_button_link: https://paypal.me/pools/c/8ri9VrxZl9
 
 permalink: pretty
 timezone: Europe/Berlin
@@ -14,9 +14,8 @@ shields_style: for-the-badge
 footer_menu: footer_menu
 
 # Build settings
-theme: bulma-clean-theme
+# theme: bulma-clean-theme
 remote_theme: chrisrhymes/bulma-clean-theme
-markdown: kramdown
 plugins:
     - github-pages
 
@@ -24,9 +23,7 @@ defaults:
     -   scope:
             path: ""
         values:
-            hero_image: /assets/images/apple-on-grass-red.jpg
-    -   scope:
-            path: "/downloads/*"
-        values:
             hero_height: is-small
+            hero_image: /assets/images/apple-on-grass-red.jpg
+
 
