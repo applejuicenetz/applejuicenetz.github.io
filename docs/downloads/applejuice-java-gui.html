@@ -8,7 +8,7 @@ menubar: downloads_menu
 <h1 class="title">{{ page.title }}</h1>
 <p class="subtitle is-6">{{ page.subtitle }}</p>
 
-<div class="field is-grouped is-grouped-multiline">
+<div class="field is-grouped aj-badges">
     <div class="control">
         <img alt="GitHub latest GUI release" src="https://img.shields.io/github/v/release/{{ site.github_username }}/gui-java?label=GUI&style={{ site.shields_style }}">
     </div>
@@ -22,25 +22,37 @@ menubar: downloads_menu
     <div class="columns">
         <div class="column is-two-thirds">
             <p>
-                das offizielle <span class="is-help" title="Graphical User Interface | Grafische Benutzeroberfläche">GUI</span> für den Core
+                Das offizielle <span class="is-help" title="Graphical User Interface | Grafische Benutzeroberfläche">GUI</span> für den Core geschrieben in <code>Java</code>.
             </p>
+
+            <p>
+                Das offizielle JavaGUI ist:
+            </p>
+
+            <ul>
+                <li>Bestandteil des <a href="/downloads/applejuice-windows/">Windows Setup</a></li>
+                <li>Bestandteil des <a href="/downloads/applejuice-portable/">Windows Portable</a> Packages</li>
+                <li>als <a href="/downloads/applejuice-macos/">macOS App</a> verfügbar</li>
+                <li>als <a href="/downloads/applejuice-linux/">Linux Snap</a> verfügbar</li>
+            </ul>
         </div>
+
         <div class="column">
+            <a href="https://github.com/{{ site.github_username }}/gui-java/releases/latest|download/AJCoreGUI.zip" class="button is-link is-success is-medium is-block">
+                <i class="fas fa-download"></i>
+                &nbsp; jetzt herunterladen
+            </a>
+
             <figure class="image box is-pulled-right">
                 <a href="#" class="modal-button" data-target="modal-applejuice-javagui">
-                    <img src="/assets/screenshots/applejuice_javagui.png" width="200">
+                    <img src="/assets/screenshots/applejuice_javagui.png">
                 </a>
             </figure>
         </div>
     </div>
 
-    <div class="buttons">
-        <p>
-            <a href="https://github.com/{{ site.github_username }}/gui-java/releases/latest|download/AJCoreGUI.zip" class="button is-link is-success is-medium">
-                <i class="fas fa-download"></i>
-                &nbsp; jetzt herunterladen
-            </a>
-        </p>
+    <div class="notification is-small is-info is-light">
+        <i class="fas fa-fw fa-hand-point-right"></i> Das GUI ist ohne appleJuice <a href="/downloads/applejuice-core/">Core</a> nicht funktionsfähig.
     </div>
 
     <div class="modal" id="modal-applejuice-javagui">

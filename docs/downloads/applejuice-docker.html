@@ -8,7 +8,7 @@ menubar: downloads_menu
 <h1 class="title">{{ page.title }}</h1>
 <p class="subtitle is-6">{{ page.subtitle }}</p>
 
-<div class="field is-grouped is-grouped-multiline">
+<div class="field is-grouped aj-badges">
     <div class="control">
         <img alt="Docker Image Version" src="https://img.shields.io/docker/v/{{ site.github_username }}/core?color=blue&style={{ site.shields_style }}">
     </div>
@@ -19,16 +19,21 @@ menubar: downloads_menu
 </div>
 
 <div class="content is-medium">
-    <p>
-        Der appleJuice Core als Docker Container
-    </p>
-
-    <div class="buttons">
-        <p>
-            <a href="https://hub.docker.com/r/applejuicenet/core" class="button is-link is-info is-medium">
+    <div class="columns">
+        <div class="column is-two-thirds">
+            <p>
+                Der appleJuice <a href="/downloads/applejuice-core">Core</a> als Docker Container
+            </p>
+        </div>
+        <div class="column">
+            <a href="https://hub.docker.com/r/applejuicenet/core" class="button is-link is-info is-medium is-block">
                 <i class="fab fa-docker"></i>
-                &nbsp; im Docker Hub ansehen
+                &nbsp; zum Docker Hub
             </a>
-        </p>
+        </div>
+    </div>
+
+    <div class="notification is-small is-info is-light">
+        <i class="fas fa-fw fa-hand-point-right"></i> Es muss lediglich <a href="https://docs.docker.com/get-docker/" target="_blank">Docker</a> installiert sein.
     </div>
 </div>

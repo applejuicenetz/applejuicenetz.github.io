@@ -8,56 +8,49 @@ menubar: downloads_menu
 <h1 class="title">{{ page.title }}</h1>
 <p class="subtitle is-6">{{ page.subtitle }}</p>
 
-<div class="field is-grouped is-grouped-multiline">
+<div class="field is-grouped aj-badges">
     <div class="control">
         <img alt="GitHub latest Core release" src="https://img.shields.io/github/v/release/{{ site.github_username }}/core?label=core&style={{ site.shields_style }}">
     </div>
+</div>
 
-    <div class="control">
-        <img alt="GitHub Core Downloads" src="https://img.shields.io/github/downloads/{{ site.github_username }}/core/total?style={{ site.shields_style }}">
-    </div>
-
-    <div class="content is-medium">
-        <div class="columns">
-            <div class="column is-two-thirds">
-                <p>
-                    Der appleJuice Core kommuniziert mit dem appleJuice Netzwerk und baut die <span class="is-help" title="Peer-to-Peer">P2P</span> Verbindung auf.
-                </p>
-            </div>
-            <div class="column">
-                <figure class="image box is-pulled-right">
-                    <a href="#" class="modal-button" data-target="modal-applejuice-core">
-                        <img src="/assets/screenshots/applejuice_core.png" width="200">
-                    </a>
-                </figure>
-
-            </div>
+<div class="content is-medium">
+    <div class="columns">
+        <div class="column is-two-thirds">
+            <p>
+                Der appleJuice Core kommuniziert mit dem appleJuice Netzwerk und baut die <span class="is-help" title="Peer-to-Peer">P2P</span> Verbindung auf.
+            </p>
         </div>
 
-        <div class="notification is-small is-info is-light">
-            <ul class="is-unstyled">
-                <li><i class="fas fa-fw fa-exclamation"></i>Zum start wird eine passende <code>ajnetmask</code> Bibliothek von <a href="/downloads/applejuice-bibliotheken">hier</a> benötigt!</li>
-                <li><i class="fas fa-fw fa-hand-point-right"></i>Unter Windows wird außerdem die <code>Trayicon12.dll</code> empfohlen.</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="buttons">
-        <p>
-            <a href="https://github.com/{{ site.github_username }}/core/releases/latest/download/ajcore.jar" class="button is-link is-success is-medium">
+        <div class="column">
+            <a href="https://github.com/{{ site.github_username }}/core/releases/latest/download/ajcore.jar" class="button is-link is-success is-medium is-block">
                 <i class="fas fa-download"></i>
                 &nbsp; jetzt herunterladen
             </a>
-        </p>
+
+            <figure class="image box">
+                <a href="#" class="modal-button" data-target="modal-applejuice-core">
+                    <img src="/assets/screenshots/applejuice_core.png">
+                </a>
+            </figure>
+        </div>
     </div>
 
-    <div class="modal" id="modal-applejuice-core">
-        <div class="modal-background"></div>
-        <div class="modal-content">
-            <p class="image is-4by3">
-                <img src="/assets/screenshots/applejuice_core.png" alt="appleJuice Core">
-            </p>
-        </div>
-        <button class="modal-close is-large" aria-label="close"></button>
+    <div class="notification is-small is-info is-light">
+        <ul class="is-unstyled">
+            <li><i class="fas fa-fw fa-exclamation"></i>Zum start wird eine passende <code>ajnetmask</code> Bibliothek von <a href="/downloads/applejuice-bibliotheken">hier</a> benötigt!</li>
+            <li><i class="fas fa-fw fa-hand-point-right"></i>Unter Windows wird außerdem die <code>Trayicon12.dll</code> empfohlen.</li>
+        </ul>
     </div>
+</div>
+
+
+<div class="modal" id="modal-applejuice-core">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <p class="image is-4by3">
+            <img src="/assets/screenshots/applejuice_core.png" alt="appleJuice Core">
+        </p>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
 </div>

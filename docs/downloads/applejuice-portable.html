@@ -4,11 +4,10 @@ title: appleJuice Portable
 subtitle: ohne Setup, mit Java, einfach downloaden und starten
 menubar: downloads_menu
 ---
-
 <h1 class="title">{{ page.title }}</h1>
 <p class="subtitle is-6">{{ page.subtitle }}</p>
 
-<div class="field is-grouped is-grouped-multiline">
+<div class="field is-grouped aj-badges">
     <div class="control">
         <img alt="GitHub latest Core release" src="https://img.shields.io/github/v/release/{{ site.github_username }}/core?label=core&style={{ site.shields_style }}">
     </div>
@@ -20,44 +19,36 @@ menubar: downloads_menu
     <div class="control">
         <img alt="GitHub latest Portable release" src="https://img.shields.io/github/v/release/{{ site.github_username }}/portable?label=Portable&style={{ site.shields_style }}">
     </div>
-
-    <div class="control">
-        <img alt="GitHub Portable Downloads" src="https://img.shields.io/github/downloads/{{ site.github_username }}/portable/total?style={{ site.shields_style }}">
-    </div>
 </div>
 
 <div class="content is-medium">
-    <p>
-        appleJuice Portable für Windows bestehend aus:
-    </p>
-    <ul>
-        <li>dem aktuellsten <a href="https://adoptopenjdk.net/" target="_blank">AdoptOpenJDK</a> JRE 1.8</li>
-        <li>dem aktuellsten <a href="/downloads/applejuice-core">Core</a></li>
-        <li>dem aktuellsten <a href="/downloads/applejuice-java-gui">JavaGUI</a></li>
-    </ul>
-    <p>
-        Features:
-    </p>
-    <ul>
-        <li>der appleJuice Client kann auf einem separaten Datenträger betrieben werden</li>
-        <li>keine Reste, oder Integration im Betriebssystem</li>
-        <li>Es muss kein <span class="is-help" title="Java Runtime Environment | Laufzeitumgebung">JRE</span> (Java) installiert werden</li>
-        <li>das <code>ajfsp://</code> Protokoll kann bei Bedarf mit dem GUI verknüpft werden</li>
-        <li>der Arbeitsspeicher für den Core wird automatisch berechnet (<code>-Xmx</code>)</li>
-        <li>noch mehr Informationen gibt es <a href="https://github.com/{{ site.github_username }}/portable/" target="_blank">hier</a></li>
-    </ul>
-
     <div class="columns">
+        <div class="column is-two-thirds">
+            <p>
+                Inhalt und Features:
+            </p>
+            <ul>
+                <li>aktuellste <a href="/downloads/applejuice-core">Core</a></li>
+                <li>aktuellste <a href="/downloads/applejuice-java-gui">JavaGUI</a></li>
+                <li>aktuellste <a href="https://adoptopenjdk.net/" target="_blank">AdoptOpenJDK</a> JRE 1.8</li>
+                <li>betrieb auf separaten Datenträger möglich</li>
+                <li>keine Reste, oder Integration im Betriebssystem</li>
+                <li>keine <span class="is-help" title="Java Runtime Environment | Laufzeitumgebung">JRE</span> (Java) installation notwendig</li>
+                <li>optionale <code>ajfsp://</code> Protokoll GUI verknüpfung</li>
+                <li>automatische Arbeitsspeichern berechnung (<code>-Xmx</code>)</li>
+                <li>und noch ein wenig <a href="https://github.com/{{ site.github_username }}/portable/" target="_blank">mehr</a></li>
+            </ul>
+
+        </div>
         <div class="column">
             <a href="https://github.com/{{ site.github_username }}/portable/releases/latest/download/appleJuice-Portable-x86.zip" class="button is-link is-success is-medium is-block">
                 <i class="fas fa-download"></i>
-                &nbsp; jetzt für 32bit herunterladen
+                &nbsp; 32bit herunterladen
             </a>
-        </div>
-        <div class="column">
+            <br>
             <a href="https://github.com/{{ site.github_username }}/portable/releases/latest/download/appleJuice-Portable-x64.zip" class="button is-link is-success is-medium is-block">
                 <i class="fas fa-download"></i>
-                &nbsp; jetzt für 64bit herunterladen
+                &nbsp; 64bit herunterladen
             </a>
         </div>
     </div>
