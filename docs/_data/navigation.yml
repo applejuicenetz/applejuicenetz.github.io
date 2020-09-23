@@ -1,20 +1,8 @@
 -   name: Downloads
     link: /downloads/
 
-#-   name: Dokumentation
-#    link: /dokumentation/
-#    dropdown:
-#        -   name: Core
-#            link: /dokumentation/core/
-#
-#        -   name: Server
-#            link: /dokumentation/server/
-#
-#-   name: FAQ
-#    link: /faq/
-#    dropdown:
-#        -   name: Core
-#            link: /faq/core/
-#
-#        -   name: Server
-#            link: /faq/server/
+-   name: Dokumentation
+    link: /dokumentation/
+
+-   name: Roadmap
+    link: /roadmap/
