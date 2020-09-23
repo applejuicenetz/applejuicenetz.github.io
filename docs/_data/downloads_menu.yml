@@ -1,3 +1,14 @@
+-   label: appleJuice
+    items:
+        -   name: Core
+            link: /downloads/applejuice-core/
+            icon: fa-apple-alt
+
+        -   name: GUI
+            link: /downloads/applejuice-java-gui/
+            icon_brand: true
+            icon: fa-java
+
 -   label: Pakete
     items:
         -   name: Windows Setup
@@ -27,24 +38,15 @@
 
 -   label: Weiteres
     items:
-        -   name: Core
-            link: /downloads/applejuice-core/
-            icon: fa-apple-alt
-
-        -   name: JavaGUI
-            link: /downloads/applejuice-java-gui/
+        -   name: Browser Erweiterung
+            link: /downloads/applejuice-browser-erweiterung/
             icon_brand: true
-            icon: fa-java
+            icon: fa-edge
 
         -   name: phpGUI
             link: /downloads/applejuice-php-gui/
             icon_brand: true
             icon: fa-php
-
-        -   name: Browser Erweiterung
-            link: /downloads/applejuice-browser-erweiterung/
-            icon_brand: true
-            icon: fa-edge
 
         -   name: Biblitotheken
             link: /downloads/applejuice-bibliotheken/
