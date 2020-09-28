@@ -14,8 +14,23 @@ menubar: downloads_menu
     </div>
 
     <div class="control">
-        <img alt="Docker Image Size" src="https://img.shields.io/docker/image-size/{{ site.github_username }}/phpgui?label=Docker%20Image&style={{ site.shields_style }}">
+        <img alt="Docker phpGUI Image Size" src="https://img.shields.io/docker/image-size/{{ site.github_username }}/phpgui?label=Docker%20Image&style={{ site.shields_style }}">
     </div>
+
+    <div class="control">
+        <img alt="Docker phpGUI Image Pulls" src="https://img.shields.io/docker/pulls/{{ site.github_username }}/phpgui?color=blue&style={{ site.shields_style }}">
+    </div>
+
+
+    <div class="control">
+        <img alt="GitHub phpGUI License" src="https://img.shields.io/github/license/{{ site.github_username }}/phpgui?style={{ site.shields_style }}">
+    </div>
+
+    <!--
+    <div class="control">
+        <img alt="GitHub phpGUI Downloads" src="https://img.shields.io/github/downloads/{{ site.github_username }}/phpgui/total?style={{ site.shields_style }}">
+    </div>
+    -->
 </div>
 
 <div class="content is-medium">
@@ -39,11 +54,21 @@ menubar: downloads_menu
                 <i class="fas fa-external-link-alt"></i>
                 &nbsp; zum download
             </a>
+
             <br>
+
             <a href="https://hub.docker.com/r/applejuicenet/phpgui" class="button is-link is-info is-medium is-block">
                 <i class="fab fa-docker"></i>
                 &nbsp; als Docker Image
             </a>
+
+            <br>
+
+            <a href="https://github.com/{{ site.github_username }}/phpgui/blob/master/CHANGELOG.md" class="button is-link is-info is-medium is-block" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+                &nbsp; Changelog
+            </a>
+
             <figure class="image box">
                 <a href="#" class="modal-button" data-target="modal-applejuice-phpgui">
                     <img src="/assets/screenshots/applejuice_phpgui.png" width="200">

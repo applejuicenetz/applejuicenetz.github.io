@@ -10,7 +10,15 @@ menubar: downloads_menu
 
 <div class="field is-grouped aj-badges">
     <div class="control">
-        <img alt="GitHub latest Core release" src="https://img.shields.io/github/v/release/{{ site.github_username }}/core?label=core&style={{ site.shields_style }}">
+        <img alt="GitHub latest Core release" src="https://img.shields.io/github/v/release/{{ site.github_username }}/core?style={{ site.shields_style }}">
+    </div>
+
+    <div class="control">
+        <img alt="GitHub Core Downloads" src="https://img.shields.io/github/downloads/{{ site.github_username }}/core/total?style={{ site.shields_style }}">
+    </div>
+
+    <div class="control">
+        <img alt="GitHub Core License" src="https://img.shields.io/badge/license-proprietary-blue?color=orange&style={{ site.shields_style }}">
     </div>
 </div>
 
@@ -35,10 +43,24 @@ menubar: downloads_menu
 
         </div>
 
-        <div class="column">
+        <div class="column has-text-centered">
             <a href="https://github.com/{{ site.github_username }}/core/releases/latest/download/ajcore.jar" class="button is-link is-success is-medium is-block">
                 <i class="fas fa-download"></i>
                 &nbsp; jetzt herunterladen
+            </a>
+
+            <br>
+
+            <a href="https://github.com/{{ site.github_username }}/core/releases/" class="button is-link is-info is-medium is-block" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+                &nbsp; weitere Downloads
+            </a>
+
+            <br>
+
+            <a href="https://github.com/{{ site.github_username }}/gui-java/blob/core/CHANGELOG.md" class="button is-link is-info is-medium is-block" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+                &nbsp; Changelog
             </a>
 
             <figure class="image box">
@@ -46,6 +68,7 @@ menubar: downloads_menu
                     <img src="/assets/screenshots/applejuice_core.png">
                 </a>
             </figure>
+
         </div>
     </div>
 
