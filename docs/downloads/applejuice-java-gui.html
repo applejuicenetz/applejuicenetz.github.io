@@ -10,7 +10,15 @@ menubar: downloads_menu
 
 <div class="field is-grouped aj-badges">
     <div class="control">
-        <img alt="GitHub GUI release" src="https://img.shields.io/github/v/release/{{ site.github_username }}/gui-java?label=GUI&style={{ site.shields_style }}">
+        <img alt="GitHub JavaGUI release" src="https://img.shields.io/github/v/release/{{ site.github_username }}/gui-java?style={{ site.shields_style }}">
+    </div>
+
+    <div class="control">
+        <img alt="GitHub JavaGUI Downloads" src="https://img.shields.io/github/downloads/{{ site.github_username }}/gui-java/total?style={{ site.shields_style }}">
+    </div>
+
+    <div class="control">
+        <img alt="GitHub JavaGUI License" src="https://img.shields.io/github/license/{{ site.github_username }}/gui-java?style={{ site.shields_style }}">
     </div>
 </div>
 
@@ -33,10 +41,24 @@ menubar: downloads_menu
             </ul>
         </div>
 
-        <div class="column">
+        <div class="column has-text-centered">
             <a href="https://github.com/{{ site.github_username }}/gui-java/releases/latest/download/AJCoreGUI.zip" class="button is-link is-success is-medium is-block">
                 <i class="fas fa-download"></i>
                 &nbsp; jetzt herunterladen
+            </a>
+
+            <br>
+
+            <a href="https://github.com/{{ site.github_username }}/gui-java/releases/" class="button is-link is-info is-medium is-block" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+                &nbsp; weitere Downloads
+            </a>
+
+            <br>
+
+            <a href="https://github.com/{{ site.github_username }}/gui-java/blob/master/CHANGELOG.md" class="button is-link is-info is-medium is-block" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+                &nbsp; Changelog
             </a>
 
             <figure class="image box">
@@ -44,6 +66,7 @@ menubar: downloads_menu
                     <img src="/assets/screenshots/applejuice_javagui.png">
                 </a>
             </figure>
+
         </div>
     </div>
 
