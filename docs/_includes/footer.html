@@ -1,6 +1,5 @@
 <footer class="footer">
     <div class="container">
-
         {% if site.footer_menu %}
         <div class="columns is-multiline">
             {% for item in site.data[site.footer_menu] %}
@@ -22,7 +21,11 @@
             Copyright &copy; 2002-2020 &middot; powered by <a href="//appleJuicenet.de">appleJuicenet.de</a>
         </div>
         <div class="content is-small has-text-centered">
-            Site built using <a href="https://github.com/chrisrhymes/bulma-clean-theme" target="_blank">Bulma Clean Theme</a> by C.S. Rhymes
+            <span id="nw-server">0</span> Server <span class="fa fa-server"></span>
+            &middot;
+            <span id="nw-user">0</span> User <span class="fa fa-user-friends"></span>
+            &middot;
+            <span id="nw-files">0</span> Files <span class="fa fa-file"></span>
         </div>
     </div>
 </footer>
