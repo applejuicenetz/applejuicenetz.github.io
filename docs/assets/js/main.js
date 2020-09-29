@@ -1,5 +1,3 @@
-'use strict';
-
 document.addEventListener('DOMContentLoaded', () => {
     let rootEl = document.documentElement;
     let $modals = getAll('.modal');
@@ -9,8 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if ($modalButtons.length > 0) {
         $modalButtons.forEach($el => {
             $el.addEventListener('click', ($e) => {
-                let target = $el.dataset.target;
-                let $target = document.getElementById(target);
+                let $target = document.getElementById($el.dataset.target);
                 rootEl.classList.add('is-clipped');
                 $target.classList.add('is-active');
             });
