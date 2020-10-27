@@ -23,8 +23,3 @@
     icon_brand: false
     icon: fa-edit
 
--   name: Spenden
-    link: https://paypal.me/pools/c/8ri9VrxZl9
-    icon_brand: true
-    icon: fa-paypal
-
