@@ -13,6 +13,11 @@
     icon_brand: false
     icon: fa-list-ul
 
+-   name: Netzwerkstatistik
+    link: https://grafana.applejuicenet.cc
+    icon_brand: false
+    icon: fa-chart-pie
+
 -   name: Einstellungsrechner
     link: /einstellungsrechner/
     icon_brand: false
