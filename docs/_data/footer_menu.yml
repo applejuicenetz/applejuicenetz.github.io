@@ -3,28 +3,27 @@
     icon_brand: false
     icon: fa-gavel
 
--   name: Chat
-    link: https://discord.gg/ur3WqHw
+-   name: Netzwerkstatistik
+    link: https://grafana.applejuicenet.cc
     icon_brand: false
-    icon: fa-comments
+    icon: fa-chart-pie
 
 -   name: Serverliste
     link: /serverliste/
     icon_brand: false
     icon: fa-list-ul
 
--   name: Netzwerkstatistik
-    link: https://grafana.applejuicenet.cc
-    icon_brand: false
-    icon: fa-chart-pie
-
 -   name: Einstellungsrechner
     link: /einstellungsrechner/
     icon_brand: false
     icon: fa-calculator
 
+-   name: Link Konverter
+    link: /link-konverter/
+    icon_brand: false
+    icon: fa-random
+
 -   name: Changelogs
     link: /changelogs/
     icon_brand: false
     icon: fa-edit
-
