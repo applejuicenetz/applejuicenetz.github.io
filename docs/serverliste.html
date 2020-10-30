@@ -9,7 +9,6 @@ title: Serverliste
 <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
     <thead>
     <tr>
-        <th width="1%"></th>
         <th>Servername</th>
         <th>Address</th>
         <th width="5%" align="right">Port</th>
@@ -17,8 +16,7 @@ title: Serverliste
     </thead>
     <tfoot>
     <tr>
-        <td colspan="3"></td>
-        <td align="right">
+        <td colspan="3" align="right">
             <a href="https://www.applejuicenet.cc/serverlist/networkinfo.php" target="_blank"><span class="fa fa-signal"></span></a>
             <a href="https://www.applejuicenet.cc/serverlist/xmllist.php" target="_blank"><span class="fa fa-file-code"></span></a>
         </td>
@@ -28,40 +26,4 @@ title: Serverliste
 
     </tbody>
 </table>
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        let template = `<tr>
-        <td>
-            <span class="fa fa-server"></span>
-        </td>
-        <td>
-            %NAME%
-        </td>
-        <td>
-            <a href="%LINK%">
-                %SERVERIP%
-            </a>
-        </td>
-        <td align="right">
-            %PORT%
-        </td>
-    </tr>`;
-
-        let int = setInterval(() => {
-            if (window.applejuice) {
-                let tBody = document.getElementsByTagName('tbody')[0];
-
-                window.applejuice.servers.forEach(element => {
-                    let row = template
-                        .replace('%NAME%', element.name)
-                        .replace('%LINK%', `ajfsp://server|${element.ip}|${element.port}/`)
-                        .replace('%SERVERIP%', element.ip)
-                        .replace('%PORT%', element.port);
-
-                    tBody.innerHTML += row;
-                });
-                clearInterval(int);
-            }
-        }, 500);
-    });
-</script>
+<script src="/assets/js/serverlist.js"></script>
