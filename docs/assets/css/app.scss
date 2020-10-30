@@ -71,6 +71,7 @@ dl.inline-flex {
 dl.inline-flex dt {
   flex: 0 0 25%;
   text-overflow: ellipsis;
+  white-space: nowrap;
   overflow: hidden;
 }
 
@@ -80,4 +81,12 @@ dl.inline-flex dd {
   text-align: left;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+
+#wizard input, #wizard select {
+  width: 220px !important;
+}
+
+textarea {
+  white-space: pre-wrap;
 }
