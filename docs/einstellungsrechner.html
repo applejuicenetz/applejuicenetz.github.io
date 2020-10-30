@@ -2,4 +2,61 @@
 layout: page
 title: Einstellungsrechner
 ---
-<iframe width="100%" height="570px" frameborder="0" src="//applejuicenet.github.io/config-wizard/"></iframe>
+
+<form id="wizard">
+    <div class="columns">
+        <div class="column">
+            <div class="box">
+                <dl class="inline-flex">
+                    <dt>
+                        <label for="preset">Internet Verbindung</label>
+                    </dt>
+                    <dd>
+                        <select id="preset" class="input">
+                            <option class="has-text-centered" value="custom" autofocus selected>-- custom --</option>
+                        </select>
+                    </dd>
+
+                    <dt>
+                        <label for="download">Download in kbit/s</label>
+                    </dt>
+                    <dd>
+                        <input type="number" id="download" class="input has-text-right" step="128"/>
+                    </dd>
+
+                    <dt>
+                        <label for="upload">Upload in kbit/s</label>
+                    </dt>
+                    <dd>
+                        <input type="number" id="upload" class="input has-text-right" step="128"/>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="column">
+            <div class="box">
+                <dl class="inline-flex">
+                    <dt>
+                        <label for="download_calculated">Download in KB/s</label>
+                    </dt>
+                    <dd>
+                        <input type="number" id="download_calculated" class="input has-text-right" step="64" readonly/>
+                    </dd>
+                    <dt>
+                        <label for="upload_calculated">Upload in KB/s</label>
+                    </dt>
+                    <dd>
+                        <input type="number" id="upload_calculated" class="input has-text-right" step="64" readonly/>
+                    </dd>
+                    <dt>
+                        <label for="ram">Memory</label>
+                    </dt>
+                    <dd>
+                        <input type="text" id="ram" class="input has-text-danger has-text-right" readonly/>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</form>
+<script src="/assets/js/config-wizard.js"></script>
