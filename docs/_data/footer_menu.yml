@@ -3,11 +3,6 @@
     icon_brand: false
     icon: fa-gavel
 
--   name: Netzwerkstatistik
-    link: https://grafana.applejuicenet.cc
-    icon_brand: false
-    icon: fa-chart-pie
-
 -   name: Serverliste
     link: /serverliste/
     icon_brand: false
