@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', async () => {
     try {
-        let result = await window.fetch('http://www.applejuicenet.cc/serverlist/networkinfo.php');
+        let result = await window.fetch('https://www.applejuicenet.cc/serverlist/networkinfo.php');
         window.applejuice = await result.json();
 
         document.getElementById('nw-server').innerHTML = window.applejuice.server.toLocaleString();
