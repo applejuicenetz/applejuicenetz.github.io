@@ -1,0 +1,27 @@
+<h2 id="applejuice_core_2gb_problem">Was hat es mit dem 2GB Limit auf sich?</h2>
+
+<div class="notification is-small is-danger is-light">
+    <i class="fas fa-fw fa-exclamation"></i> <strong>Vorab:</strong> Es ist kein <code>Limit</code>, sondern ein <code>Bug</code>.
+</div>
+
+<p>
+    <span class="tag">AJ</span> wurde zu einer Zeit programmiert, wo 64Bit Betriebssysteme noch nicht weit verbreitet waren und auch die Dateigrößen noch relativ klein waren (meist unter 1GB).
+</p>
+
+<p>
+    Das Problem ist daher die Umsetzung, wie <span class="tag">AJ</span> intern mit Zahlen wie bspw. Größenangaben umgeht.
+
+    Diese werden an den meisten Stellen noch als <a href="https://www.w3schools.com/java/java_data_types.asp" target="_blank">Java Datentyp</a> <code>int</code> behandelt,
+    was einem Maximum von <code>2,147,483,647</code> Bytes entspricht (<span class="tag">2GB</span>).
+</p>
+
+<p>
+    Leider wird nur beim einlesen von Dateien (<code>sharecheck</code>) der eigentlich benötigte Datentyp <code>long</code> verwendet was einem Maximum von <code>9,223,372,036,854,775,807</code> Bytes
+    entspricht.
+</p>
+
+<p>
+    Es reicht jedoch <strong>nicht</strong>, nur im Core den Datentyp von <code>int</code> auf <code>long</code> zu korrigieren.
+
+    Die Größenangaben werden ebenfalls an die Server von <span class="tag">AJ</span> übermittelt, somit müss(t)en auch diese angepasst werden.
+</p>
