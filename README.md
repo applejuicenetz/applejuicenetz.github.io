@@ -1,4 +1,4 @@
-# appleJuiceNETZ Downloads
+# appleJuiceNET.cc Homepage
 
 Es handelt sich um eine einfache, statische Website, welche aus dynamischen Inhalt generiert wird.
 
@@ -11,12 +11,11 @@ da es auf dem [Bulma](https://bulma.io) CSS Framework basiert, welcher schlanker
 
 ## warum?
 
-Nahezu alle Downloads zu `appleJuice` werden in den dazugehörigen Repositories hier auf github angeboten.
+Nahezu alles zu `appleJuiceNET` ist statischer Inhalt und Downloads werden in den dazugehörigen Repositories hier auf github angeboten.
 Die Download Links zeigen **immer** auf das letzte veröffentliche Release eines Repositories, 
 somit muss der Download nicht immer manuell angepasst werden, wenn z.B. ein neues [JavaGUI](https://github.com/applejuicenetz/gui-java/releases) oder [phpGUI](https://github.com/applejuicenetz/phpgui/releases) Release veröffentlicht wird.
 
 Durch die Badges von [shields.io](https://shields.io) ist es außerdem möglich, stets die aktuellen Informationen wie bspw. die letzte Version an einem Download **dynamisch** anzuzeigen!
-
 
 ## Änderungvorschlag?
 

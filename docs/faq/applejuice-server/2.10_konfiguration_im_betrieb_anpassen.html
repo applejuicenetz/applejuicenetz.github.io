@@ -1,0 +1,10 @@
+<h3 id="konfiguration_im_betrieb_anpassen">2.10 Werte in server.xml OHNE Serverneustart ändern</h3>
+
+<p>Ab der Serverversion <code>0.77.0</code> is es auch möglich, die meisten Werte in der server.xml zu verändern, ohne den Server neu starten zu müssen.
+    <code>port</code> und <code>bindip</code> lassen sich so nicht wirksam
+    ändern. Dazu ist nach wie vor Serverneustart erforderlich.
+    <code>ip/dynip</code> wird erst wirksam, wenn im Server die Meldung <span class="tag">check ip</span> (alle 10 Minuten) kommt.
+</p>
+<p>
+    <strong>Ablauf</strong>: Die Werte in der <code>server.xml</code> ändern und speichern. Anschließend im Serverfenster <code>reload</code> eintippen.
+</p>
