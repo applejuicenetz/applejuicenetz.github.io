@@ -1,0 +1,17 @@
+<h3 id="serverwatcher_nicht_erreichbar">2.6 Ich kann den Serverwatcher nicht öffnen</h3>
+
+<p>Im Browser wird der Watcher mit <a href="http://127.0.0.1:8001/">http://127.0.0.1:8001</a> aufgerufen,
+    vorausgesetzt, dass der Server auf dem selben Rechner läuft und der Port nicht geändert wurde.
+</p>
+
+<p>
+    Wer beim Parameter <code>bindip</code> in der <code>server.xml</code> eine reale ip, also nicht <code>0.0.0.</code>, eingetragen hat,
+    kann den Watcher <strong>nur</strong> über diese ip aufrufen. <code>127.0.0.1</code> funktioniert dann nicht!
+</p>
+
+<p>
+    Den Port <code>8001</code> kann man in der <code>server.xml</code> festlegen (<code>webport</code>).
+    Dort kann man auch User (<code>webuser</code>) und Passwort (<code>webpw</code>) festlegen.
+    Wenn also bei der nachfolgenden Eingabeaufforderung nur ein <span class="tag">access denied</span> als Antwort kommt,
+    stimmt wahrscheinlich eine dieser Angaben nicht mit deiner Eingabe überein.
+</p>
