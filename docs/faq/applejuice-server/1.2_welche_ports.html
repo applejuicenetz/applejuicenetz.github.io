@@ -1,0 +1,17 @@
+<h3 id="welche_ports">1.2 Welche Ports braucht der Server?</h3>
+
+<p>
+    Der Server nutzt insgesamt 3 Ports - 2 für den Serverbetrieb und 1 für den Serverwatcher.
+    Alle 3 können durch ändern der <code>server.xml</code> frei gewählt werden</p>
+<p>
+    <code>&lt;port value="EIN PORT"/&gt;</code> - ist der 1. tcp-port. Der 2. Port wird durch 1. Port +1 errechnet. z.B. &lt;port value="9855"/&gt; Port <code>9855</code> und <code>9856</code>.
+    Für beide muss tcp freigeben werden (Router/Firewall).
+    Der erste Port ist für Client&lt;&gt;Server, der zweite für Server&lt;&gt;Server Kommunikation zuständig.
+</p>
+
+<p>
+    <code>&lt;webport&gt;8001&lt;/webport&gt;</code> - ist der Port für den Serverwatcher,
+    der in dem Fall mit <a href="http://127.0.0.1:8001/">http://127.0.0.1:8001</a>
+    aufgerufen werden kann (Server läuft hier lokal auf dem Rechner).
+    Der Port muss nur freigegeben werden, wenn von außen auf den Serverwatcher zugegriffen werden soll.
+</p>

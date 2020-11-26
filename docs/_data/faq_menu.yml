@@ -1,12 +1,22 @@
 -   items:
-    -   name: Allgemein
-        link: /faq/
+        -   name: Allgemein
+            link: /faq/
 
-    -   name: appleJuice Core
-        link: /faq/applejuice-core/
+        -   name: appleJuice Core
+            link: /faq/applejuice-core/
 
-#    -   name: appleJuice Java GUI
-#        link: /faq/applejuice-java-gui/
+        -   name: appleJuice Server
+            link: /faq/applejuice-server/
+
+        -   name: appleJuice Java GUI
+            link: /faq/applejuice-java-gui/
+
+        -   name: appleJuice PHP GUI
+            link: /faq/applejuice-php-gui/
+
+        -   name: appleJuice Browser Erweiterung
+            link: /faq/applejuice-browser-erweiterung/
+
 
 #-   name: appleJuice PHP GUI
 #    link: /faq/applejuice-php-gui/

@@ -1,0 +1,8 @@
+<h3 id="verbindungslimit">2.5 Verbindungslimits vom Betriebssystem</h3>
+
+<p>Unter Linux darf ein "normaler User" meistens nur 1024 Dateien/Verbindungen gleichzeitig &ouml;ffnen.
+    Bei einem gro&szlig;en Server kann das schon mal zu wenig sein.
+    Dieses Limit l&auml;sst sich f&uuml;r den root zeitweise mit <code>ulimit -n 32000</code> erh&ouml;hen,
+    oder dauerhaft f&uuml;r beliebige User durch bearbeiten der <code>/etc/security/limits.conf</code>.
+    F&uuml;r letztere Methode muss zus&auml;tzlich noch in der <code>/etc/pam.d/login</code> die Zeile <br/><strong>session required pam_limits.so</strong> <br/>aktiviert werden.
+</p>

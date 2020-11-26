@@ -1,0 +1,33 @@
+<h3 id="start_shutdown_server">2.3 Gleich nach dem Start erscheint eine Fehlermeldung und dann "shutdown server"</h3>
+
+<p>Der Server hat sich selbst beendet. Die Ursache steht in der Fehlermeldung darüber.</p>
+<p>Hier einige Meldungen und ihre Ursachen:</p>
+<dl>
+    <dt><code>Exception in thread "main" java.util.zip.ZipException: Das System kann die angegebene Datei nicht finden</code></dt>
+    <dd>Die Datei ajserver.jar wurde nicht gefunden. Entweder bist du im falschen Verzeichnis oder du hast den Dateinamen falsch geschrieben.</dd>
+</dl>
+<dl>
+    <dt><code>java.io.FileNotFoundException: [...]\server.xml (Das System kann die angegebene Datei nicht finden)</code></dt>
+    <dd>Datei server.xml wurde nicht gefunden. Laut Anleitung muss sie beim ersten Start aus der Beispieldatei umbenannt und angepasst werden. Kann es evtl. sein, dass du die Datei in server.xml.xml
+        umbenannt hast?
+    </dd>
+</dl>
+<dl>
+    <dt><code>java.net.BindException: Address already in use</code></dt>
+    <dd>Ein eingestellter Port ist bereits in Belegt. Entweder läuft schon ein Server oder die Serverports sind schon durch eine andere Anwendung belegt. Evtl. hast du versucht, den Server per
+        Doppelklick zu starten - in dem Fall im Taskmanager nach <code>javaw.exe</code> suchen und den Prozess beenden.
+    </dd>
+</dl>
+<dl>
+    <dt><code>org.xml.sax.SAXParseException: Zeichenumwandlungsfehler: "Unconvertible UTF-8 chacter beginning with 0xb4" (Zeilenzahl möglicherweise zu niedrig)</code></dt>
+    <dd>Wahrscheinlich sind Sonderzeichen in der xml-Datei. Auch das <code>ß</code> und das <code>&acute;</code> sind Auslöser der Meldung. Rufe die Datei einmal im Browser auf. Der Internet-Explorer z.B. markiert
+        die falschen Zeichen.
+    </dd>
+</dl>
+<dl>
+    <dt><code>de.applejuicenet.server.S: error in settings: invalid timeserver</code></dt>
+    <dd>Der Server holt sich einen Timeserver von <code>time.applejuicenet.de</code>. Vermutlich ist der Timeserver selbst zur Zeit nicht erreichbar. Meistens ist der Timeserver nach kurzer Zeit wieder erreichbar.
+        <code>time.applejuicenet.de</code> gibt auch unterschiedliche Timeserver bei den Abrufen zur&uuml;ck. Einer von diesen sollte erreichbar sein. Wenn es absolut nicht funktionieren will, kann der Server auch
+        mit dem Parameter <code>--usemyNTP</code> gestartet werden, um den Timerserver aus der <code>server.xml</code> zu verwenden.
+    </dd>
+</dl>
