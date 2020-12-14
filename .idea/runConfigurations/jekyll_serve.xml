@@ -3,8 +3,8 @@
     <deployment type="docker-image">
       <settings>
         <option name="imageTag" value="jekyll/jekyll:3.8" />
-        <option name="command" value="jekyll serve --livereload --livereload-port 35729 --verbose --force_polling" />
-        <option name="containerName" value="applejuicenet-jekyll-serve" />
+        <option name="command" value="jekyll serve --livereload --livereload-port 35728 --force_polling --incremental" />
+        <option name="containerName" value="applejuicenet-website" />
         <option name="entrypoint" value="" />
         <option name="envVars">
           <list>
@@ -21,8 +21,8 @@
               <option name="hostPort" value="4000" />
             </DockerPortBindingImpl>
             <DockerPortBindingImpl>
-              <option name="containerPort" value="35729" />
-              <option name="hostPort" value="35729" />
+              <option name="containerPort" value="35728" />
+              <option name="hostPort" value="35728" />
             </DockerPortBindingImpl>
           </list>
         </option>
