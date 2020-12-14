@@ -12,11 +12,15 @@ shields_style: for-the-badge
 
 footer_menu: footer_menu
 
+paginate: 5
+paginate_path: "/aktuelles/page:num"
+
 # Build settings
 #theme: bulma-clean-theme
 remote_theme: chrisrhymes/bulma-clean-theme
 plugins:
     - github-pages
+    - jemoji
 
 defaults:
     -   scope:

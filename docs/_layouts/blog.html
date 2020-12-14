@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+{{ content }}
+
+
+<div class="columns">
+    <div class="column is-multiline is-9">
+        {% for post in paginator.posts %}
+        <div class="column">
+            {% include post-card.html %}
+        </div>
+        {% endfor %}
+
+        <div class="column ">
+            {% include pagination.html %}
+        </div>
+
+    </div>
+
+    <div class="column is-multiline is-3">
+        {% include bad_ani.html %}
+
+        <div class="column is-12">
+            {% include subscribe.html %}
+        </div>
+    </div>
+</div>
