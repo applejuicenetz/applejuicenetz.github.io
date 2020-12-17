@@ -23,7 +23,15 @@ menubar: downloads_menu
             <p>
                 <a href="/downloads/applejuice-core">Core</a> und das <a href="/downloads/applejuice-java-gui">JavaGUI</a> als native macOS Apps.
             </p>
+
+            <p>
+                Der zugewiesen RAM (default <code>1024</code>) für den Core kann mittels nachfolgenden Befehl im Terminal angepasst werden:<br><br>
+                <code>defaults write de.applejuicenet.core ram 2048</code> <br><br>
+                Wobei die <code>2048</code> angepasst werden darf.<br>
+                Danach muss der Core neugestartet werden.
+            </p>
         </div>
+
         <div class="column">
             <a href="https://github.com/{{ site.github_username }}/core/releases/latest/download/AJCore.macOS.zip" class="button is-link is-success is-medium is-block">
                 <i class="fas fa-download"></i>
