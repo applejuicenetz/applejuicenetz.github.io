@@ -60,7 +60,7 @@ let converter = {
 
     ajl2ajfsp: function (el) {
         let content = '';
-        let lines = el.target.value.split("\n");
+        let lines = el.target.value.split(/\s+/);
 
         let run = false;
         let count = 0;
