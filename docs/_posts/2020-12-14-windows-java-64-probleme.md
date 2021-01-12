@@ -4,7 +4,14 @@ title: generelles Windows Java 64bit Probleme
 date: 2020-12-14 11:00:00
 ---
 
-Seit der **Java Version 8 Update 251** oder höher startet der appleJuice Core nicht mehr.
+Seit der **Java Version 8 Update 251** oder höher startet der appleJuice Core nicht mehr (korrekt).
+
+### Darstellung
+
+- das weiße Fenster zeigt in den ersten 5 Zeilen eine Fehlermeldung bevor die Zeile `Start appleJuice Client` erscheint
+- der Core lässt sich nicht mehr in den Systemtray minimieren
+- der Core verschwindet, wenn man das `X` drückt (ist aber über das GUI noch erreichbar)
+
 
 ### Ursache
 
