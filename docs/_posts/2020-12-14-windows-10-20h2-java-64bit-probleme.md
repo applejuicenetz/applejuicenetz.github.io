@@ -4,7 +4,13 @@ title: Windows 10 20h2 Java 64bit Probleme
 date: 2020-12-14 14:00:00
 ---
 
-Seit dem Windows 10 Build **20h2** startet der Core mit dem **weißen Fenster** nicht mehr.
+Seit dem Windows 10 Build **20h2** startet der Core mit dem **weißen Fenster** nicht mehr (korrekt).
+
+### Darstellung
+
+- das weiße Fenster zeigt in den ersten 5 Zeilen eine Fehlermeldung bevor die Zeile `Start appleJuice Client` erscheint
+- der Core lässt sich nicht mehr in den Systemtray minimieren
+- der Core verschwindet, wenn man das `X` drückt (ist aber über das GUI noch erreichbar)
 
 ### Ursache
 
