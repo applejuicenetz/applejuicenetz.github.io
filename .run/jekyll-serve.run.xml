@@ -2,10 +2,9 @@
   <configuration default="false" name="jekyll-serve" type="docker-deploy" factoryName="docker-image" server-name="Docker">
     <deployment type="docker-image">
       <settings>
-        <option name="imageTag" value="jekyll/jekyll:3.8" />
+        <option name="imageTag" value="jekyll/jekyll:3" />
         <option name="command" value="jekyll serve --livereload --livereload-port 35728 --force_polling --incremental" />
         <option name="containerName" value="applejuicenet-website" />
-        <option name="entrypoint" value="" />
         <option name="envVars">
           <list>
             <DockerEnvVarImpl>
@@ -26,7 +25,6 @@
             </DockerPortBindingImpl>
           </list>
         </option>
-        <option name="commandLineOptions" value="" />
         <option name="volumeBindings">
           <list>
             <DockerVolumeBindingImpl>
