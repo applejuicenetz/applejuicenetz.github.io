@@ -1,9 +1,10 @@
-title: appleJuiceNET
+title: appleJuiceNETZ
 description: >-
     appleJuice - dein P2P Client aus Deutschland
 lang: de_DE
 favicon: favicon.png
 github_username: applejuicenetz
+docker_username: applejuicenetz
 
 permalink: pretty
 timezone: Europe/Berlin

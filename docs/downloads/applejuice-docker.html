@@ -10,7 +10,9 @@ menubar: downloads_menu
 
 <div class="field is-grouped aj-badges">
     <div class="control">
-        <img alt="GitHub latest Core release" src="https://img.shields.io/github/v/release/{{ site.github_username }}/core?style={{ site.shields_style }}">
+        <img alt="Docker Hub Version" src="https://img.shields.io/docker/v/{{ site.docker_username }}/core?style={{ site.shields_style }}">
+        <img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/{{ site.docker_username }}/core?style={{ site.shields_style }}">
+        <img alt="Docker Size" src="https://img.shields.io/docker/image-size/{{ site.docker_username }}/core?style={{ site.shields_style }}">
     </div>
 </div>
 
@@ -22,7 +24,7 @@ menubar: downloads_menu
             </p>
         </div>
         <div class="column">
-            <a href="https://github.com/orgs/{{ site.github_username }}/packages/container/package/core" class="button is-link is-info is-medium is-block">
+            <a href="https://hub.docker.com/r/{{ site.docker_username }}/core" class="button is-link is-info is-medium is-block">
                 <i class="fab fa-docker"></i>
                 &nbsp; zum Container
             </a>
