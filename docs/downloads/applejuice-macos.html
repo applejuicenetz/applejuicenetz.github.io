@@ -13,34 +13,47 @@ menubar: downloads_menu
     </div>
 
     <div class="control">
-        <img alt="GitHub latest GUI release" src="https://img.shields.io/github/v/release/{{ site.github_username }}/gui-java?label=GUI&style={{ site.shields_style }}">
+        <img alt="GitHub latest JavaGUI release" src="https://img.shields.io/github/v/release/{{ site.github_username }}/gui-java?label=GUI&style={{ site.shields_style }}">
+    </div>
+
+    <div class="control">
+        <img alt="GitHub latest Collector release" src="https://img.shields.io/github/v/release/{{ site.github_username }}/core-information-collector?label=Collector&style={{ site.shields_style }}">
     </div>
 </div>
 
 <div class="content is-medium">
     <div class="columns">
-        <div class="column is-two-thirds">
+        <div class="column">
             <p>
-                <a href="/downloads/applejuice-core">Core</a> und das <a href="/downloads/applejuice-java-gui">JavaGUI</a> als native macOS Apps.
-            </p>
-
-            <p>
-                Der zugewiesen RAM (default <code>1024</code>) für den Core kann mittels nachfolgenden Befehl im Terminal angepasst werden:<br><br>
-                <code>defaults write de.applejuicenet.core ram 2048</code> <br><br>
-                Wobei die <code>2048</code> angepasst werden darf.<br>
-                Danach muss der Core neugestartet werden.
+                <a href="/downloads/applejuice-core">Core</a>, <a href="/downloads/applejuice-java-gui">JavaGUI</a> und der <a href="/downloads/applejuice-collector">Collector</a> als native macOS Apps.
             </p>
         </div>
 
-        <div class="column">
-            <a href="https://github.com/{{ site.github_username }}/core/releases/latest/download/AJCore.macOS.zip" class="button is-link is-success is-medium is-block">
+        <div class="column is-two-fifths">
+            <a href="https://github.com/{{ site.github_username }}/core/releases/latest/download/AJCore_x86_64.dmg" class="button is-link is-success is-medium is-block">
                 <i class="fas fa-download"></i>
-                &nbsp; Core für macOS
+                &nbsp; Core (Intel) App
             </a>
+
             <br>
-            <a href="https://github.com/{{ site.github_username }}/gui-java/releases/latest/download/AJCoreGUI.macOS.zip" class="button is-link is-success is-medium is-block">
+
+            <a href="https://github.com/{{ site.github_username }}/core/releases/latest/download/AJCore_arm64.dmg" class="button is-link is-success is-medium is-block">
                 <i class="fas fa-download"></i>
-                &nbsp; JavaGUI für macOS
+                &nbsp; Core (M1) App
+            </a>
+
+            <br>
+
+            <a href="https://github.com/{{ site.github_username }}/gui-java/releases/latest/download/AJCoreGUI.macOS.zip" class="button is-link is-info is-medium is-block">
+                <i class="fas fa-download"></i>
+                &nbsp; JavaGUI App
+            </a>
+
+            <br>
+
+            <a href="https://github.com/{{ site.github_username }}/core-information-collector/releases/latest/download/AJCollector.macOS.zip" class="button is-info is-medium is-block">
+                <i class="fas fa-download"></i>
+                &nbsp; Collector App
             </a>
 
             <figure class="image box">

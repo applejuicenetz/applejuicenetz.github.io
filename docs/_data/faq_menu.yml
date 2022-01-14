@@ -1,22 +1,41 @@
--   items:
-        -   name: Allgemein
-            link: /faq/
+- items:
+    - name: Allgemein
+      link: /faq/
+      icon: fa-question
 
-        -   name: appleJuice Core
-            link: /faq/applejuice-core/
+    - name: appleJuice Core
+      link: /faq/applejuice-core/
+      icon: fa-atom
 
-        -   name: appleJuice Server
-            link: /faq/applejuice-server/
+    - name: appleJuice Collector
+      link: /faq/applejuice-collector/
+      icon: fa-university
 
-        -   name: appleJuice Java GUI
-            link: /faq/applejuice-java-gui/
+    - name: appleJuice Browser Erweiterung
+      link: /faq/applejuice-browser-erweiterung/
+      icon: fa-edge
+      icon_brand: true
 
-        -   name: appleJuice PHP GUI
-            link: /faq/applejuice-php-gui/
+    - name: appleJuice Server
+      link: /faq/applejuice-server/
+      icon: fa-server
 
-        -   name: appleJuice Browser Erweiterung
-            link: /faq/applejuice-browser-erweiterung/
+- label: Oberflächen
+  items:
+    - name: JavaGUI
+      link: /faq/applejuice-java-gui/
+      icon_brand: true
+      icon: fa-java
 
+    - name: phpGUI
+      link: /faq/applejuice-php-gui/
+      icon_brand: true
+      icon: fa-php
 
-#-   name: appleJuice PHP GUI
-#    link: /faq/applejuice-php-gui/
+    - name: Apfelmus GUI
+      link: /faq/applejuice-apfelmus-gui/
+      icon: fa-apple-alt
+
+    - name: ApplePulp GUI
+      link: /faq/applejuice-applepulp-gui/
+      icon: fa-apple-alt

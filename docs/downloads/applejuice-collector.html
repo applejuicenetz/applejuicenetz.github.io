@@ -1,0 +1,90 @@
+---
+layout: page
+title: appleJuice Collector
+subtitle: Informationen Sammler für den Core
+menubar: downloads_menu
+---
+
+<h1 class="title">{{ page.title }}</h1>
+<p class="subtitle is-6">{{ page.subtitle }}</p>
+
+<div class="field is-grouped aj-badges">
+    <div class="control">
+        <img alt="GitHub latest Collector release" src="https://img.shields.io/github/v/release/{{ site.github_username }}/collector?style={{ site.shields_style }}">
+    </div>
+
+    <div class="control">
+        <img alt="GitHub Collector Downloads" src="https://img.shields.io/github/downloads/{{ site.github_username }}/core-information-collector/total?style={{ site.shields_style }}">
+    </div>
+
+    <div class="control">
+        <img alt="GitHub Collector License" src="https://img.shields.io/github/license/{{ site.github_username }}/collector?style={{ site.shields_style }}">
+    </div>
+</div>
+
+<div class="content is-medium">
+    <div class="columns">
+        <div class="column">
+            <p>
+                Dieses kleine Tool holt die Informationen von deinem Core und leitet diese aufbereitet an eine definierte URL weiter.
+            </p>
+
+            <p>
+                Diese Informationen sind außerdem als Tooltip mittels des info_line Parameters konfigurierbar und werden ebenfalls als stdOut ausgegeben.
+            </p>
+
+            <p>
+                Der Collector ist:
+            </p>
+
+            <ul>
+                <li>Bestandteil des <a href="/downloads/applejuice-windows/">Windows Setup</a></li>
+                <li>als <a href="/downloads/applejuice-macos/">macOS App</a> verfügbar</li>
+                <li>als <a href="/downloads/applejuice-linux/">Linux Snap</a> verfügbar</li>
+            </ul>
+        </div>
+
+        <div class="column is-two-fifths">
+            <a href="https://github.com/{{ site.github_username }}/core-information-collector/releases/latest/download/AJCollector.setup.exe" class="button is-link is-success is-medium is-block">
+                <i class="fab fa-windows"></i>
+                &nbsp; setup herunterladen
+            </a>
+
+            <br>
+
+            <a href="https://github.com/{{ site.github_username }}/core-information-collector/releases" class="button is-link is-medium is-block">
+                <i class="fas fa-external-link-alt"></i>
+                &nbsp; weitere downloads
+            </a>
+
+            <br>
+
+            <a href="https://hub.docker.com/r/{{ site.github_username }}/core-information-collector" class="button is-info is-medium is-block">
+                <i class="fab fa-docker"></i>
+                &nbsp; als Docker Image
+            </a>
+
+            <figure class="image box">
+                <a href="#" class="modal-button" data-target="modal-applejuice-collector">
+                    <img src="/assets/screenshots/applejuice_collector.png" alt="appleJuice collector">
+                </a>
+            </figure>
+        </div>
+    </div>
+
+    <div class="notification is-small is-info is-light">
+        <ul class="is-unstyled">
+            <li><i class="fas fa-fw fa-hand-point-right"></i>Der Collector kann auch ohne das Weiterleiten der Informationen betrieben werden.</li>
+        </ul>
+    </div>
+
+    <div class="modal" id="modal-applejuice-collector">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <p class="image is-4by3">
+                <img src="/assets/screenshots/applejuice_collector.png" alt="appleJuice collector">
+            </p>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+</div>

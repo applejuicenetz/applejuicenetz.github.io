@@ -1,0 +1,81 @@
+---
+layout: page
+title: ApplePulp GUI
+subtitle: weiteres Windows GUI
+menubar: downloads_menu
+---
+
+<h1 class="title">{{ page.title }}</h1>
+<p class="subtitle is-6">{{ page.subtitle }}</p>
+
+<div class="field is-grouped aj-badges">
+    <div class="control">
+        <img alt="GitHub latest ApplePulp release" src="https://img.shields.io/github/v/release/{{ site.github_username }}/gui-applepulp?style={{ site.shields_style }}">
+    </div>
+
+    <div class="control">
+        <img alt="GitHub ApplePulp Downloads" src="https://img.shields.io/github/downloads/{{ site.github_username }}/gui-applepulp/total?style={{ site.shields_style }}">
+    </div>
+
+    <div class="control">
+        <img alt="GitHub ApplePulp License" src="https://img.shields.io/badge/license-proprietary-blue?color=orange&style={{ site.shields_style }}">
+    </div>
+</div>
+
+<div class="content is-medium">
+    <div class="columns">
+        <div class="column">
+            <p>
+                Weiteres <span class="is-help" title="Graphical User Interface | Grafische Benutzeroberfläche">GUI</span> für den Core geschrieben in <code>.NET</code>.
+            </p>
+
+
+            <p>
+                ApplePulp ist auch:
+            </p>
+
+            <ul>
+                <li>Bestandteil des <a href="/downloads/applejuice-windows/">Windows Setup</a></li>
+            </ul>
+        </div>
+
+        <div class="column is-two-fifths">
+            <a href="https://github.com/{{ site.github_username }}/gui-applepulp/releases/latest/download/ApplePulp.setup.exe" class="button is-link is-success is-medium is-block">
+                <i class="fab fa-windows"></i>
+                &nbsp; setup herunterladen
+            </a>
+
+            <br>
+
+            <a href="https://github.com/{{ site.github_username }}/gui-applepulp/releases/latest/download/ApplePulp.zip" class="button is-link is-medium is-block">
+                <i class="fas fa-file-archive"></i>
+                &nbsp; .zip herunterladen
+            </a>
+
+            <br>
+
+            <figure class="image box">
+                <a href="#" class="modal-button" data-target="modal-applejuice-applepulp">
+                    <img src="/assets/screenshots/applejuice_gui_applepulp.png" alt="appleJuice ApplePulp GUI">
+                </a>
+            </figure>
+
+        </div>
+    </div>
+
+    <div class="notification is-small is-info is-light">
+        <ul class="is-unstyled">
+            <li><i class="fas fa-fw fa-hand-point-right"></i>ApplePulp benötigt <a href="https://www.microsoft.com/de-de/download/details.aspx?id=21">.NET 3.5</a></li>
+        </ul>
+    </div>
+
+    <div class="modal" id="modal-applejuice-applepulp">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <p class="image is-4by3">
+                <img src="/assets/screenshots/applejuice_gui_applepulp.png" alt="appleJuice ApplePulp GUI">
+            </p>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+</div>

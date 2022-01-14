@@ -1,7 +1,7 @@
 ---
 layout: page
 title: appleJuice Setup für Windows
-subtitle: Core und GUI in einem installer, 32bit und 64bit.
+subtitle: alle appleJuice Komponenten auf einmal installieren
 menubar: downloads_menu
 ---
 
@@ -10,66 +10,40 @@ menubar: downloads_menu
 
 <div class="field is-grouped aj-badges">
     <div class="control">
-        <img alt="GitHub latest Core release" src="https://img.shields.io/github/v/release/{{ site.github_username }}/core?label=core&style={{ site.shields_style }}">
-    </div>
-
-    <div class="control">
-        <img alt="GitHub latest GUI release" src="https://img.shields.io/github/v/release/{{ site.github_username }}/gui-java?label=GUI&style={{ site.shields_style }}">
+        <img alt="GitHub Setup Downloads" src="https://img.shields.io/github/downloads/{{ site.github_username }}/setup/total?style={{ site.shields_style }}">
     </div>
 
     <div class="control">
         <img alt="GitHub latest Setup release" src="https://img.shields.io/github/v/release/{{ site.github_username }}/setup?label=Setup&style={{ site.shields_style }}">
     </div>
-
-    <div class="control">
-        <img alt="GitHub Setup Downloads" src="https://img.shields.io/github/downloads/{{ site.github_username }}/setup/total?style={{ site.shields_style }}">
-    </div>
 </div>
 
 <div class="content is-medium">
     <div class="columns">
-        <div class="column is-two-thirds">
+        <div class="column">
             <p>
-                Inhalt und Features:
+                Setup welches die ausgewählten Komponenten installiert.
             </p>
             <ul>
-                <li>appleJuice <a href="/downloads/applejuice-core">Core</a> in <code>32bit</code> und <code>64bit</code>
-                    <ul>
-                        <li>zugehörige <a href="/downloads/applejuice-bibliotheken">ajnetmask</a> Bibliotheken</li>
-                        <li>zugehörige <a href="/downloads/applejuice-bibliotheken">Trayicon</a> Bibliotheken</li>
-                        <li>automatische Arbeitsspeicher erhöhung (<code>-Xmx</code>)</li>
-                    </ul>
-                </li>
-                <li>appleJuice <a href="/downloads/applejuice-java-gui">JavaGUI</a>
-                    <ul>
-                        <li><code>ajfsp://</code> Protokoll verknüpfung</li>
-
-                    </ul>
-                </li>
-                <li>Desktop- und Startmenüeinträge für Core und GUI</li>
-                <li>und noch ein wenig <a href="https://github.com/{{ site.github_username }}/setup/blob/master/README.md" target="_blank">mehr</a></li>
+                <li><a href="/downloads/applejuice-core/">Core</a></li>
+                <li><a href="/downloads/applejuice-java-gui/">JavaGUI</a></li>
+                <li><a href="/downloads/applejuice-collector/">Collector</a></li>
+                <li><a href="/downloads/applejuice-apfelmus-gui/">Apfelmus GUI</a></li>
+                <li><a href="/downloads/applejuice-applepulp-gui/">ApplePulp GUI</a></li>
             </ul>
         </div>
 
-        <div class="column has-text-centered">
-            <a href="https://github.com/{{ site.github_username }}/setup/releases/latest/download/appleJuice-setup.exe" class="button is-link is-success is-medium is-block">
+        <div class="column is-two-fifths">
+            <a href="https://github.com/{{ site.github_username }}/setup/releases/latest/download/appleJuice.setup.exe" class="button is-link is-success is-medium is-block">
                 <i class="fas fa-download"></i>
-                &nbsp; jetzt herunterladen
-            </a>
-
-            <br>
-
-            <a href="https://github.com/{{ site.github_username }}/setup/releases/" class="button is-link is-info is-medium is-block" target="_blank">
-                <i class="fas fa-external-link-alt"></i>
-                &nbsp; weitere Downloads
+                &nbsp; setup herunterladen
             </a>
 
             <figure class="image box">
                 <a href="#" class="modal-button" data-target="modal-applejuice-windows">
-                    <img src="/assets/screenshots/applejuice_windows.png">
+                    <img src="/assets/screenshots/applejuice_windows_setup.png">
                 </a>
             </figure>
-
         </div>
     </div>
 </div>
@@ -78,7 +52,7 @@ menubar: downloads_menu
     <div class="modal-background"></div>
     <div class="modal-content">
         <p class="image is-4by3">
-            <img src="/assets/screenshots/applejuice_windows.png" alt="appleJuice Windows Setup">
+            <img src="/assets/screenshots/applejuice_windows_setup.png" alt="appleJuice Windows Setup">
         </p>
     </div>
     <button class="modal-close is-large" aria-label="close"></button>

@@ -24,13 +24,13 @@ menubar: downloads_menu
 
 <div class="content is-medium">
     <div class="columns">
-        <div class="column is-two-thirds">
+        <div class="column">
             <p>
                 Der appleJuice Core kommuniziert mit dem appleJuice Netzwerk und baut die <span class="is-help" title="Peer-to-Peer">P2P</span> Verbindung auf.
             </p>
 
             <p>
-                Der Core ist:
+                Der Core ist auch:
             </p>
 
             <ul>
@@ -43,19 +43,31 @@ menubar: downloads_menu
 
         </div>
 
-        <div class="column has-text-centered">
-            <a href="https://github.com/{{ site.github_username }}/core/releases/latest/download/ajcore.jar" class="button is-link is-success is-medium is-block">
-                <i class="fas fa-download"></i>
-                &nbsp; jetzt herunterladen
+        <div class="column is-two-fifths">
+            <a href="https://github.com/{{ site.github_username }}/core/releases/latest/download/AJCore.x64.setup.exe" class="button is-success is-medium is-block">
+                <i class="fab fa-windows"></i>
+                &nbsp; setup x64 herunterladen
             </a>
 
             <br>
 
+            <a href="https://github.com/{{ site.github_username }}/core/releases/latest/download/AJCore.x86.setup.exe" class="button is-success is-medium is-block">
+                <i class="fab fa-windows"></i>
+                &nbsp; setup x86 herunterladen
+            </a>
+
             <br>
 
-            <a href="https://github.com/{{ site.github_username }}/core/blob/master/CHANGELOG.md" class="button is-link is-info is-medium is-block" target="_blank">
-                <i class="fas fa-external-link-alt"></i>
-                &nbsp; Changelog
+            <a href="https://github.com/{{ site.github_username }}/core/releases/latest/download/ajcore.jar" class="button is-link is-medium is-block">
+                <i class="fab fa-java"></i>
+                &nbsp; .jar herunterladen
+            </a>
+
+            <br>
+
+            <a href="https://hub.docker.com/r/{{ site.github_username }}/core" class="button is-info is-medium is-block">
+                <i class="fab fa-docker"></i>
+                &nbsp; als Docker Image
             </a>
 
             <figure class="image box">
