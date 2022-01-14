@@ -1,56 +1,42 @@
 style: is-light
-height: is-medium
+height: is-small
 items:
-    -   title: Windows
-        subtitle: 32bit und 64bit
-        icon: fa-windows
-        icon_brand: true
-        description: >
-            Core und GUI als Windows Setup
-        call_to_action_name: zum download
-        call_to_action_link: /downloads/applejuice-windows
+  - title: Windows
+    subtitle: einfache Installation
+    icon: fa-windows
+    icon_brand: true
+    description: alle Komponenten als Setup
+    call_to_action_name: zum download
+    call_to_action_link: /downloads/applejuice-windows
 
-    -   title: Linux
-        subtitle: als Snap verfügbar
-        icon: fa-linux
-        icon_brand: true
-        description: >
-            Core und GUI verfügbar im Snapcraft Store
-        call_to_action_name: zum download
-        call_to_action_link: /downloads/applejuice-linux
+  - title: Linux
+    subtitle: native Apps
+    icon: fa-linux
+    icon_brand: true
+    description: Core, GUI und Collector verfügbar im Snapcraft Store
+    call_to_action_name: zum download
+    call_to_action_link: /downloads/applejuice-linux/
 
-    -   title: macOS
-        subtitle: verfügbar über Homebrew
-        icon: fa-apple
-        icon_brand: true
-        description: >
-            native macOS Apps
-        call_to_action_name: zum download
-        call_to_action_link: /downloads/applejuice-macos
+  - title: macOS
+    subtitle: native Apps
+    icon: fa-apple
+    icon_brand: true
+    description: auch verfügbar über Homebrew
+    call_to_action_name: zum download
+    call_to_action_link: /downloads/applejuice-macos/
 
-    -   title: Docker
-        subtitle: für alle architekturen
-        icon: fa-docker
-        icon_brand: true
-        description: >
-            Der Core als fertiges Docker Image
-        call_to_action_name: zum download
-        call_to_action_link: /downloads/applejuice-docker
+  - title: Portable
+    subtitle: nur für Windows
+    icon: fa-usb
+    icon_brand: true
+    description: ohne Setup, alles drin, downloaden und starten
+    call_to_action_name: zum download
+    call_to_action_link: /downloads/applejuice-portable/
 
-    -   title: Portable
-        subtitle: nur für Windows
-        icon: fa-usb
-        icon_brand: true
-        description: >
-            ohne Setup, mit Java, downloaden und starten
-        call_to_action_name: zum download
-        call_to_action_link: /downloads/applejuice-portable
-
-    -   title: Browser Erweiterung
-        subtitle: für alle Browser
-        icon: fa-edge
-        icon_brand: true
-        description: >
-            links ohne Umwege an den Core übergeben
-        call_to_action_name: zum download
-        call_to_action_link: /downloads/applejuice-browser-erweiterung
+  - title: Browser Erweiterung
+    subtitle: für alle Browser
+    icon: fa-edge
+    icon_brand: true
+    description: links ohne Umwege an den Core übergeben
+    call_to_action_name: zum download
+    call_to_action_link: /downloads/applejuice-browser-erweiterung/

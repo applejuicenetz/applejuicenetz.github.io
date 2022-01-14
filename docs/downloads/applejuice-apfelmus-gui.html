@@ -1,0 +1,79 @@
+---
+layout: page
+title: Apfelmus GUI
+subtitle: weiteres Windows GUI
+menubar: downloads_menu
+---
+
+<h1 class="title">{{ page.title }}</h1>
+<p class="subtitle is-6">{{ page.subtitle }}</p>
+
+<div class="field is-grouped aj-badges">
+    <div class="control">
+        <img alt="GitHub latest Apfelmus release" src="https://img.shields.io/github/v/release/{{ site.github_username }}/gui-apfelmus?style={{ site.shields_style }}">
+    </div>
+
+    <div class="control">
+        <img alt="GitHub Apfelmus Downloads" src="https://img.shields.io/github/downloads/{{ site.github_username }}/gui-apfelmus/total?style={{ site.shields_style }}">
+    </div>
+
+    <div class="control">
+        <img alt="GitHub Apfelmus License" src="https://img.shields.io/badge/license-proprietary-blue?color=orange&style={{ site.shields_style }}">
+    </div>
+</div>
+
+<div class="content is-medium">
+    <div class="columns">
+        <div class="column">
+            <p>
+                Weiteres <span class="is-help" title="Graphical User Interface | Grafische Benutzeroberfläche">GUI</span> für den Core geschrieben in <code>.NET</code>.
+            </p>
+
+            <p>
+                Apfelmus ist auch:
+            </p>
+
+            <ul>
+                <li>Bestandteil des <a href="/downloads/applejuice-windows/">Windows Setup</a></li>
+            </ul>
+        </div>
+
+        <div class="column is-two-fifths">
+            <a href="https://github.com/{{ site.github_username }}/gui-apfelmus/releases/latest/download/Apfelmus.setup.exe" class="button is-link is-success is-medium is-block">
+                <i class="fab fa-windows"></i>
+                &nbsp; setup herunterladen
+            </a>
+
+            <br>
+
+            <a href="https://github.com/{{ site.github_username }}/gui-apfelmus/releases/latest/download/Apfelmus.zip" class="button is-link is-medium is-block">
+                <i class="fas fa-file-archive"></i>
+                &nbsp; .zip herunterladen
+            </a>
+
+            <br>
+
+            <figure class="image box">
+                <a href="#" class="modal-button" data-target="modal-applejuice-apfelmus">
+                    <img src="/assets/screenshots/applejuice_gui_apfelmus.png" alt="appleJuice Apfelmus GUI">
+                </a>
+            </figure>
+        </div>
+    </div>
+
+    <div class="notification is-small is-info is-light">
+        <ul class="is-unstyled">
+            <li><i class="fas fa-fw fa-hand-point-right"></i>Apfelmus benötigt <a href="https://www.microsoft.com/de-de/download/details.aspx?id=30653">.NET 4.5</a></li>
+        </ul>
+    </div>
+
+    <div class="modal" id="modal-applejuice-apfelmus">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <p class="image is-4by3">
+                <img src="/assets/screenshots/applejuice_gui_apfelmus.png" alt="appleJuice Apfelmus GUI">
+            </p>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+</div>

@@ -1,59 +1,68 @@
--   label: appleJuice
-    items:
-        -   name: Core
-            link: /downloads/applejuice-core/
-            icon: fa-apple-alt
+- label: Pakete
+  items:
+    - name: Windows Setup
+      link: /downloads/applejuice-windows/
+      icon_brand: true
+      icon: fa-windows
 
-        -   name: GUI
-            link: /downloads/applejuice-java-gui/
-            icon_brand: true
-            icon: fa-java
+    - name: Windows Portable
+      link: /downloads/applejuice-portable/
+      icon_brand: true
+      icon: fa-usb
 
--   label: Pakete
-    items:
-        -   name: Windows Setup
-            link: /downloads/applejuice-windows/
-            icon_brand: true
-            icon: fa-windows
+    - name: macOS Apps
+      link: /downloads/applejuice-macos/
+      icon_brand: true
+      icon: fa-apple
 
-        -   name: Windows Portable
-            link: /downloads/applejuice-portable/
-            icon_brand: true
-            icon: fa-usb
+    - name: Linux Snap
+      link: /downloads/applejuice-linux/
+      icon_brand: true
+      icon: fa-linux
 
-        -   name: macOS Apps
-            link: /downloads/applejuice-macos/
-            icon_brand: true
-            icon: fa-apple
+- label: appleJuice
+  items:
+    - name: Core
+      link: /downloads/applejuice-core/
+      icon: fa-atom
 
-        -   name: Linux Snap
-            link: /downloads/applejuice-linux/
-            icon_brand: true
-            icon: fa-linux
+- label: Oberflächen
+  items:
+    - name: JavaGUI
+      link: /downloads/applejuice-java-gui/
+      icon_brand: true
+      icon: fa-java
 
-        -   name: Docker Image
-            link: /downloads/applejuice-docker/
-            icon_brand: true
-            icon: fa-docker
+    - name: Appfelmus
+      link: /downloads/applejuice-apfelmus-gui/
+      icon: fa-apple-alt
 
--   label: Weiteres
-    items:
-        -   name: Browser Erweiterung
-            link: /downloads/applejuice-browser-erweiterung/
-            icon_brand: true
-            icon: fa-edge
+    - name: ApplePulp
+      link: /downloads/applejuice-applepulp-gui/
+      icon: fa-apple-alt
 
-        -   name: phpGUI
-            link: /downloads/applejuice-php-gui/
-            icon_brand: true
-            icon: fa-php
+    - name: phpGUI
+      link: /downloads/applejuice-php-gui/
+      icon_brand: true
+      icon: fa-php
 
-        -   name: Biblitotheken
-            link: /downloads/applejuice-bibliotheken/
-            icon: fa-file-code
+- label: Weiteres
+  items:
+    - name: Collector
+      link: /downloads/applejuice-collector/
+      icon: fa-university
 
-        -   name: Tools
-            link: /downloads/applejuice-tools/
-            icon_brand: false
-            icon: fa-tools
+    - name: Browser Erweiterung
+      link: /downloads/applejuice-browser-erweiterung/
+      icon_brand: true
+      icon: fa-edge
+
+    - name: Biblitotheken
+      link: /downloads/applejuice-bibliotheken/
+      icon: fa-file-code
+
+    - name: Tools
+      link: /downloads/applejuice-tools/
+      icon_brand: false
+      icon: fa-tools
 
