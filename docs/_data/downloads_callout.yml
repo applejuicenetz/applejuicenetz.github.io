@@ -21,7 +21,7 @@ items:
     subtitle: native Apps
     icon: fa-apple
     icon_brand: true
-    description: auch verfügbar über Homebrew
+    description: auch für Apple M1
     call_to_action_name: zum download
     call_to_action_link: /downloads/applejuice-macos/
 
