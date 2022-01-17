@@ -13,11 +13,10 @@ items:
         call_to_action_name: zum Changelog
         call_to_action_link: https://github.com/applejuicenetz/gui-java/blob/master/CHANGELOG.md
 
-    -   title: Windows Setup
-        icon: fa-windows
-        icon_brand: true
+    -   title: Collector
+        icon: fa-university
         call_to_action_name: zum Changelog
-        call_to_action_link: https://github.com/applejuicenetz/setup/releases
+        call_to_action_link: https://github.com/applejuicenetz/core-information-collector/blob/master/CHANGELOG.md
 
     -   title: Portable
         icon: fa-usb

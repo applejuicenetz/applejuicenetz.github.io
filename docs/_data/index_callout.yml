@@ -5,8 +5,7 @@ items:
         subtitle: "einfaches setups"
         icon: fa-windows
         icon_brand: true
-        description: >
-           einfach installieren und starten!
+        description: einfach installieren und starten!
         call_to_action_name: zum download
         call_to_action_link: /downloads/applejuice-windows/
 
@@ -14,8 +13,7 @@ items:
         subtitle: "native Apps"
         icon: fa-linux
         icon_brand: true
-        description: >
-            verfügbar im Snapcraft Store!
+        description: verfügbar im Snapcraft Store!
         call_to_action_name: zum download
         call_to_action_link: /downloads/applejuice-linux/
 
@@ -23,7 +21,6 @@ items:
         subtitle: "native Apps"
         icon: fa-apple
         icon_brand: true
-        description: >
-            auch verfügbar über Homebrew
+        description: auch für Apple M1
         call_to_action_name: zum download
         call_to_action_link: /downloads/applejuice-macos/
