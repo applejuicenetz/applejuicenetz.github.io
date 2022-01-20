@@ -20,6 +20,24 @@
       link: /faq/applejuice-server/
       icon: fa-server
 
+- label: Betriebssysteme
+  items:
+    - name: Windows
+      link: /faq/windows/
+      icon_brand: true
+      icon: fa-windows
+
+    - name: macOS
+      link: /faq/mac/
+      icon_brand: true
+      icon: fa-apple
+
+    - name: Linux
+      link: /faq/linux/
+      icon_brand: true
+      icon: fa-linux
+
+
 - label: Oberflächen
   items:
     - name: JavaGUI
