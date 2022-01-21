@@ -1,6 +1,6 @@
 title: appleJuiceNETZ
 description: >-
-    appleJuice - dein P2P Client aus Deutschland
+  appleJuice - dein P2P Client aus Deutschland
 lang: de_DE
 favicon: favicon.png
 github_username: applejuicenetz
@@ -13,21 +13,19 @@ shields_style: for-the-badge
 
 footer_menu: footer_menu
 
-paginate: 5
-paginate_path: "/aktuelles/page:num"
-
 # Build settings
-#theme: bulma-clean-theme
+#theme: bulma-clean-theme # enable local builds in docker
 remote_theme: chrisrhymes/bulma-clean-theme
+
 plugins:
-    - github-pages
-    - jemoji
+  - github-pages
+  - jemoji
 
 defaults:
-    -   scope:
-            path: ""
-        values:
-            hero_height: is-small
-            hero_image: /assets/images/apple-on-grass-red.jpg
+  - scope:
+      path: ""
+    values:
+      hero_height: is-small
+      hero_image: /assets/images/apple-on-grass-red.jpg
 
 
