@@ -3,6 +3,10 @@ layout: page
 title: appleJuice Browser Erweiterung
 subtitle: links ohne Umwege an den Core übergeben
 menubar: downloads_menu
+
+github_repo: browser-extension
+chrome_id: kidjbmkomidijgbealkgeadgamkdgdch
+firefox_id: applejuice-link-catcher
 ---
 
 <h1 class="title">{{ page.title }}</h1>
@@ -10,11 +14,23 @@ menubar: downloads_menu
 
 <div class="field is-grouped aj-badges">
     <div class="control">
-        <img alt="Chrome Store latest release" src="https://img.shields.io/chrome-web-store/v/kidjbmkomidijgbealkgeadgamkdgdch?style={{ site.shields_style }}">
+        <img alt="Chrome Store latest release" src="https://img.shields.io/chrome-web-store/v/{{ page.chrome_id }}?style={{ site.shields_style }}">
     </div>
 
     <div class="control">
-        <img alt="Snapcraft latest GUI" src="https://img.shields.io/amo/v/applejuice-link-catcher?style={{ site.shields_style }}">
+        <img alt="Chrome Web Store Users" src="https://img.shields.io/chrome-web-store/users/{{ page.chrome_id }}?label=Users&logo=google-chrome&color=blue&logoColor=white&style={{ site.shields_style }}">
+    </div>
+
+    <div class="control">
+        <img alt="Mozilla Add-on latest release" src="https://img.shields.io/amo/v/{{ page.firefox_id }}?style={{ site.shields_style }}">
+    </div>
+
+    <div class="control">
+        <img alt="Mozilla Add-on Users" src="https://img.shields.io/amo/users/{{ page.firefox_id }}?label=Users&logo=firefox&logoColor=white&style={{ site.shields_style }}">
+    </div>
+
+    <div class="control">
+        <img alt="Browser Extension License" src="https://img.shields.io/github/license/{{ site.github_username }}/{{ page.github_repo }}?style={{ site.shields_style }}">
     </div>
 </div>
 
@@ -22,22 +38,29 @@ menubar: downloads_menu
     <div class="columns">
         <div class="column">
             <p>
-                Über das <span class="is-help" title="Rechtsklick / Sekundärklick">Kontextmenü</span> werden die <code>ajfsp://</code> Links direkt an den <a href="/downloads/applejuice-core">Core</a>
-                übergeben.
+                Über das <span class="is-help" title="Rechtsklick / Sekundärklick">Kontextmenü</span> können die <code>ajfsp://</code> Links direkt an den <a href="/downloads/applejuice-core">Core</a>
+                übergeben werden.
             </p>
         </div>
 
         <div class="column is-two-fifths">
-            <a href="https://chrome.google.com/webstore/detail/applejuice-link-catcher/kidjbmkomidijgbealkgeadgamkdgdch" class="button is-link is-success is-medium is-block" target="_blank">
+            <a href="https://chrome.google.com/webstore/detail/{{ page.chrome_id }}" class="button is-link is-success is-medium is-block" target="_blank">
                 <i class="fab fa-chrome"></i>
                 &nbsp; Chrome Extension
             </a>
 
             <br>
 
-            <a href="https://addons.mozilla.org/de/firefox/addon/applejuice-link-catcher/" class="button is-link is-success is-medium is-block" target="_blank">
+            <a href="https://addons.mozilla.orghttps://addons.mozilla.org/de/firefox/addon/applejuice-link-catcher//firefox/addon/{{ page.firefox_id }}/" class="button is-link is-success is-medium is-block" target="_blank">
                 <i class="fab fa-firefox"></i>
                 &nbsp; Firefox Addon
+            </a>
+
+            <br>
+
+            <a href="https://github.com/applejuicenetz/{{ page.github_repo }}" class="button is-link is-medium is-block" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+                &nbsp; Quellcode
             </a>
 
             <figure class="image box">
