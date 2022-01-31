@@ -3,6 +3,7 @@ layout: page
 title: appleJuice JavaGUI
 subtitle: das offizielle JavaGUI
 menubar: downloads_menu
+repo: gui-java
 ---
 
 <h1 class="title">{{ page.title }}</h1>
@@ -10,15 +11,15 @@ menubar: downloads_menu
 
 <div class="field is-grouped aj-badges">
     <div class="control">
-        <img alt="GitHub JavaGUI release" src="https://img.shields.io/github/v/release/{{ site.github_username }}/gui-java?style={{ site.shields_style }}">
+        <img alt="GitHub JavaGUI release" src="https://img.shields.io/github/v/release/{{ site.github_username }}/{{ page.repo }}?style={{ site.shields_style }}">
     </div>
 
     <div class="control">
-        <img alt="GitHub JavaGUI Downloads" src="https://img.shields.io/github/downloads/{{ site.github_username }}/gui-java/total?style={{ site.shields_style }}">
+        <img alt="GitHub JavaGUI Downloads" src="https://img.shields.io/github/downloads/{{ site.github_username }}/{{ page.repo }}/total?style={{ site.shields_style }}">
     </div>
 
     <div class="control">
-        <img alt="GitHub JavaGUI License" src="https://img.shields.io/badge/license-gpl2-blue?color=orange&style={{ site.shields_style }}">
+        <img alt="GitHub JavaGUI License" src="https://img.shields.io/github/license/{{ site.github_username }}/{{ page.repo }}?style={{ site.shields_style }}">
     </div>
 </div>
 
@@ -42,14 +43,14 @@ menubar: downloads_menu
         </div>
 
         <div class="column is-two-fifths">
-            <a href="https://github.com/{{ site.github_username }}/gui-java/releases/latest/download/AJCoreGUI.setup.exe" class="button is-link is-success is-medium is-block">
+            <a href="https://github.com/{{ site.github_username }}/{{ page.repo }}/releases/latest/download/AJCoreGUI.setup.exe" class="button is-link is-success is-medium is-block">
                 <i class="fab fa-windows"></i>
                 &nbsp; setup herunterladen
             </a>
 
             <br>
 
-            <a href="https://github.com/{{ site.github_username }}/gui-java/releases/latest/download/AJCoreGUI.zip" class="button is-link is-medium is-block">
+            <a href="https://github.com/{{ site.github_username }}/{{ page.repo }}/releases/latest/download/AJCoreGUI.zip" class="button is-link is-medium is-block">
                 <i class="fas fa-file-archive"></i>
                 &nbsp; .zip herunterladen
             </a>
