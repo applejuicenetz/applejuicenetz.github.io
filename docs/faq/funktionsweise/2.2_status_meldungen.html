@@ -1,0 +1,38 @@
+<h2 id="status_meldungen">2.2. Statusmeldungen</h2>
+
+<dl>
+    <dt>"found defect part in xx.data"</dt>
+    <dd>Bei Überprüfung des geladenen Chunks hat AJ festgestellt, dass dieser defekt ist und hat ihn verworfen.</dd>
+</dl>
+
+<dl>
+    <dt>"error while reading file [Pfad]"</dt>
+    <dd>Kommt wenn AJ ein File sucht, welches nicht mehr verfügbar ist (verschoben, gelöscht etc); Shareüberprüfung starten oder Core neustarten, damit der Eintrag aktualisiert wird.</dd>
+</dl>
+
+<dl>
+    <dt>"close connection cause of inactivity ..."</dt>
+    <dd>Ihr seid grad Zeuge geworden wie eine inaktive Verbindung geschlossen wurde. Toll oder? *g das kann z.B. der Fall sein wenn der andere Client offline gegangen ist. Das ist ein ganz natürlicher Vorgang und kein Grund zur Beunruhigung.</dd>
+</dl>
+
+<dl>
+    <dt>"Error while read: Eine bestehende Verbindung wurde softwaregesteuert durch den Hostcomputer abgebrochen"</dt>
+    <dd>siehe "close connection cause of inactivity"</dd>
+</dl>
+
+<dl>
+    <dt>"close download/upload"</dt>
+    <dd>Die Übertragung eines Chunks wurde hiermit abgeschlossen ;)</dd>
+</dl>
+
+<dl>
+    <dt>"you have to wait 30 minutes until reconnect"</dt>
+    <dd>Das ist die integrierte Anti-Server-Hopping-Funktion. Sie verhindert, dass man ständig den Server wechselt. Nach Ablauf der Sperrfrist versucht appleJuice wieder selbstständig zu einem Server zu verbinden. Die Sperre wird nur aktiv, wenn man
+        manuell zum Server connectet. Alternativ kann man auch AJ neustarten um die Sperre zu umgehen *g
+    </dd>
+</dl>
+
+<dl>
+    <dt>"error logging into server: not enough in buffer"</dt>
+    <dd>heisst ganz einfach dass der Server auf den du dich gerade verbinden willst voll ist.</dd>
+</dl>

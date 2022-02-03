@@ -1,7 +1,12 @@
-- items:
+- label: appleJuice
+  items:
     - name: Allgemein
       link: /faq/
       icon: fa-question
+
+    - name: Funktionsweise
+      link: /faq/funktionsweise
+      icon: fa-life-ring
 
     - name: appleJuice Core
       link: /faq/applejuice-core/
@@ -11,8 +16,8 @@
       link: /faq/applejuice-collector/
       icon: fa-university
 
-    - name: appleJuice Browser Erweiterung
-      link: /faq/applejuice-browser-erweiterung/
+    - name: Browser Erweiterung
+      link: /faq/browser-erweiterung/
       icon: fa-edge
       icon_brand: true
 
@@ -36,7 +41,6 @@
       link: /faq/linux/
       icon_brand: true
       icon: fa-linux
-
 
 - label: Oberflächen
   items:

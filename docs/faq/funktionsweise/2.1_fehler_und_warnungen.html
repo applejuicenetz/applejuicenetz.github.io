@@ -1,0 +1,69 @@
+<h2 id="fehler_warnungen">2.1. Fehler und Warnungen</h2>
+
+<dl>
+    <dt>"Address already in use"</dt>
+    <dd>Entweder der Port oder der XML-Port des Core ist schon belegt. Passiert z.B., wenn der Core bereits läuft. Beende alle AJ Prozesse und starte dann erneut. Im Taskmanager läuft der Core als java.exe bzw javaw.exe.</dd>
+</dl>
+
+<dl>
+    <dt>"error renaming H:\_aj\_temp\22.data to H:\_aj\_temp\filename"</dt>
+    <dd>Fehler beim Umbennen des Files, z.B. beim Fertigstellen. Dies kann daran liegen, dass im Filenamen Sonderzeichen verwendet wurden. Das fertige File liegt dann als *.ready datei im Temp-Ordner. Einfach manuell umbenennen und in den Incoming
+        Ordner verschieben ;)
+    </dd>
+</dl>
+
+<dl>
+    <dt>"error copy file from temp to incoming directory"</dt>
+    <dd>Beim Kopieren des fertigen Files vom Temp in den Incoming Ordner ist ein Fehler aufgetreten. Kann zum Beispiel passieren wenn die Festplatte voll ist. Das File liegt bereits fertig im Temp Ordner, einfach selbst in den Incoming Ordner
+        schieben.
+    </dd>
+</dl>
+
+<dl>
+    <dt>"c:\blub\downloads seems to be temp. sharechecking skipped"</dt>
+    <dd>Dieser Ordner wurde als Temp Ordner erkannt und wird deshalb nicht gehasht</dd>
+</dl>
+
+<dl>
+    <dt> "cannot create 'verzeichnis'"</dt>
+    <dd>Core hat versucht, ein Verzeichnis, das du in Optionen eingestellt hast, welches aber nicht existiert, anzulegen ... hat leider nicht geklappt :/ Danach folgt dann entweder "Temp directory doesn't exist" oder "Incoming directory doesn't
+        exist", der Core verbindet sich nicht mit einem Server.
+    </dd>
+</dl>
+
+<dl>
+    <dt>"Temp directory doesn't exist"</dt>
+    <dd>Kein Temp Ordner in den Optionen eingestellt.</dd>
+</dl>
+
+<dl>
+    <dt>"Incoming directory doesn't exist"</dt>
+    <dd>Kein Incoming Ordner eingestellt. Ohne eingestellten Incoming/Temp Ordner ist keine Serververbindung möglich.</dd>
+</dl>
+
+<dl>
+    <dt>"tempdir lies under incomingdir. please change"</dt>
+    <dd>der Temp-Ordner liegt unter dem Incoming-Ordner ... und das mag der Core nicht ;) Also die Einstellungen in den Optionen entsprechend korrigieren und zwei voneinanander getrennte Verzeichnisse angeben. Der Core verbindet sich bei dieser
+        Meldung nicht mit einem Server "serverlogin not available."
+    </dd>
+</dl>
+
+<dl>
+    <dt>"incomingdir lies under tempdir. please change"</dt>
+    <dd>analog "tempdir lies under incomingdir. please change" ... nur das hier der Incoming- unter dem Temp-Order liegt.</dd>
+</dl>
+
+<dl>
+    <dt>"Please change your nickname"</dt>
+    <dd>In den Optionen wurde kein Nickname eingegeben oder er beginnt mit "nonick". Ohne eingestellten Nick ist keine Serververbindung möglich.</dd>
+</dl>
+
+<dl>
+    <dt>"serverlogin not available."</dt>
+    <dd>Core kann sich nicht am Server einloggen ... die Ursache kann unterschiedlich sein und steht eine Zeile über dieser Meldung.</dd>
+</dl>
+
+<dl>
+    <dt>"failure: incorrect link"</dt>
+    <dd>der Download- oder Serverlink, den du gerade übernehmen wolltest, war nicht korrekt ... also überprüfen und nochmal versuchen ;)</dd>
+</dl>
