@@ -13,11 +13,6 @@
     icon_brand: false
     icon: fa-calculator
 
--   name: Link Konverter
-    link: /link-konverter/
-    icon_brand: false
-    icon: fa-random
-
 -   name: Changelogs
     link: /changelogs/
     icon_brand: false

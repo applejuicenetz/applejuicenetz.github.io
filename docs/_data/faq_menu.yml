@@ -25,7 +25,7 @@
       link: /faq/applejuice-server/
       icon: fa-server
 
-- label: Betriebssysteme
+- label: Umgebungen
   items:
     - name: Windows
       link: /faq/windows/
@@ -41,6 +41,11 @@
       link: /faq/linux/
       icon_brand: true
       icon: fa-linux
+
+    - name: Docker
+      link: /faq/docker/
+      icon_brand: true
+      icon: fa-docker
 
 - label: Oberflächen
   items:
