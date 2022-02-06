@@ -26,7 +26,13 @@ figure.image .modal-button img {
 }
 
 .aj-badges {
-  height: 25px;
+  margin-left: 0;
+  margin-top: 5px;
+  min-height: 40px;
+}
+
+.aj-badges .control {
+  margin-right: 10px;
 }
 
 .img-done {
