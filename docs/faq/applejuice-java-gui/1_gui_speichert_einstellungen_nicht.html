@@ -1,0 +1,24 @@
+<h2 id="gui_settings_not_saved">1. JavaGUI speichert die Einstellungen nicht (mehr)</h2>
+
+<p>
+    <strong>Ursache:</strong>
+    <br>
+    Das JavaGUI wurde "als Admin" gestartet. Dadurch wurde die Konfiguration der JavaGUI mit erhöhten Rechten abgespeichert.
+    <br>
+    <br>
+    Öffnet man die GUI danach wieder als "normaler User", kann die Datei nicht mehr beschrieben werden.
+    <br>
+    <br>
+    <strong>Lösung:</strong>
+</p>
+
+<ul>
+    <li>beende das JavaGUI (z.B. über den TaskManager)</li>
+    <li>öffne den Ordner <code>C:\Benutzer\%USERNAME%\appleJuice\gui\</code>
+        <ul>
+            <li>unter macOS und Linux <code>~/appleJuice/gui/</code></li>
+        </ul>
+    </li>
+    <li>entferne die Datei <code>ajgui.properties</code></li>
+    <li>starte das JavaGUI erneut</li>
+</ul>
