@@ -1,0 +1,18 @@
+<h2 id="volumes_empty">2. Container Volumes haben keinen Inhalt</h2>
+
+<p>
+    Wenn Volumes in den Container gemountet wurden und diese keinen Inhalt anzeigen,
+    dann stimmen die Berechtigungen nicht überein.
+    <br>
+    Der Container läuft standardmäßig mit den UID <code>1000</code> und GID <code>1000</code> Umgebungsvariablen.
+    <br>
+    Diese Umgebungsvariablen müssen im Regelfall an die <code>UID</code> eines Nutzers angepasst werden,
+    welcher das Volume auch einsehen kann.
+</p>
+
+<div class="notification is-small is-primary is-light">
+    <i class="fas fa-fw fa-hand-point-right"></i>
+    siehe auch in den Beispielen <a href="https://github.com/applejuicenetz/core/tree/master/docker" target="_blank">hier</a>
+</div>
+
+
