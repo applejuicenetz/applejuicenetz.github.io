@@ -1,0 +1,30 @@
+<h2 id="applejuice_alter">6. Wie alt ist appleJuice?</h2>
+
+<div class="columns">
+    <div class="column is-three-fifths">
+        <p>
+            Die ersten - noch in delphi geschriebenen - Version erschienen im <code>Februar 2002</code>.
+        </p>
+    </div>
+
+    <div class="column has-text-centered">
+        <p class="box has-background-warning">
+            appleJuice ist
+            <br>
+            <span id="aj_age_calc" class="tag is-success"></span>
+            <br>
+            Jahre alt.
+        </p>
+
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let target = document.getElementById('aj_age_calc');
+        let ageDifMs = Date.now() - new Date('2002-02-15');
+        let ageDate = new Date(ageDifMs);
+        target.innerText = Math.abs(ageDate.getUTCFullYear() - 1970);
+
+    });
+</script>
