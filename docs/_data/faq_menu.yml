@@ -4,10 +4,6 @@
       link: /faq/
       icon: fa-question
 
-    - name: Funktionsweise
-      link: /faq/funktionsweise
-      icon: fa-life-ring
-
     - name: appleJuice Core
       link: /faq/applejuice-core/
       icon: fa-atom
