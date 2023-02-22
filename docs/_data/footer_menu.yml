@@ -8,6 +8,11 @@
     icon_brand: false
     icon: fa-list-ul
 
+-   name: Statistiken
+    link: https://grafana.applejuicenet.cc
+    icon_brand: false
+    icon: fa-chart-bar
+
 -   name: Einstellungsrechner
     link: /einstellungsrechner/
     icon_brand: false
