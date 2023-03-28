@@ -20,3 +20,4 @@ Durch die Badges von [shields.io](https://shields.io) ist es außerdem möglich,
 ## Änderungvorschlag?
 
 Sobald eine Änderung an den Dateien im [/docs/](./docs/) Ordner durchgeführt sind diese nur wenige Minuten später `live`. 
+
