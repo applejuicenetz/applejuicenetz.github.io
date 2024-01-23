@@ -21,6 +21,6 @@ items:
         subtitle: "native Apps"
         icon: fa-apple
         icon_brand: true
-        description: auch für Apple M1
+        description: auch für Geräte mit Apple Silicon Chip!
         call_to_action_name: zum download
         call_to_action_link: /downloads/applejuice-macos/
