@@ -3,7 +3,7 @@ layout: page
 title: Apfelmus GUI
 subtitle: weiteres Windows GUI
 menubar: downloads_menu
-repo: gui-apfelmus
+repo: {{ page.repo }}
 ---
 
 <h1 class="title">{{ page.title }}</h1>
@@ -40,14 +40,14 @@ repo: gui-apfelmus
         </div>
 
         <div class="column is-two-fifths">
-            <a href="https://github.com/{{ site.github_username }}/gui-apfelmus/releases/latest/download/Apfelmus.setup.exe" class="button is-link is-success is-medium is-block">
+            <a href="https://github.com/{{ site.github_username }}/{{ page.repo }}/releases/latest/download/Apfelmus.setup.exe" class="button is-link is-success is-medium is-block">
                 <i class="fab fa-windows"></i>
                 &nbsp; setup herunterladen
             </a>
 
             <br>
 
-            <a href="https://github.com/{{ site.github_username }}/gui-apfelmus/releases/latest/download/Apfelmus.zip" class="button is-link is-medium is-block">
+            <a href="https://github.com/{{ site.github_username }}/{{ page.repo }}/releases/latest/download/Apfelmus.zip" class="button is-link is-medium is-block">
                 <i class="fas fa-file-archive"></i>
                 &nbsp; .zip herunterladen
             </a>

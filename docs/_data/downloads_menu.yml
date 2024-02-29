@@ -41,6 +41,10 @@
       link: /downloads/applejuice-applepulp-gui/
       icon: fa-apple-alt
 
+    - name: Juicer
+      link: /downloads/applejuice-juicer-gui/
+      icon: fa-apple-alt
+
     - name: phpGUI
       link: /downloads/applejuice-php-gui/
       icon_brand: true
