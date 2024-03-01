@@ -2,7 +2,7 @@
   <configuration default="false" name="jekyll-serve" type="docker-deploy" factoryName="docker-image" server-name="Docker">
     <deployment type="docker-image">
       <settings>
-        <option name="imageTag" value="jekyll/jekyll:3" />
+        <option name="imageTag" value="jekyll/jekyll:4" />
         <option name="command" value="jekyll serve --livereload --livereload-port 35728 --force_polling --incremental" />
         <option name="containerName" value="applejuicenet-website" />
         <option name="envVars">
