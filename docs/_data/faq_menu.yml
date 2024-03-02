@@ -62,3 +62,7 @@
     - name: ApplePulp GUI
       link: /faq/applejuice-applepulp-gui/
       icon: fa-apple-alt
+
+    - name: Juicer GUI
+      link: /faq/applejuice-juicer-gui/
+      icon: fa-apple-alt
