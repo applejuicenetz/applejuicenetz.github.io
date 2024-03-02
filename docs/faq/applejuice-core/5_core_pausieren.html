@@ -1,10 +1,30 @@
-<h2 id="core_pausieren">5. appleJuice Core pausieren</h2>
+<h2 id="core_pausieren">5. Core pausieren</h2>
 <p>
-    Der Core kann nicht einfach so pausiert werden.
-    <br>
-    <br>
-    Unter linux kann der Prozess selbst "eingefroren" werden. z.B. mit <code>killall -s STOP java</code> und "aufgetaut" wird dann z.B. <code>killall -s CONT java</code>
-    <br>
-    <br>
-    Ansonsten reicht es evtl. auch, alle Downloads zu pausieren und den Upload auf 3 KiB/s (ist der Minimalwert) zu reduzieren.
+    Der Core kann nicht ohne weiteres pausiert werden, es gibt jedoch andere Möglichkeiten:
 </p>
+<table class="table">
+    <tbody>
+    <tr>
+        <td><code>Allgemein</code></td>
+        <td>alle Downloads pausieren und Upload auf ein Minimum reduzieren</td>
+    </tr>
+    <tr>
+        <td><code>Windows</code></td>
+        <td>mit dem <a target="_blank" href="http://technet.microsoft.com/de-de/sysinternals/bb896653.aspx">Process Explorer</a> die <code>javaw.exe</code> des Core auf <code>suspend</code> setzen
+        </td>
+    </tr>
+    <tr>
+        <td><code>Linux</code></td>
+        <td>
+            Pausieren: <code>killall -s STOP java</code>
+            &mid;
+            Fortsetzen: <code>killall -s CONT java</code>
+        </td>
+    </tr>
+    <tr>
+        <td><code>macOS</code></td>
+        <td>Analog Linux</td>
+    </tr>
+    </tbody>
+</table>
+
