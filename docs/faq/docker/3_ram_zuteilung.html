@@ -1,0 +1,30 @@
+<h2 id="ram_zuteilung">3. Wie grenze ich RAM des Core im Container ein?</h2>
+
+<p>
+    Der RAM des Cores im Container kann <strong>ausschließlich</strong> beim Erstellen des Containers wie folgt eingeschränkt werden:
+    <code>--memory="2GB"</code> (Beispiel für 2 GB RAM), siehe auch <a target="_blank" href="https://docs.docker.com/config/containers/resource_constraints/">docker.com</a>
+</p>
+
+<p>
+    Damit das wirklich funktioniert, müssen unter Linux <strong>zwingend</strong> die <code>cgroups</code> aktiviert sein.
+</p>
+
+<div class="notification is-small is-info is-light">
+    <i class="fas fa-fw fa-lightbulb"></i>Die <code>cgroups</code> sind bei den meisten Linux-Distributionen standardmäßig aktiviert.
+</div>
+
+<p>
+    Ob die <code>cgroups</code> aktiviert sind, kann mit folgendem Befehl überprüft werden:
+    <br>
+    <br>
+    <code>cat /proc/cgroups</code> (Wenn eine Liste erscheint, sind die <code>cgroups</code> aktiviert)
+</p>
+
+<div class="notification is-small is-info is-light">
+    <i class="fas fa-fw fa-hand-point-right"></i><i>cgroups</i> erklärt auf <a target="_blank" href="https://www.dev-insider.de/was-sind-cgroups-a-78165eca235acce3c47260da91f2c545/">dev-insider.de</a>
+</div>
+
+<div class="notification is-small is-info is-warning">
+    <i class="fab fa-fw fa-raspberry-pi"></i>Auf einem Raspberry PI <strong>muss</strong> die Datei <code>/boot/cmdline.txt</code> angepasst werden
+    <a href="https://duckduckgo.de/?q=cgroups+raspberry+pi" target="_blank"><i class="fas fa-fw fa-square-up-right"></i></a>
+</div>

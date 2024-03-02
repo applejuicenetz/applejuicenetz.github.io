@@ -1,29 +1,43 @@
 <h2 id="core_pausieren">5. Core pausieren</h2>
+
 <p>
     Der Core kann nicht ohne weiteres pausiert werden, es gibt jedoch andere Möglichkeiten:
 </p>
+
 <table class="table">
     <tbody>
     <tr>
-        <td><code>Allgemein</code></td>
+        <td><i class="fas fa-hand-point-right"></i> <code>Allgemein</code></td>
         <td>alle Downloads pausieren und Upload auf ein Minimum reduzieren</td>
     </tr>
     <tr>
-        <td><code>Windows</code></td>
-        <td>mit dem <a target="_blank" href="http://technet.microsoft.com/de-de/sysinternals/bb896653.aspx">Process Explorer</a> die <code>javaw.exe</code> des Core auf <code>suspend</code> setzen
+        <td><i class="fab fa-windows"></i> <code>Windows</code></td>
+        <td>mit dem <a target="_blank" href="https://technet.microsoft.com/de-de/sysinternals/bb896653.aspx">Process Explorer</a> die <code>javaw.exe</code> des Core auf <code>suspend</code> setzen
         </td>
     </tr>
     <tr>
-        <td><code>Linux</code></td>
+        <td><i class="fab fa-linux"></i> <code>Linux</code></td>
         <td>
-            Pausieren: <code>killall -s STOP java</code>
+            Pausieren: <code>pkill -STOP -f ajcore</code>
             &mid;
-            Fortsetzen: <code>killall -s CONT java</code>
+            Fortsetzen: <code>pkill -CONT -f ajcore</code>
         </td>
     </tr>
     <tr>
-        <td><code>macOS</code></td>
-        <td>Analog Linux</td>
+        <td><i class="fab fa-apple"></i> <code>macOS</code></td>
+        <td>
+            Pausieren: <code>pkill -STOP -f AJCore</code>
+            &mid;
+            Fortsetzen: <code>pkill -CONT -f AJCore</code>
+        </td>
+    </tr>
+    <tr>
+        <td><i class="fab fa-docker"></i> <code>Docker</code></td>
+        <td>
+            Pausieren: <code>docker pause ajcore</code>
+            &mid;
+            Fortsetzen: <code>docker unpause ajcore</code>
+        </td>
     </tr>
     </tbody>
 </table>

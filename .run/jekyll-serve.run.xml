@@ -28,12 +28,12 @@
         <option name="volumeBindings">
           <list>
             <DockerVolumeBindingImpl>
-              <option name="containerPath" value="/srv/jekyll" />
+              <option name="containerPath" value="/srv/jekyll/" />
               <option name="hostPath" value="$PROJECT_DIR$/docs" />
             </DockerVolumeBindingImpl>
             <DockerVolumeBindingImpl>
-              <option name="containerPath" value="/usr/local/bundle" />
-              <option name="hostPath" value="$PROJECT_DIR$/vendor/bundle" />
+              <option name="containerPath" value="/usr/gem/" />
+              <option name="hostPath" value="$PROJECT_DIR$/gem" />
             </DockerVolumeBindingImpl>
           </list>
         </option>

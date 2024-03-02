@@ -1,11 +1,22 @@
 <h2 id="eigenes_limit">10. Was bedeutet "Eigenes Limit erreicht"?</h2>
-<p>
-    Diese Anzeige kann unter der Registerkarte Download im GUI auftauchen und bedeutet, dass
-</p>
 
-<ol>
-<li>Der in den AJ-Optionen unter max. Verbindungen eingestellte Wert erreicht ist. </li>
-<li>Der in den AJ-Optionen unter max. Download eingestellte Wert erreicht ist. </li>
-<li>Die Credits aufgebraucht sind und somit der max. Download auf die doppelte Uploadgeschwindigkeit, bzw. maximal 15 KByte/sec. beschränkt wird </li>
-<li>Dem Core zuwenig Arbeitsspeicher zugewiesen worden ist.</li>
-</ol>
+<ul>
+    <li><strong>Meldung:</strong> im GUI wird angezeigt <code>Eigenes Limit erreicht</code></li>
+    <li><strong>Problem:</strong> kein Download</li>
+    <li><strong>mögliche Ursachen:</strong>
+        <ol>
+            <li>der in Optionen unter max. Verbindungen eingestellte Wert ist erreicht</li>
+            <li>die Credits sind aufgebraucht und somit wird der max. Download auf 15 KByte/sec. beschränkt</li>
+            <li>der Core hat zu wenig Arbeitsspeicher zugewiesen bekommen</li>
+            <li>zu viele indirekten Verbindungen, z.B. durch <code>rote Firewall-Meldung</code></li>
+        </ol>
+    </li>
+    <li><strong>mögliche Lösungen:</strong>
+        <ol>
+            <li>benutz den <a href="/einstellungsrechner/">Einstellungsrechner</a> für deine Leitung</li>
+            <li>Pausiere die Downloads und/oder sammle Credits</li>
+            <li>siehe <a href="/faq/applejuice-core/#ram_zuteilung">appleJuice Core &middot; Punkt 1</a></li>
+            <li>den <code>TCP-Port</code> im Router für das Gerät wo der Core läuft freigeben</li>
+        </ol>
+    </li>
+</ul>

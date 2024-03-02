@@ -1,0 +1,20 @@
+<h2 id="datei_wird_immer_wieder_eingelesen">13. Datei wird immer wieder gehashed</h2>
+
+
+<ul>
+    <li><strong>Problem:</strong> Datei oder Ordner wird immer und immer wieder neu eingelesen</li>
+    <li><strong>Mögliche Ursachen:</strong>
+        <ol>
+            <li>versteckte Sonderzeichen wie z.B. Gedankenstrich <code>&mdash;</code> statt Bindestrich<code>-</code></li>
+            <li>Core wurde nicht richtig beendet</li>
+            <li>fehlende Berechtigungen im <a href="#wo_liegen_die_konfigurationen">Konfigurations-Ordner</a></li>
+        </ol>
+    </li>
+    <li><strong>Mögliche Lösung:</strong>
+        <ol>
+            <li>Benenne die Datei bzw. den Ordner um und entferne zum Testen etwaige Sonderzeichen</li>
+            <li>beende den Core über ein GUI oder mit <code>exit</code></li>
+            <li>der Benutzer, unter welchem der Core läuft, muss Schreibrechte für den <a href="#wo_liegen_die_konfigurationen">Konfigurations-Ordner</a> haben</li>
+        </ol>
+    </li>
+</ul>
