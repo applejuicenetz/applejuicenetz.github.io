@@ -1,8 +1,10 @@
 ---
 layout: page
 title: appleJuice Core
+description: der offizielle Client für das appleJuice Netzwerk
 subtitle: ohne geht nicht
 menubar: downloads_menu
+github_repo: core
 ---
 
 <h1 class="title">{{ page.title }}</h1>
@@ -10,11 +12,11 @@ menubar: downloads_menu
 
 <div class="columns is-vcentered aj-badges">
     <div class="control">
-        <img alt="GitHub latest Core release" src="https://img.shields.io/github/v/release/{{ site.github_username }}/core?label=latest&style={{ site.shields_style }}">
+        <img alt="GitHub latest Core release" src="https://img.shields.io/github/v/release/{{ site.github_username }}/{{ page.github_repo }}?label=latest&style={{ site.shields_style }}">
     </div>
 
     <div class="control">
-        <img alt="GitHub Core Downloads" src="https://img.shields.io/github/downloads/{{ site.github_username }}/core/total?style={{ site.shields_style }}">
+        <img alt="GitHub Core Downloads" src="https://img.shields.io/github/downloads/{{ site.github_username }}/{{ page.github_repo }}/total?style={{ site.shields_style }}">
     </div>
 
     <div class="control">
@@ -34,39 +36,48 @@ menubar: downloads_menu
             </p>
 
             <ul>
-                <li>Bestandteil des <a href="/downloads/applejuice-windows/">Windows Setup</a></li>
+                <li>Bestandteil des <a href="/downloads/applejuice-windows/">Windows Setup</a> Packages</li>
                 <li>Bestandteil des <a href="/downloads/applejuice-portable/">Windows Portable</a> Packages</li>
                 <li>als <a href="/downloads/applejuice-macos/">macOS App</a> verfügbar</li>
                 <li>als <a href="/downloads/applejuice-linux/">Linux Snap</a> verfügbar</li>
             </ul>
 
+            <br>
+
+            <div class="notification is-small is-info is-light">
+                Nur bei einer manuellen Installation...
+                <ul class="is-unstyled">
+                    <li>.. wird die <code>ajnetmask</code> <a href="/downloads/applejuice-bibliotheken">Bibliothek</a> benötigt<i class="fas fa-fw fa-exclamation"></i></li>
+                    <li>.. empfiehlt sich für Windows die <code>Trayicon12.dll</code></li>
+                </ul>
+            </div>
         </div>
 
         <div class="column is-two-fifths">
-            <a href="https://github.com/{{ site.github_username }}/core/releases/latest/download/AJCore.x64.setup.exe" class="button is-success is-medium is-block">
+            <a href="https://github.com/{{ site.github_username }}/{{ page.github_repo }}/releases/latest/download/AJCore.x64.setup.exe" class="button is-success is-medium is-block">
                 <i class="fab fa-windows"></i>
                 &nbsp; setup x64 herunterladen
             </a>
 
             <br>
 
-            <a href="https://github.com/{{ site.github_username }}/core/releases/latest/download/AJCore.x86.setup.exe" class="button is-success is-medium is-block">
+            <a href="https://github.com/{{ site.github_username }}/{{ page.github_repo }}/releases/latest/download/AJCore.x86.setup.exe" class="button is-success is-medium is-block">
                 <i class="fab fa-windows"></i>
                 &nbsp; setup x86 herunterladen
             </a>
 
             <br>
 
-            <a href="https://github.com/{{ site.github_username }}/core/releases/latest/download/ajcore.jar" class="button is-link is-medium is-block">
-                <i class="fab fa-java"></i>
-                &nbsp; .jar herunterladen
+            <a href="https://hub.docker.com/r/{{ site.github_username }}/{{ page.github_repo }}" class="button is-info is-medium is-block">
+                <i class="fab fa-docker"></i>
+                &nbsp; als Docker Image
             </a>
 
             <br>
 
-            <a href="https://hub.docker.com/r/{{ site.github_username }}/core" class="button is-info is-medium is-block">
-                <i class="fab fa-docker"></i>
-                &nbsp; als Docker Image
+            <a href="/faq/applejuice-core/" class="button is-link is-warning is-medium is-block">
+                <i class="fas fa-question"></i>
+                zur FAQ
             </a>
 
             <figure class="image box">
@@ -75,15 +86,18 @@ menubar: downloads_menu
                 </a>
             </figure>
 
-        </div>
-    </div>
+            <a href="https://github.com/{{ site.github_username }}/{{ page.github_repo }}/releases/latest/download/ajcore.jar" class="button is-link is-medium is-block">
+                <i class="fab fa-java"></i>
+                &nbsp; .jar herunterladen
+            </a>
 
-    <div class="notification is-small is-info is-light">
-        Nur bei einer manueller Installation...
-        <ul class="is-unstyled">
-            <li>.. wird zum start eine passende <code>ajnetmask</code> Bibliothek von <a href="/downloads/applejuice-bibliotheken">hier</a> benötigt<i class="fas fa-fw fa-exclamation"></i></li>
-            <li>.. wird unter Windows außerdem die <code>Trayicon12.dll</code> empfohlen<i class="fas fa-fw fa-hand-point-left"></i></li>
-        </ul>
+            <br>
+
+            <a href="https://github.com/{{ site.github_username }}/{{ page.github_repo }}/blob/master/CHANGELOG.md" class="button is-link is-info is-medium is-block" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+                &nbsp; Changelog
+            </a>
+        </div>
     </div>
 
     <div class="modal" id="modal-applejuice-core">

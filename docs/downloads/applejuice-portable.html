@@ -1,9 +1,10 @@
 ---
 layout: page
 title: appleJuice Portable für Windows
+description: appleJuice als Portable Package für Windows
 subtitle: ohne Setup, mit Java, einfach downloaden und starten
 menubar: downloads_menu
-repo: portable
+github_repo: portable
 ---
 <h1 class="title">{{ page.title }}</h1>
 <p class="subtitle is-6">{{ page.subtitle }}</p>
@@ -18,11 +19,11 @@ repo: portable
     </div>
 
     <div class="control">
-        <img alt="GitHub latest Portable release" src="https://img.shields.io/github/v/release/{{ site.github_username }}/{{ page.repo }}?label=Portable&style={{ site.shields_style }}">
+        <img alt="GitHub latest Portable release" src="https://img.shields.io/github/v/release/{{ site.github_username }}/{{ page.github_repo }}?label=Portable&style={{ site.shields_style }}">
     </div>
 
     <div class="control">
-        <img alt="GitHub Portable Downloads" src="https://img.shields.io/github/downloads/{{ site.github_username }}/{{ page.repo }}/latest/total?style={{ site.shields_style }}">
+        <img alt="GitHub Portable Downloads" src="https://img.shields.io/github/downloads/{{ site.github_username }}/{{ page.github_repo }}/latest/total?style={{ site.shields_style }}">
     </div>
 </div>
 
@@ -56,14 +57,23 @@ repo: portable
 
         </div>
         <div class="column is-two-fifths">
-            <a href="https://github.com/{{ site.github_username }}/portable/releases/latest/download/appleJuice-Portable-x86.zip" class="button is-link is-success is-medium is-block">
+            <a href="https://github.com/{{ site.github_username }}/{{ page.github_repo }}/releases/latest/download/appleJuice-Portable-x86.zip" class="button is-link is-success is-medium is-block">
                 <i class="fas fa-download"></i>
                 &nbsp; 32bit herunterladen
             </a>
+
             <br>
-            <a href="https://github.com/{{ site.github_username }}/portable/releases/latest/download/appleJuice-Portable-x64.zip" class="button is-link is-success is-medium is-block">
+            
+            <a href="https://github.com/{{ site.github_username }}/{{ page.github_repo }}/releases/latest/download/appleJuice-Portable-x64.zip" class="button is-link is-success is-medium is-block">
                 <i class="fas fa-download"></i>
                 &nbsp; 64bit herunterladen
+            </a>
+
+            <br>
+
+            <a href="/faq/" class="button is-link is-warning is-medium is-block">
+                <i class="fas fa-question"></i>
+                zur FAQ
             </a>
         </div>
     </div>

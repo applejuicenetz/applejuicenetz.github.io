@@ -1,9 +1,11 @@
 ---
 layout: page
 title: appleJuice Collector
+description: Informationen Sammler für den Core
 subtitle: Informationen Sammler für den Core
 menubar: downloads_menu
-repo: core-information-collector
+github_repo: core-information-collector
+docker_image: core-information-collector
 ---
 
 <h1 class="title">{{ page.title }}</h1>
@@ -11,15 +13,15 @@ repo: core-information-collector
 
 <div class="columns is-vcentered aj-badges">
     <div class="control">
-        <img alt="GitHub latest Collector release" src="https://img.shields.io/github/v/release/{{ site.github_username }}/{{ page.repo }}?label=latest&style={{ site.shields_style }}">
+        <img alt="GitHub latest Collector release" src="https://img.shields.io/github/v/release/{{ site.github_username }}/{{ page.github_repo }}?label=latest&style={{ site.shields_style }}">
     </div>
 
     <div class="control">
-        <img alt="GitHub Collector Downloads" src="https://img.shields.io/github/downloads/{{ site.github_username }}/{{ page.repo }}/latest/total?style={{ site.shields_style }}">
+        <img alt="GitHub Collector Downloads" src="https://img.shields.io/github/downloads/{{ site.github_username }}/{{ page.github_repo }}/latest/total?style={{ site.shields_style }}">
     </div>
 
     <div class="control">
-        <img alt="GitHub Collector License" src="https://img.shields.io/github/license/{{ site.github_username }}/{{ page.repo }}?style={{ site.shields_style }}">
+        <img alt="GitHub Collector License" src="https://img.shields.io/github/license/{{ site.github_username }}/{{ page.github_repo }}?style={{ site.shields_style }}">
     </div>
 </div>
 
@@ -46,23 +48,30 @@ repo: core-information-collector
         </div>
 
         <div class="column is-two-fifths">
-            <a href="https://github.com/{{ site.github_username }}/core-information-collector/releases/latest/download/AJCollector.setup.exe" class="button is-link is-success is-medium is-block">
+            <a href="https://github.com/{{ site.github_username }}/{{ site.github_repo }}/releases/latest/download/AJCollector.setup.exe" class="button is-link is-success is-medium is-block">
                 <i class="fab fa-windows"></i>
                 &nbsp; setup herunterladen
             </a>
 
             <br>
 
-            <a href="https://github.com/{{ site.github_username }}/core-information-collector/releases" class="button is-link is-medium is-block">
+            <a href="https://github.com/{{ site.github_username }}/{{ page.github_repo }}/releases" class="button is-link is-medium is-block">
                 <i class="fas fa-external-link-alt"></i>
                 &nbsp; weitere downloads
             </a>
 
             <br>
 
-            <a href="https://hub.docker.com/r/{{ site.github_username }}/core-information-collector" class="button is-info is-medium is-block">
+            <a href="https://hub.docker.com/r/{{ site.github_username }}/{{ page.docker_image }}" class="button is-info is-medium is-block">
                 <i class="fab fa-docker"></i>
                 &nbsp; als Docker Image
+            </a>
+
+            <br>
+
+            <a href="/faq/applejuice-collector/" class="button is-link is-warning is-medium is-block">
+                <i class="fas fa-question"></i>
+                zur FAQ
             </a>
 
             <figure class="image box">
@@ -70,6 +79,18 @@ repo: core-information-collector
                     <img src="/assets/screenshots/applejuice_collector.png" alt="appleJuice collector">
                 </a>
             </figure>
+
+            <a href="https://github.com/{{ site.github_username }}/{{ page.github_repo }}/blob/master/CHANGELOG.md" class="button is-link is-info is-medium is-block" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+                &nbsp; Changelog
+            </a>
+
+            <br>
+
+            <a href="https://github.com/{{ site.github_username }}/{{ page.github_repo }}/" class="button is-link is-medium is-block" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+                &nbsp; Quellcode
+            </a>
         </div>
     </div>
 

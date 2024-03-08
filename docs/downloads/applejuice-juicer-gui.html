@@ -1,9 +1,10 @@
 ---
 layout: page
 title: Juicer GUI
+description: ein alternativer Windows GUI für appleJuice
 subtitle: weiteres GUI
 menubar: downloads_menu
-repo: gui-juicer
+github_repo: gui-juicer
 ---
 
 <h1 class="title">{{ page.title }}</h1>
@@ -11,15 +12,15 @@ repo: gui-juicer
 
 <div class="columns is-vcentered aj-badges">
     <div class="control">
-        <img alt="GitHub latest Juicer release" src="https://img.shields.io/github/v/release/{{ site.github_username }}/{{ page.repo }}?label=latest&style={{ site.shields_style }}">
+        <img alt="GitHub latest Juicer release" src="https://img.shields.io/github/v/release/{{ site.github_username }}/{{ page.github_repo }}?label=latest&style={{ site.shields_style }}">
     </div>
 
     <div class="control">
-        <img alt="GitHub Juicer Downloads" src="https://img.shields.io/github/downloads/{{ site.github_username }}/{{ page.repo }}/latest/total?style={{ site.shields_style }}">
+        <img alt="GitHub Juicer Downloads" src="https://img.shields.io/github/downloads/{{ site.github_username }}/{{ page.github_repo }}/latest/total?style={{ site.shields_style }}">
     </div>
 
     <div class="control">
-        <img alt="GitHub Juicer License" src="https://img.shields.io/github/license/{{ site.github_username }}/{{ page.repo }}?style={{ site.shields_style }}">
+        <img alt="GitHub Juicer License" src="https://img.shields.io/github/license/{{ site.github_username }}/{{ page.github_repo }}?style={{ site.shields_style }}">
     </div>
 </div>
 
@@ -29,7 +30,6 @@ repo: gui-juicer
             <p>
                 Weiteres <span class="is-help" title="Graphical User Interface | Grafische Benutzeroberfläche">GUI</span> für den Core geschrieben in <code>QT4</code>.
             </p>
-
 
             <p>
                 Juicer ist auch:
@@ -41,19 +41,31 @@ repo: gui-juicer
         </div>
 
         <div class="column is-two-fifths">
-            <a href="https://github.com/{{ site.github_username }}/{{ page.repo }}/releases/latest/download/Juicer.setup.exe" class="button is-link is-success is-medium is-block">
+            <a href="https://github.com/{{ site.github_username }}/{{ page.github_repo }}/releases/latest/download/Juicer.setup.exe" class="button is-link is-success is-medium is-block">
                 <i class="fab fa-windows"></i>
                 &nbsp; setup herunterladen
             </a>
 
             <br>
 
-            <a href="https://github.com/{{ site.github_username }}/{{ page.repo }}/releases/latest/download/Juicer.zip" class="button is-link is-medium is-block">
+            <a href="https://github.com/{{ site.github_username }}/{{ page.github_repo }}/releases/latest/download/Juicer.zip" class="button is-link is-medium is-block">
                 <i class="fas fa-file-archive"></i>
                 &nbsp; .zip herunterladen
             </a>
 
             <br>
+
+            <a href="https://github.com/{{ site.github_username }}/{{ page.github_repo }}/releases" class="button is-link is-medium is-block">
+                <i class="fas fa-external-link-alt"></i>
+                &nbsp; weitere downloads
+            </a>
+
+            <br>
+
+            <a href="/faq/applejuice-juicer-gui/" class="button is-link is-warning is-medium is-block">
+                <i class="fas fa-question"></i>
+                zur FAQ
+            </a>
 
             <figure class="image box">
                 <a href="#" class="modal-button" data-target="modal-applejuice-juicer">
@@ -61,15 +73,28 @@ repo: gui-juicer
                 </a>
             </figure>
 
+
+            <a href="https://github.com/{{ site.github_username }}/{{ page.github_repo }}/blob/master/CHANGELOG.md" class="button is-link is-info is-medium is-block" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+                &nbsp; Changelog
+            </a>
+
+            <br>
+
+            <a href="https://github.com/{{ site.github_username }}/{{ page.github_repo }}/" class="button is-link is-medium is-block" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+                &nbsp; Quellcode
+            </a>
+
         </div>
 
-    <div class="modal" id="modal-applejuice-juicer">
-        <div class="modal-background"></div>
-        <div class="modal-content">
-            <p class="image is-4by3">
-                <img src="/assets/screenshots/applejuice_gui_juicer.png" alt="appleJuice Juicer GUI">
-            </p>
+        <div class="modal" id="modal-applejuice-juicer">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+                <p class="image is-4by3">
+                    <img src="/assets/screenshots/applejuice_gui_juicer.png" alt="appleJuice Juicer GUI">
+                </p>
+            </div>
+            <button class="modal-close is-large" aria-label="close"></button>
         </div>
-        <button class="modal-close is-large" aria-label="close"></button>
     </div>
-</div>

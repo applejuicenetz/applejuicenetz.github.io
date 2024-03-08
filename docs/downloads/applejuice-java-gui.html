@@ -1,9 +1,10 @@
 ---
 layout: page
 title: appleJuice JavaGUI
+description: Das offizielle JavaGUI für appleJuice
 subtitle: das offizielle JavaGUI
 menubar: downloads_menu
-repo: gui-java
+github_repo: gui-java
 ---
 
 <h1 class="title">{{ page.title }}</h1>
@@ -11,15 +12,15 @@ repo: gui-java
 
 <div class="columns is-vcentered aj-badges">
     <div class="control">
-        <img alt="GitHub JavaGUI release" src="https://img.shields.io/github/v/release/{{ site.github_username }}/{{ page.repo }}?label=latest&style={{ site.shields_style }}">
+        <img alt="GitHub JavaGUI release" src="https://img.shields.io/github/v/release/{{ site.github_username }}/{{ page.github_repo }}?label=latest&style={{ site.shields_style }}">
     </div>
 
     <div class="control">
-        <img alt="GitHub JavaGUI Downloads" src="https://img.shields.io/github/downloads/{{ site.github_username }}/{{ page.repo }}/latest/total?style={{ site.shields_style }}">
+        <img alt="GitHub JavaGUI Downloads" src="https://img.shields.io/github/downloads/{{ site.github_username }}/{{ page.github_repo }}/latest/total?style={{ site.shields_style }}">
     </div>
 
     <div class="control">
-        <img alt="GitHub JavaGUI License" src="https://img.shields.io/github/license/{{ site.github_username }}/{{ page.repo }}?style={{ site.shields_style }}">
+        <img alt="GitHub JavaGUI License" src="https://img.shields.io/github/license/{{ site.github_username }}/{{ page.github_repo }}?style={{ site.shields_style }}">
     </div>
 </div>
 
@@ -43,16 +44,23 @@ repo: gui-java
         </div>
 
         <div class="column is-two-fifths">
-            <a href="https://github.com/{{ site.github_username }}/{{ page.repo }}/releases/latest/download/AJCoreGUI.setup.exe" class="button is-link is-success is-medium is-block">
+            <a href="https://github.com/{{ site.github_username }}/{{ page.github_repo }}/releases/latest/download/AJCoreGUI.setup.exe" class="button is-link is-success is-medium is-block">
                 <i class="fab fa-windows"></i>
                 &nbsp; setup herunterladen
             </a>
 
             <br>
 
-            <a href="https://github.com/{{ site.github_username }}/{{ page.repo }}/releases/latest/download/AJCoreGUI.zip" class="button is-link is-medium is-block">
+            <a href="https://github.com/{{ site.github_username }}/{{ page.github_repo }}/releases/latest/download/AJCoreGUI.zip" class="button is-link is-medium is-block">
                 <i class="fas fa-file-archive"></i>
                 &nbsp; .zip herunterladen
+            </a>
+
+            <br>
+
+            <a href="/faq/applejuice-java-gui/" class="button is-link is-warning is-medium is-block">
+                <i class="fas fa-question"></i>
+                zur FAQ
             </a>
 
             <figure class="image box">
@@ -61,6 +69,17 @@ repo: gui-java
                 </a>
             </figure>
 
+            <a href="https://github.com/{{ site.github_username }}/{{ page.github_repo }}/blob/master/CHANGELOG.md" class="button is-link is-info is-medium is-block" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+                &nbsp; Changelog
+            </a>
+
+            <br>
+
+            <a href="https://github.com/{{ site.github_username }}/{{ page.github_repo }}/" class="button is-link is-medium is-block" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+                &nbsp; Quellcode
+            </a>
         </div>
     </div>
 
