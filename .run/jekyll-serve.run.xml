@@ -4,7 +4,7 @@
       <settings>
         <option name="imageTag" value="jekyll/jekyll:4" />
         <option name="command" value="jekyll serve --livereload --livereload-port 35728 --force_polling --incremental" />
-        <option name="containerName" value="applejuicenet-website" />
+        <option name="containerName" value="jekyll-serve" />
         <option name="envVars">
           <list>
             <DockerEnvVarImpl>

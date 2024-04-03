@@ -1,0 +1,36 @@
+<h2 id="token_hinterlegen">3. Wo hinterlege ich das Token?</h2>
+
+<p>
+    Das Token muss in der <code>.xml</code> Datei, welche unter <a href="#wo_liegt_die_konfiguration">Punkt 2</a> beschrieben wird, hinterlegt werden.
+    <br>
+    Siehe dazu auch die Beispiele in der <a target="_blank" href="https://github.com/applejuicenetz/core-information-collector?tab=readme-ov-file#beispiel-xml">README.md</a>.
+</p>
+
+<table class="table">
+    <tbody>
+    <tr>
+        <td class="has-text-centered has-text-success"><i class="fas fa-thumbs-up"></i></td>
+        <td>Richtig</td>
+        <td><code>&lt;token&gt;DEIN_TOKEN&lt;/token&gt;</code></td>
+    </tr>
+    <tr>
+        <td class="has-text-centered has-text-danger"><i class="fas fa-thumbs-down"></i></td>
+        <td>Falsch</td>
+        <td><code>&lt;token/&gt;DEIN_TOKEN</code></td>
+    </tr>
+    <tr>
+        <td class="has-text-centered has-text-danger"><i class="fas fa-thumbs-down"></i></td>
+        <td>Falsch</td>
+        <td><code>&lt;/token&gt;DEIN_TOKEN&lt;/token&gt;</code></td>
+    </tr>
+    <tr>
+        <td class="has-text-centered has-text-danger"><i class="fas fa-thumbs-down"></i></td>
+        <td>Falsch</td>
+        <td><code>&lt;tocken&gt;DEIN_TOKEN&lt;/tocken&gt;</code></td>
+    </tr>
+    </tbody>
+</table>
+
+<div class="notification is-centered is-info is-light">
+    <i class="fas fa-fw fa-hand-point-right"></i> Der Collector startet nicht, wenn das Token nicht korrekt hinterlegt wurde.
+</div>
