@@ -14,8 +14,8 @@ shields_style: for-the-badge
 footer_menu: footer_menu
 
 # Build settings
-#heme: bulma-clean-theme # enable local builds in docker
-remote_theme: chrisrhymes/bulma-clean-theme
+#theme: bulma-clean-theme # enable local builds in docker
+remote_theme: chrisrhymes/bulma-clean-theme@v0.14.0
 
 plugins:
   - github-pages
