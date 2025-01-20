@@ -43,6 +43,18 @@
       icon_brand: true
       icon: fa-docker
 
+- label: Browser
+  items:
+    - name: Firefox und Derivate
+      link: /faq/browser-mozilla/
+      icon_brand: true
+      icon: fa-firefox
+
+    - name: Chrome, Opera, Edge usw.
+      link: /faq/browser-chromium/
+      icon_brand: true
+      icon: fa-chrome
+
 - label: Oberflächen
   items:
     - name: JavaGUI

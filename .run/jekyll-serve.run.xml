@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="jekyll-serve" type="docker-deploy" factoryName="docker-image" server-name="Docker">
+  <configuration default="false" name="jekyll-serve" type="docker-deploy" factoryName="docker-image" server-name="localhost">
     <deployment type="docker-image">
       <settings>
         <option name="imageTag" value="jekyll/jekyll:4" />
