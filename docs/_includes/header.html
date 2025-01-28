@@ -1,5 +1,5 @@
 <nav class="navbar is-primary {% if site.fixed_navbar %} is-fixed-{{ site.fixed_navbar }} {% endif %}" x-data="{ openNav: false }">
-<div class="container">
+    <div class="container">
         <div class="navbar-brand">
             <a href="{{ site.baseurl }}/" class="navbar-item {% if page.url == '/' %}is-active{% endif %}">
                 {{ site.title }}
@@ -10,7 +10,7 @@
                 <span aria-hidden="true"></span>
             </a>
         </div>
-    <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
+        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
             <div class="navbar-start">
                 {% if site.data.navigation %}
                 {% for item in site.data.navigation %}
@@ -28,6 +28,20 @@
                 {% endif %}
                 {% endfor %}
                 {% endif %}
+            </div>
+
+            <div class="navbar-item">
+                <form method="get" action="https://duckduckgo.com/" class="field has-addons">
+                    <input type="hidden" name="sites" value="https://{{ site.github_username }}.github.io/">
+                    <div class="control">
+                        <input class="input" type="text" name="q" placeholder="Suche mit DuckDuckGo" minlength="3" required>
+                    </div>
+                    <div class="control">
+                        <button class="button is-info" type="submit">
+                            <i class="fas fa-search fa-lg"></i>
+                        </button>
+                    </div>
+                </form>
             </div>
 
             <div class="navbar-end">
