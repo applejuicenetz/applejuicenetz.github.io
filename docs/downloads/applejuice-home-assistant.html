@@ -1,0 +1,83 @@
+---
+layout: page
+title: appleJuice Core Home Assistant
+description: appleJuice Core Integration für Home Assistant
+subtitle: viele Informationen als Sensoren
+menubar: downloads_menu
+
+github_repo: ha-applejuice-core
+---
+
+<h1 class="title">{{ page.title }}</h1>
+<p class="subtitle is-6">{{ page.subtitle }}</p>
+
+<div class="columns is-vcentered aj-badges">
+    <div class="control">
+        <img alt="GitHub {{page.title }} release" src="https://img.shields.io/github/v/release/{{ site.github_username }}/{{ page.github_repo }}?label=latest&style={{ site.shields_style }}">
+    </div>
+
+    <div class="control">
+        <img alt="HACS Custom" src="https://img.shields.io/badge/HACS-Custom-orange.svg?style={{ site.shields_style }}">
+    </div>
+
+    <div class="control">
+        <img alt="Home Assistant {{page.title }} Usage" src="https://img.shields.io/badge/dynamic/json?style={{ site.shields_style }}&color=41BDF5&logo=home-assistant&label=integration%20usage&suffix=%20installs&cacheSeconds=15600&url=https://analytics.home-assistant.io/custom_integrations.json&query=$.applejuice_core.total">
+    </div>
+
+    <div class="control">
+        <img alt="GitHub {{page.title }} License" src="https://img.shields.io/github/license/{{ site.github_username }}/{{ page.github_repo }}?style={{ site.shields_style }}">
+    </div>
+</div>
+
+<div class="content is-medium">
+    <div class="columns">
+        <div class="column">
+            <p>
+                Die <code>Integration</code> für Home Assistant ermöglicht es, viele Informationen des appleJuice Core als <code>Sensoren</code> zu nutzen.
+            </p>
+            <p>
+                So können z.B. deine <code>Credits</code>, die Anzahl der <code>Uploads</code>, <code>Downloads</code>, die aktiven <code>Verbindungen</code> und vieles mehr in Home Assistant angezeigt und in <code>Automatisierungen</code>
+                verwendet werden.
+            </p>
+            <p>
+                Die Integration verhält sich wie all die anderen appleJuice GUI.
+                Daher, gib bei der einrichtung die gleichen Daten ein, wie du es in einem appleJuice GUI tun würdest.
+            </p>
+        </div>
+
+        <div class="column is-two-fifths">
+            <div class="has-text-centered">
+                <a href="https://my.home-assistant.io/redirect/hacs_repository/?owner={{ site.github_username }}&repository={{ page.github_repo }}&category=integration" class="is-medium is-block" target="_blank">
+                    <img src="https://my.home-assistant.io/badges/hacs_repository.svg" alt="add new HACS Repository">
+                </a>
+            </div>
+
+            <figure class="image box">
+                <a href="#" class="modal-button" data-target="modal-applejuice-core-home-assistant">
+                    <img src="/assets/screenshots/applejuice_core_home_assistant.png" width="200">
+                </a>
+            </figure>
+
+            <a href="https://github.com/{{ site.github_username }}/{{ page.github_repo }}?tab=readme-ov-file#manuelle-installation" class="button is-link is-medium is-block" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+                &nbsp; manuelle Installation
+            </a>
+        </div>
+    </div>
+
+    <div class="notification is-info is-light">
+        <ul class="is-unstyled">
+            <li><i class="fas fa-fw fa-hand-point-right"></i> Es muss vorher <a href="https://hacs.xyz/" target="_blank">HACS</a> installiert sein</li>
+        </ul>
+    </div>
+</div>
+
+<div class="modal" id="modal-applejuice-core-home-assistant">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <p class="image is-5by4">
+            <img src="/assets/screenshots/applejuice_core_home_assistant.png" alt="appleJuice Core Home Assistant Integration">
+        </p>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>

@@ -100,3 +100,10 @@ dl.inline-flex dd {
 #wizard dt, #wizard dd {
   padding: 5px;
 }
+
+.fab.fa-home-assistant:before {
+  content: url('/assets/images/home-assistant-logo.svg');
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+}

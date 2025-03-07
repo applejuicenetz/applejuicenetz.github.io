@@ -56,6 +56,11 @@
       link: /downloads/applejuice-collector/
       icon: fa-university
 
+    - name: Home Assistant
+      link: /downloads/applejuice-home-assistant/
+      icon_brand: true
+      icon: fa-home-assistant
+
     - name: Browser Erweiterung
       link: /downloads/applejuice-browser-erweiterung/
       icon_brand: true
