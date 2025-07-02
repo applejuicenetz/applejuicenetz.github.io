@@ -3,20 +3,37 @@
 <ul>
     <li><strong>Meldung:</strong> im GUI wird angezeigt <code>Eigenes Limit erreicht</code></li>
     <li><strong>Problem:</strong> kein Download</li>
-    <li><strong>mögliche Ursachen:</strong>
-        <ol>
-            <li>der in Optionen unter max. Verbindungen eingestellte Wert ist erreicht</li>
-            <li>die Credits sind aufgebraucht und somit wird der max. Download auf 15 KByte/sec. beschränkt</li>
-            <li>der Core hat zu wenig Arbeitsspeicher zugewiesen bekommen</li>
-            <li>zu viele indirekten Verbindungen, z.B. durch <code>rote Firewall-Meldung</code></li>
-        </ol>
-    </li>
-    <li><strong>mögliche Lösungen:</strong>
-        <ol>
-            <li>benutz den <a href="/einstellungsrechner/">Einstellungsrechner</a> für deine Leitung</li>
-            <li>Pausiere die Downloads und/oder sammle Credits</li>
-            <li>siehe <a href="/faq/applejuice-core/#ram_zuteilung">appleJuice Core &middot; Punkt 1</a></li>
-            <li>den <code>TCP-Port</code> im Router für das Gerät wo der Core läuft freigeben</li>
-        </ol>
-    </li>
 </ul>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>mögliche Ursache</th>
+        <th>mögliche Lösung</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>eingestellte max. Verbindungen erreicht</td>
+        <td>benutz den <a href="/einstellungsrechner/">Einstellungsrechner</a></td>
+    </tr>
+
+    <tr>
+        <td>maximaler Download-Wert konfiguriert</td>
+        <td>Stelle den Download-Wert auf <code>0</code></td>
+    </tr>
+    <tr>
+        <td>Download eingeschränkt/langsam</td>
+        <td>Pausiere Downloads und sammle Credits</td>
+    </tr>
+    <tr>
+        <td>Core hat zu wenig Arbeitsspeicher erhalten</td>
+        <td>siehe FAQ <a href="/faq/applejuice-core/#ram_zuteilung">appleJuice Core &middot; Punkt 1</a></td>
+    </tr>
+    <tr>
+        <td>zu viele indirekte Verbindungen</td>
+        <td><code>Core-Port</code> weiterleiten, siehe <a href="/faq/applejuice-core/#port_freigabe">Punkt 18</a></td>
+    </tr>
+
+    </tbody>
+</table>
