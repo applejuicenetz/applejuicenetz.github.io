@@ -1,0 +1,32 @@
+<h2 id="defender_freigabe_manuell">3. Windows Firewall Freigabe manuell hinzufügen</h2>
+
+<div class="columns">
+    <div class="column">
+        <p>
+            Wenn das Popup zur Freigabe der <code>Zulu Platform Architecture</code> in der Windows Firewall nicht erscheint, kann die Freigabe manuell hinzugefügt werden.
+        </p>
+
+        <p>
+            Öffne ein Windows Terminal mit <strong>Administratorrechten</strong> und führe den folgenden Befehl aus:
+            (rechtsklick auf das Windows-Logo in der Taskleiste, wähle <code>Terminal (Admin)</code> oder <code>Windows PowerShell (Admin)</code>
+        </p>
+
+        <p>
+            Füge den nachfolgenden Befehl ein und drücke <code>Enter</code>.
+            <br>
+            Wenn der Befehl erfolgreich ausgeführt wurde, sollte einfach nur <code>OK</code> erscheinen.
+        </p>
+
+        <div class="notification is-small is-success is-size-6">
+            <code>
+                netsh advfirewall firewall add rule name="appleJuice" dir=in action=allow protocol=tcp localport=<u>9850</u>
+            </code>
+        </div>
+    </div>
+</div>
+
+<div class="notification is-small is-danger is-light">
+    <i class="fas fa-fw fa-exclamation"></i>
+    Stelle sicher, dass der Port <code>9850</code> Am Ende mit deinem Core-Port übereinstimmt.
+</div>
+
