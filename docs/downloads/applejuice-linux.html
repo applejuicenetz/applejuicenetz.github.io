@@ -1,8 +1,8 @@
 ---
 layout: page
 title: appleJuice für Linux
-description: appleJuice für Linux als Snap Packages
-subtitle: direkt aus dem Snapcraft Store
+description: appleJuice für Linux als Flatpak
+subtitle: fertige Pakete für viele Distributionen!
 menubar: downloads_menu
 ---
 
@@ -11,15 +11,15 @@ menubar: downloads_menu
 
 <div class="columns is-vcentered aj-badges">
     <div class="control">
-        <img alt="Snapcraft latest Core" src="https://snapcraft.io/applejuice-core/badge.svg">
+        <img alt="GitHub latest Core release" src="https://img.shields.io/github/v/release/{{ site.github_username }}/core?label=core&style={{ site.shields_style }}">
     </div>
 
     <div class="control">
-        <img alt="Snapcraft latest JavaGUI" src="https://snapcraft.io/applejuice-gui/badge.svg">
+        <img alt="GitHub latest JavaGUI release" src="https://img.shields.io/github/v/release/{{ site.github_username }}/gui-java?label=GUI&style={{ site.shields_style }}">
     </div>
 
     <div class="control">
-        <img alt="Snapcraft latest Collector" src="https://snapcraft.io/applejuice-collector/badge.svg">
+        <img alt="GitHub latest Collector release" src="https://img.shields.io/github/v/release/{{ site.github_username }}/core-information-collector?label=Collector&style={{ site.shields_style }}">
     </div>
 </div>
 
@@ -27,45 +27,69 @@ menubar: downloads_menu
     <div class="columns">
         <div class="column">
             <p>
-                <a href="/downloads/applejuice-core">Core</a>, <a href="/downloads/applejuice-java-gui">JavaGUI</a> und der <a href="/downloads/applejuice-collector">Collector</a> als Snap Packages.
+                <a href="/downloads/applejuice-core">Core</a>,
+                <a href="/downloads/applejuice-java-gui">JavaGUI</a>
+                und der <a href="/downloads/applejuice-collector">Collector</a>
+                als Flatpak.
             </p>
 
+            <p>
+                Falls noch nicht geschehen, muss einmalig <a href="https://flatpak.org/setup/" target="_blank">Flatpak</a> installiert werden.
+            </p>
+
+
             <div class="notification is-small is-info is-light">
-                <i class="fas fa-fw fa-hand-point-right"></i> Java muss nicht <strong>manuell</strong> installiert werden.
+                <i class="fas fa-fw fa-hand-point-right"></i> Java muss in keinem Fall <strong>manuell</strong> installiert werden.
+            </div>
+
+            <div class="content is-medium">
+                <div class="box">
+                    <h3>Snap Paket</h3>
+                    <div class="notification is-danger is-light">
+                        <i class="fas fa-fw fa-exclamation"></i> Snap Pakete werden nicht länger gepflegt.
+                    </div>
+
+                    <a href="https://snapcraft.io/applejuice-core" target="_blank">
+                        <img alt="Snapcraft latest Core" src="https://snapcraft.io/applejuice-core/badge.svg" width="235">
+                    </a>
+
+                    <a href="https://snapcraft.io/applejuice-gui" target="_blank">
+                        <img alt="Snapcraft latest Core" src="https://snapcraft.io/applejuice-gui/badge.svg" width="210">
+                    </a>
+
+                    <a href="https://snapcraft.io/applejuice-collector" target="_blank">
+                        <img alt="Snapcraft latest Core" src="https://snapcraft.io/applejuice-collector/badge.svg" width="210">
+                    </a>
+                </div>
             </div>
         </div>
 
-        <div class="column is-two-fifths">
-            <a href="https://snapcraft.io/applejuice-core" class="button is-link is-success is-medium is-block" target="_blank">
-                <i class="fas fa-external-link-alt"></i>
-                &nbsp; Core für Linux
+        <div class="column is-one-quarter">
+            <a href="https://applejuicenetz.github.io/flatpak/" class="button is-link is-success is-medium is-block" target="_blank">
+                <i class="fas fa-book"></i>
+                zur Anleitung
             </a>
 
-            <br>
-
-            <a href="https://snapcraft.io/applejuice-gui" class="button is-link is-success is-medium is-block" target="_blank">
-                <i class="fas fa-external-link-alt"></i>
-                &nbsp; GUI für Linux
-            </a>
-
-            <br>
-
-            <a href="https://snapcraft.io/applejuice-collector" class="button is-link is-success is-medium is-block" target="_blank">
-                <i class="fas fa-external-link-alt"></i>
-                &nbsp; Collector für Linux
-            </a>
-
-            <br>
+            <figure class="image box">
+                <a href="#" class="modal-button" data-target="modal-applejuice-flatpak">
+                    <img src="/assets/screenshots/applejuice_flatpak.png" alt="appleJuice Core macOS">
+                </a>
+            </figure>
 
             <a href="/faq/linux/" class="button is-link is-warning is-medium is-block">
                 <i class="fas fa-question"></i>
-                zur FAQ
+                zur Linux FAQ
             </a>
         </div>
     </div>
+</div>
 
-    <div class="notification is-small is-info is-light">
-        <i class="fas fa-fw fa-hand-point-right"></i> Alternativ können <a href="/downloads/applejuice-core/">Core</a>, <a href="/downloads/applejuice-java-gui/">JavaGUI</a> und der <a
-            href="/downloads/applejuice-collector/">Collector</a> auh manuell installiert werden.
+<div class="modal" id="modal-applejuice-flatpak">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <p class="image is-4by3">
+            <img src="/assets/screenshots/applejuice_flatpak.png" alt="appleJuice Flatpak">
+        </p>
     </div>
+    <button class="modal-close is-large" aria-label="close"></button>
 </div>

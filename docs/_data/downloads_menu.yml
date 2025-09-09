@@ -15,7 +15,7 @@
       icon_brand: true
       icon: fa-apple
 
-    - name: Linux Snap
+    - name: Linux Pakete
       link: /downloads/applejuice-linux/
       icon_brand: true
       icon: fa-linux

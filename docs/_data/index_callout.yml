@@ -13,7 +13,7 @@ items:
         subtitle: "native Apps"
         icon: fa-linux
         icon_brand: true
-        description: verfügbar im Snapcraft Store!
+        description: fertige Pakete für viele Distributionen!
         call_to_action_name: zum download
         call_to_action_link: /downloads/applejuice-linux/
 

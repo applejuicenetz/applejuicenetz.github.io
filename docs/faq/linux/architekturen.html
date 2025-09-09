@@ -1,0 +1,100 @@
+<h2 id="architekturen">1. mögliche Architekturen</h2>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Typ</th>
+        <th>Paket</th>
+        <th class="has-text-centered">amd64 <small>(x86_64)</small></th>
+        <th class="has-text-centered">aarch64 <small>(arm64)</small></th>
+        <th class="has-text-centered">armhf <small>(arm32)</small></th>
+        <th class="has-text-centered">x86 <small>(i386)</small></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td rowspan="2">
+            <a href="https://hub.docker.com/u/{{ site.github_username }}" target="_blank">Container Image</a>
+            <br>
+            <span class="tag is-success">modern</span>
+            <span class="tag is-link">sparsam</span>
+            <br>
+            <span class="tag is-info">cli</span>
+        </td>
+        <td>Core</td>
+        <td class="has-text-centered">✅</td>
+        <td class="has-text-centered">✅</td>
+        <td class="has-text-centered">✅</td>
+        <td class="has-text-centered">❌</td>
+    </tr>
+    <tr>
+        <td>Collector</td>
+        <td class="has-text-centered">✅</td>
+        <td class="has-text-centered">✅</td>
+        <td class="has-text-centered">✅</td>
+        <td class="has-text-centered">❌</td>
+    </tr>
+
+    <tr>
+        <td rowspan="3">
+            <a href="/downloads/applejuice-linux/">Flatpak Paket</a>
+            <br>
+            <span class="tag is-success">modern</span>
+            <span class="tag is-link">bevorzugt</span>
+            <br>
+            <span class="tag is-info">desktop</span>
+            <span class="tag is-info">cli</span>
+        </td>
+        <td>Core</td>
+        <td class="has-text-centered">✅</td>
+        <td class="has-text-centered">✅</td>
+        <td class="has-text-centered">❌</td>
+        <td class="has-text-centered">❌</td>
+    </tr>
+    <tr>
+        <td>JavaGUI</td>
+        <td class="has-text-centered">✅</td>
+        <td class="has-text-centered">✅</td>
+        <td class="has-text-centered">❌</td>
+        <td class="has-text-centered">❌</td>
+    </tr>
+    <tr>
+        <td>Collector</td>
+        <td class="has-text-centered">✅</td>
+        <td class="has-text-centered">✅</td>
+        <td class="has-text-centered">❌</td>
+        <td class="has-text-centered">❌</td>
+    </tr>
+
+    <tr>
+        <td rowspan="3">
+            <a href="https://snapcraft.io/publisher/{{ site.github_username }}" target="_blank">Snap Paket</a>
+            <br>
+            <span class="tag is-danger">veraltet</span>
+            <span class="tag is-warning">abgekündigt</span>
+            <br>
+            <span class="tag is-info">desktop</span>
+            <span class="tag is-info">cli</span>
+        </td>
+        <td>Core</td>
+        <td class="has-text-centered">✅</td>
+        <td class="has-text-centered">✅</td>
+        <td class="has-text-centered">❌</td>
+        <td class="has-text-centered">❌</td>
+    </tr>
+    <tr>
+        <td>JavaGUI</td>
+        <td class="has-text-centered">✅</td>
+        <td class="has-text-centered">✅</td>
+        <td class="has-text-centered">❌</td>
+        <td class="has-text-centered">❌</td>
+    </tr>
+    <tr>
+        <td>Collector</td>
+        <td class="has-text-centered">✅</td>
+        <td class="has-text-centered">✅</td>
+        <td class="has-text-centered">❌</td>
+        <td class="has-text-centered">❌</td>
+    </tr>
+    </tbody>
+</table>
