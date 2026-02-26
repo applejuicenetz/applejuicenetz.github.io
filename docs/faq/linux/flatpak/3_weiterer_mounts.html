@@ -1,0 +1,19 @@
+<h3 id="more_mounts">2.3. weitere Ordner im Core Flatpak erlauben</h3>
+
+<p>
+    Standardmäßig hat das appleJuice Core Flatpak nur Zugriff auf:
+</p>
+<ul>
+    <li><code>~/appleJuice/</code></li>
+    <li><code>/media</code></li>
+    <li><code>/mnt</code></li>
+    <li><code>/run/media</code></li>
+</ul>
+<p>
+    Weitere Ordner können mit dem folgenden Befehl hinzugefügt werden:
+</p>
+
+<div class="notification is-small is-info is-light">
+    <i class="fas fa-fw fa-terminal"></i><code>flatpak override --filesystem=/path/to/folder io.github.applejuicenetz.core</code>
+</div>
+
