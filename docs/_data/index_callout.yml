@@ -2,11 +2,11 @@ style: is-light
 height: is-medium
 items:
     -   title: Windows
-        subtitle: "einfaches setups"
+        subtitle: "einfaches Setup"
         icon: fa-windows
         icon_brand: true
         description: einfach installieren und starten!
-        call_to_action_name: zum download
+        call_to_action_name: zum Download
         call_to_action_link: /downloads/applejuice-windows/
 
     -   title: Linux
@@ -14,7 +14,7 @@ items:
         icon: fa-linux
         icon_brand: true
         description: fertige Pakete für viele Distributionen!
-        call_to_action_name: zum download
+        call_to_action_name: zum Download
         call_to_action_link: /downloads/applejuice-linux/
 
     -   title: macOS
@@ -22,5 +22,5 @@ items:
         icon: fa-apple
         icon_brand: true
         description: auch für Geräte mit Apple Silicon Chip!
-        call_to_action_name: zum download
+        call_to_action_name: zum Download
         call_to_action_link: /downloads/applejuice-macos/

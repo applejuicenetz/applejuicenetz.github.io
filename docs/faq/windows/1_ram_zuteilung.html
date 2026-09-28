@@ -1,27 +1,27 @@
 <h2 id="ram_zuteilung">1. Wie teile ich dem Core mehr RAM zu?</h2>
 
 <div class="notification is-small is-info is-light">
-    <i class="fas fa-fw fa-exclamation"></i> Das manuelle hinzufügen des <code>-Xmx</code> Wert mittels einer Verknüpfung <strong>entfällt</strong>.
+    <i class="fas fa-fw fa-exclamation"></i> Das manuelle Hinzufügen des <code>-Xmx</code>-Werts mittels einer Verknüpfung <strong>entfällt</strong>.
 </div>
 
 <p>
-    Der Core bekommt <strong>automatisch</strong> <code>50%</code> des aktuell freien Arbeitsspeicher zugeteilt. Beispiel:
+    Der Core bekommt <strong>automatisch</strong> <code>50 %</code> des aktuell freien Arbeitsspeichers zugeteilt. Beispiel:
 </p>
 <ul>
-    <li>physikalisch <code>8GB</code> verbaut</li>
-    <li>vom System und Anwendungen werden aktuell <code>4GB</code> verwendet</li>
-    <li>der Core bekommt automatisch <code>2GB</code> via <code>-Xmx</code> zugeteilt (<code>50%</code> vom freien RAM)</li>
+    <li>physikalisch <code>8 GB</code> verbaut</li>
+    <li>vom System und Anwendungen werden aktuell <code>4 GB</code> verwendet</li>
+    <li>der Core bekommt automatisch <code>2 GB</code> via <code>-Xmx</code> zugeteilt (<code>50 %</code> vom freien RAM)</li>
 </ul>
 
 
-<h4>manuelle Anpassung</h4>
+<h4>Manuelle Anpassung</h4>
 <ul>
-    <li>navigiere in einem Explorer deiner Wahl in den Installationspfad von <span class="tag">AJ</span>
+    <li>Navigiere in einem Explorer deiner Wahl in den Installationspfad von <span class="tag">AJ</span>
         <ul>
             <li>Im Regelfall <code>C:\Programme\appleJuiceNETZ\Core</code></li>
         </ul>
     </li>
 
-    <li>öffne die <code>ajcore.l4j.ini</code> bzw. <code>ajcore_nogui.l4j.ini</code> mit einem Text Editor</li>
-    <li>entferne die <code>#</code> <strong>nur</strong> vor der <code>-Xmx</code> Zeile und editiere den Wert nach deinem Ermessen</li>
+    <li>Öffne die <code>ajcore.l4j.ini</code> bzw. <code>ajcore_nogui.l4j.ini</code> mit einem Texteditor</li>
+    <li>Entferne das <code>#</code> <strong>nur</strong> vor der <code>-Xmx</code>-Zeile und editiere den Wert nach deinem Ermessen</li>
 </ul>

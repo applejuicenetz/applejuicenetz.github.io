@@ -33,7 +33,7 @@
       icon_brand: true
       icon: fa-java
 
-    - name: Appfelmus
+    - name: Apfelmus
       link: /downloads/applejuice-apfelmus-gui/
       icon: fa-apple-alt
 
@@ -66,7 +66,7 @@
       icon_brand: true
       icon: fa-edge
 
-    - name: Biblitotheken
+    - name: Bibliotheken
       link: /downloads/applejuice-bibliotheken/
       icon: fa-file-code
 
@@ -74,4 +74,3 @@
       link: /downloads/applejuice-tools/
       icon_brand: false
       icon: fa-tools
-
