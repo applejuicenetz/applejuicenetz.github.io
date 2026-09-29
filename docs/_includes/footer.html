@@ -5,9 +5,9 @@
             {% for item in site.data[site.footer_menu] %}
             <div class="column has-text-centered">
                 <div>
-                    <a href="{{ item.link | absolute_url }}" class="link">
+                    <a href="{{ item.link | relative_url }}" class="link">
                         {% if item.icon %}
-                        <i class=" {% if item.icon_brand %} fab {% else %} fas {% endif %} fa-fw {{item.icon }}"></i>
+                        <i class="{% if item.icon_brand %}fab{% else %}fas{% endif %} fa-fw {{ item.icon }}" aria-hidden="true"></i>
                         {% endif %}
                         {{ item.name }}
                     </a>
@@ -18,11 +18,11 @@
         {% endif %}
 
         <div class="content is-small has-text-centered">
-            <span id="nw-server">0</span> Server <span class="fa fa-server"></span>
+            <span id="nw-server">0</span> Server <span class="fa fa-server" aria-hidden="true"></span>
             &middot;
-            <span id="nw-user">0</span> User <span class="fa fa-user-friends"></span>
+            <span id="nw-user">0</span> User <span class="fa fa-user-friends" aria-hidden="true"></span>
             &middot;
-            <span id="nw-files">0</span> Files <span class="fa fa-file"></span>
+            <span id="nw-files">0</span> Files <span class="fa fa-file" aria-hidden="true"></span>
         </div>
     </div>
 </footer>

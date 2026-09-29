@@ -14,12 +14,7 @@ shields_style: for-the-badge
 footer_menu: footer_menu
 
 # Build settings
-#theme: bulma-clean-theme # enable local builds in docker
-remote_theme: chrisrhymes/bulma-clean-theme@v0.14.0
-
-plugins:
-  - github-pages
-  - jemoji
+theme: bulma-clean-theme
 
 defaults:
   - scope:
@@ -27,5 +22,3 @@ defaults:
     values:
       hero_height: is-small
       hero_image: /assets/images/apple-on-grass-red.jpg
-
-

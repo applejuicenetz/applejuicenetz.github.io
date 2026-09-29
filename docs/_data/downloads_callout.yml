@@ -1,4 +1,4 @@
-style: is-light
+style: is-theme-surface
 height: is-small
 items:
   - title: Windows
