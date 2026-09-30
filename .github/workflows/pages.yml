@@ -6,6 +6,10 @@ on:
       - main
     paths:
       - 'docs/**'
+      - 'scripts/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/pages.yml'
   workflow_dispatch:
 
 permissions:
@@ -33,6 +37,15 @@ jobs:
           ruby-version: '3.3'
           bundler-cache: true
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Install search dependencies
+        run: npm ci
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v6
@@ -41,6 +54,9 @@ jobs:
         run: bundle exec jekyll build --source docs --destination docs/_site --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
+
+      - name: Build FAQ search index
+        run: npm run build:search
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5

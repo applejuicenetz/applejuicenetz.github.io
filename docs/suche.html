@@ -1,0 +1,22 @@
+---
+layout: page
+title: FAQ-Suche
+description: Durchsuche die häufig gestellten Fragen zu appleJuice.
+permalink: /suche/
+---
+
+<div id="faq-search" data-index-url="{{ '/assets/data/faq-search-index.json' | relative_url }}" data-site-root="{{ '/' | relative_url }}">
+    <form action="{{ '/suche/' | relative_url }}" method="get" class="field has-addons" role="search">
+        <div class="control is-expanded">
+            <input id="faq-search-query" class="input" type="search" name="q" aria-label="FAQ durchsuchen" placeholder="Frage oder Stichwort eingeben" required>
+        </div>
+        <div class="control">
+            <button class="button is-info" type="submit">Suchen</button>
+        </div>
+    </form>
+    <p id="faq-search-status" class="mb-4" role="status" aria-live="polite"></p>
+    <div id="faq-search-results"></div>
+</div>
+
+<script defer src="{{ '/assets/js/lunr.min.js' | relative_url }}"></script>
+<script defer src="{{ '/assets/js/faq-search.js' | relative_url }}"></script>

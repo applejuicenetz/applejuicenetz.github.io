@@ -31,10 +31,9 @@
             </div>
 
             <div class="navbar-item">
-                <form method="get" action="https://duckduckgo.com/" class="field has-addons navbar-search">
-                    <input type="hidden" name="sites" value="https://{{ site.github_username }}.github.io/">
+                <form method="get" action="{{ '/suche/' | relative_url }}" class="field has-addons navbar-search" role="search">
                     <div class="control">
-                        <input class="input" type="text" name="q" placeholder="Suche mit DuckDuckGo" minlength="3" required>
+                        <input class="input" type="search" name="q" aria-label="FAQ durchsuchen" placeholder="FAQ durchsuchen" required>
                     </div>
                     <div class="control">
                         <button class="button is-info" type="submit" aria-label="Suchen">
