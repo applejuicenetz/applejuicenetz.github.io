@@ -1,27 +1,27 @@
 <h2 id="ram_zuteilung">1. Wie teile ich dem Core mehr RAM zu?</h2>
 
-<div class="notification is-small is-info is-light">
-    <i class="fas fa-fw fa-exclamation"></i> Das manuelle Hinzufügen des <code>-Xmx</code>-Werts mittels einer Verknüpfung <strong>entfällt</strong>.
-</div>
-
+<h3 id="ram_zuteilung_jpackage">1.1 Ab Core 0.35.185.01</h3>
 <p>
-    Der Core bekommt <strong>automatisch</strong> <code>50 %</code> des aktuell freien Arbeitsspeichers zugeteilt. Beispiel:
+    Standardmäßig begrenzt den Java-Heap auf etwa <strong>50 % des von Java erkannten gesamten RAMs</strong> mittels <code>-XX:MaxRAMPercentage=50</code>.
+    Manuelle Anpassung:
 </p>
-<ul>
-    <li>physikalisch <code>8 GB</code> verbaut</li>
-    <li>vom System und Anwendungen werden aktuell <code>4 GB</code> verwendet</li>
-    <li>der Core bekommt automatisch <code>2 GB</code> via <code>-Xmx</code> zugeteilt (<code>50 %</code> vom freien RAM)</li>
-</ul>
+<ol>
+    <li>Beende den Core vollständig und öffne den Installationsordner, normalerweise <code>C:\Program Files\appleJuiceNETZ\Core</code>.</li>
+    <li>Sichere <code>app\appleJuice Core.cfg</code> und öffne die Datei mit einem Texteditor, bei Bedarf als Administrator.</li>
+    <li>Ersetze unter <code>[JavaOptions]</code> die Zeile <code>java-options=-XX:MaxRAMPercentage=50</code>
+        durch <code>java-options=-Xmx2048m</code> für maximal <code>2 GB</code> Java-Heap. Lass alle anderen Zeilen unverändert.</li>
+    <li>Speichere die Datei und starte den Core erneut.</li>
+</ol>
+<p>
+    Lass genug RAM für Windows und andere Anwendungen frei. Für die Automatik stelle die ursprüngliche Zeile wieder her.
+    Updates können die Datei überschreiben; prüfe deine Einstellung danach erneut.
+</p>
 
-
-<h4>Manuelle Anpassung</h4>
-<ul>
-    <li>Navigiere in einem Explorer deiner Wahl in den Installationspfad von <span class="tag">AJ</span>
-        <ul>
-            <li>Im Regelfall <code>C:\Programme\appleJuiceNETZ\Core</code></li>
-        </ul>
-    </li>
-
-    <li>Öffne die <code>ajcore.l4j.ini</code> bzw. <code>ajcore_nogui.l4j.ini</code> mit einem Texteditor</li>
-    <li>Entferne das <code>#</code> <strong>nur</strong> vor der <code>-Xmx</code>-Zeile und editiere den Wert nach deinem Ermessen</li>
-</ul>
+<h3 id="ram_zuteilung_launch4j">1.2 Bis Core einschließlich 0.34.101.42</h3>
+<p>Das alte Setup teilt dem Core automatisch <strong>50 % des aktuell freien RAMs</strong> zu. Manuelle Anpassung:</p>
+<ol>
+    <li>Beende den Core und öffne den Installationsordner, normalerweise <code>C:\Programme\appleJuiceNETZ\Core</code>.</li>
+    <li>Öffne <code>ajcore.l4j.ini</code> bzw. <code>ajcore_nogui.l4j.ini</code> mit einem Texteditor.</li>
+    <li>Entferne das <code>#</code> nur vor der <code>-Xmx</code>-Zeile und setze beispielsweise <code>-Xmx2048m</code> für <code>2 GB</code>.</li>
+    <li>Speichere die Datei und starte den Core erneut.</li>
+</ol>
