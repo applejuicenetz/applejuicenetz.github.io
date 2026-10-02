@@ -38,6 +38,12 @@ $primary: #5CB85C;
   color: #fff;
 }
 
+.button.is-block {
+  width: max-content;
+  min-width: 100%;
+  max-width: none;
+}
+
 .navbar-search {
   margin-bottom: 0;
 }
