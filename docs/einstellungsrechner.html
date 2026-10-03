@@ -5,9 +5,12 @@ description: Berechne die optimalen Einstellungen für den appleJuice Client
 ---
 
 <form id="wizard">
-    <div class="columns">
-        <div class="column">
+    <div class="columns is-centered">
+        <div class="column is-two-thirds-tablet is-half-desktop">
             <div class="box">
+                <p class="has-text-centered mb-4">
+                    Wähle deine Internetverbindung aus oder gib deine Bandbreite selbst ein.
+                </p>
                 <dl class="inline-flex">
                     <dt>
                         <label for="preset">Internetverbindung</label>
@@ -32,30 +35,30 @@ description: Berechne die optimalen Einstellungen für den appleJuice Client
                         <input type="number" id="upload" class="input has-text-right" step="128"/>
                     </dd>
                 </dl>
-            </div>
-        </div>
-        <div class="column">
-            <div class="box">
+
+                <hr/>
+
+                <p class="has-text-centered mb-4">
+                    <strong>Im Client eintragen</strong>
+                </p>
                 <dl class="inline-flex">
                     <dt>
                         <label for="download_calculated">Download in KB/s</label>
                     </dt>
                     <dd>
-                        <input type="number" id="download_calculated" class="input has-text-right" step="64" readonly/>
+                        <input type="number" id="download_calculated" class="input has-text-right" readonly/>
                     </dd>
+
                     <dt>
                         <label for="upload_calculated">Upload in KB/s</label>
                     </dt>
                     <dd>
-                        <input type="number" id="upload_calculated" class="input has-text-right" step="64" readonly/>
-                    </dd>
-                    <dt>
-                        <label for="ram">Memory</label>
-                    </dt>
-                    <dd>
-                        <input type="text" id="ram" class="input has-text-danger has-text-right" readonly/>
+                        <input type="number" id="upload_calculated" class="input has-text-right" readonly/>
                     </dd>
                 </dl>
+            </div>
+            <div class="notification is-info is-light">
+                Hast du keinen Download, setze das Download-Limit im Client auf <code>0</code>.
             </div>
         </div>
     </div>
