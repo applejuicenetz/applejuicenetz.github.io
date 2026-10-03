@@ -66,10 +66,6 @@
       icon_brand: true
       icon: fa-edge
 
-    - name: Bibliotheken
-      link: /downloads/applejuice-bibliotheken/
-      icon: fa-file-code
-
     - name: Tools
       link: /downloads/applejuice-tools/
       icon_brand: false
