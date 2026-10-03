@@ -5,18 +5,18 @@ items:
         icon: fa-apple-alt
         icon_brand: false
         call_to_action_name: zum Changelog
-        call_to_action_link: https://github.com/applejuicenetz/core/blob/master/CHANGELOG.md
+        call_to_action_link: https://github.com/applejuicenetz/core/blob/main/CHANGELOG.md
 
     -   title: JavaGUI
         icon: fa-java
         icon_brand: true
         call_to_action_name: zum Changelog
-        call_to_action_link: https://github.com/applejuicenetz/gui-java/blob/master/CHANGELOG.md
+        call_to_action_link: https://github.com/applejuicenetz/gui-java/blob/main/CHANGELOG.md
 
     -   title: Collector
         icon: fa-university
         call_to_action_name: zum Changelog
-        call_to_action_link: https://github.com/applejuicenetz/core-information-collector/blob/master/CHANGELOG.md
+        call_to_action_link: https://github.com/applejuicenetz/core-information-collector/blob/main/CHANGELOG.md
 
     -   title: Portable
         icon: fa-usb
@@ -28,10 +28,10 @@ items:
         icon: fa-edge
         icon_brand: true
         call_to_action_name: zum Changelog
-        call_to_action_link: https://github.com/applejuicenetz/browser-extension/blob/master/CHANGELOG.md
+        call_to_action_link: https://github.com/applejuicenetz/browser-extension/blob/main/CHANGELOG.md
 
     -   title: phpGUI
         icon: fa-php
         icon_brand: true
         call_to_action_name: zum Changelog
-        call_to_action_link: https://github.com/applejuicenetz/phpgui/blob/master/CHANGELOG.md
+        call_to_action_link: https://github.com/applejuicenetz/gui-php/blob/main/CHANGELOG.md
