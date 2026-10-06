@@ -45,6 +45,10 @@
       link: /downloads/applejuice-juicer-gui/
       icon: fa-apple-alt
 
+    - name: Control Center
+      link: /downloads/applejuice-control-center/
+      icon: fa-apple-alt
+
     - name: phpGUI
       link: /downloads/applejuice-php-gui/
       icon_brand: true
