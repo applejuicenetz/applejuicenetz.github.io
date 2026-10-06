@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Apfelmus GUI
-description: ein alternativer Windows GUI für appleJuice
-subtitle: weiteres Windows GUI
+description: ein alternatives GUI für appleJuice
+subtitle: weiteres GUI für Windows, macOS und Linux
 menubar: downloads_menu
-repo: gui-apfelmus
+repo: onotsky/apfelmus
 ---
 
 <h1 class="title">{{ page.title }}</h1>
@@ -12,15 +12,15 @@ repo: gui-apfelmus
 
 <div class="columns is-vcentered aj-badges">
     <div class="control">
-        <img alt="GitHub latest Apfelmus release" src="https://img.shields.io/github/v/release/{{ site.github_username }}/{{ page.repo }}?label=latest&style={{ site.shields_style }}">
+        <img alt="GitHub latest Apfelmus release" src="https://img.shields.io/github/v/release/{{ page.repo }}?label=latest&style={{ site.shields_style }}">
     </div>
 
     <div class="control">
-        <img alt="GitHub Apfelmus Downloads" src="https://img.shields.io/github/downloads/{{ site.github_username }}/{{ page.repo }}/latest/total?style={{ site.shields_style }}">
+        <img alt="GitHub Apfelmus Downloads" src="https://img.shields.io/github/downloads/{{ page.repo }}/latest/total?style={{ site.shields_style }}">
     </div>
 
     <div class="control">
-        <img alt="GitHub Apfelmus License" src="https://img.shields.io/badge/license-proprietary-blue?color=orange&style={{ site.shields_style }}">
+        <img alt="GitHub Apfelmus License" src="https://img.shields.io/github/license/{{ page.repo }}?style={{ site.shields_style }}">
     </div>
 </div>
 
@@ -28,29 +28,32 @@ repo: gui-apfelmus
     <div class="columns">
         <div class="column">
             <p>
-                Weiteres <span class="is-help" title="Graphical User Interface | Grafische Benutzeroberfläche">GUI</span> für den Core, geschrieben in <code>.NET</code>.
+                Weiteres <span class="is-help" title="Graphical User Interface | Grafische Benutzeroberfläche">GUI</span> für den Core, gebaut mit <code>Avalonia</code> und lauffähig unter <b>Windows, macOS und Linux</b>.
             </p>
 
             <p>
-                Apfelmus ist auch:
+                Apfelmus wird unabhängig vom appleJuice Projekt von der Community weiterentwickelt:
             </p>
 
             <ul>
-                <li>Bestandteil des <a href="/downloads/applejuice-windows/">Windows Setup</a></li>
+                <li>mehrsprachig (Deutsch, Englisch, Italienisch)</li>
+                <li>helles und dunkles Design</li>
+                <li>Downloads, Uploads, Suche, Server, Share und Einstellungen</li>
+                <li>Übernahme von <code>ajfsp://</code>-Links aus dem Browser</li>
             </ul>
         </div>
 
         <div class="column is-two-fifths">
-            <a href="https://github.com/{{ site.github_username }}/{{ page.repo }}/releases/latest/download/Apfelmus.setup.exe" class="button is-link is-success is-medium is-block">
-                <i class="fab fa-windows"></i>
-                &nbsp; Setup herunterladen
+            <a href="https://github.com/{{ page.repo }}/releases/latest" class="button is-link is-success is-medium is-block" target="_blank">
+                <i class="fas fa-download"></i>
+                &nbsp; Downloads (GitHub)
             </a>
 
             <br>
 
-            <a href="https://github.com/{{ site.github_username }}/{{ page.repo }}/releases/latest/download/Apfelmus.zip" class="button is-link is-medium is-block">
-                <i class="fas fa-file-archive"></i>
-                &nbsp; .zip herunterladen
+            <a href="https://github.com/{{ page.repo }}" class="button is-link is-medium is-block" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+                &nbsp; Projektseite &amp; Quellcode
             </a>
 
             <br>
@@ -66,12 +69,6 @@ repo: gui-apfelmus
                 </a>
             </figure>
         </div>
-    </div>
-
-    <div class="notification is-small is-info is-light">
-        <ul class="is-unstyled">
-            <li><i class="fas fa-fw fa-hand-point-right"></i>Apfelmus benötigt <a href="https://www.microsoft.com/de-de/download/details.aspx?id=30653">.NET 4.5</a></li>
-        </ul>
     </div>
 
     <div class="modal" id="modal-applejuice-apfelmus">
