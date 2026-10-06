@@ -7,3 +7,6 @@ _site/
 node_modules/
 
 .jekyll-metadata
+
+.bundle/
+.jekyll-cache/
