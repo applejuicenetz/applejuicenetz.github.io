@@ -1,0 +1,43 @@
+<h2 id="jvm_absturz_hs_err_log">19. Der Core ist abgestürzt, wo finde ich die <code>hs_err_pid</code> Datei?</h2>
+
+<p>
+    Stürzt die Java Laufzeit (JVM) selbst ab, schreibt sie eine Fehlerdatei mit dem Namen
+    <code>hs_err_pid&lt;PID&gt;.log</code>. <code>&lt;PID&gt;</code> ist die Prozess-ID des abgestürzten Core.
+    Diese Datei hilft bei der Fehlersuche und sollte jedem Fehlerbericht angehängt werden.
+</p>
+
+<table class="table">
+    <tbody>
+    <tr>
+        <td class="has-text-centered"><i class="fab fa-windows"></i></td>
+        <td><code>Windows</code></td>
+        <td><code>C:\Benutzer\%USERNAME%\appleJuice\</code></td>
+    </tr>
+    <tr>
+        <td class="has-text-centered"><i class="fab fa-linux"></i></td>
+        <td><code>Linux</code></td>
+        <td><code>~/appleJuice/</code> bzw. <code>/home/$USER/appleJuice/</code></td>
+    </tr>
+    <tr>
+        <td class="has-text-centered"><i class="fab fa-apple"></i></td>
+        <td><code>macOS</code></td>
+        <td><code>~/appleJuice/</code> bzw. <code>/Users/$USER/appleJuice/</code></td>
+    </tr>
+    <tr>
+        <td class="has-text-centered"><i class="fab fa-docker"></i></td>
+        <td><code>Docker</code></td>
+        <td>im Container Volume <code>/config/</code> im Unterordner <code>appleJuice/</code></td>
+    </tr>
+    <tr>
+        <td class="has-text-centered"><i class="fab fa-windows"></i></td>
+        <td><code>Windows</code> (Portable)</td>
+        <td>im Ordner <code>appleJuice\</code> neben den Ordnern <code>Core</code> und <code>GUI</code></td>
+    </tr>
+    </tbody>
+</table>
+
+<div class="notification is-small is-info is-light">
+    <i class="fas fa-fw fa-hand-point-right"></i>
+    Die Datei kann sensible Daten wie Pfade, Benutzernamen und Umgebungsvariablen enthalten.
+    Sie liegt im selben Ordner wie die Konfiguration (siehe <a href="#wo_liegen_die_konfigurationen">Punkt 15</a>). Prüfe sie vor dem Veröffentlichen und entferne persönliche Angaben.
+</div>
