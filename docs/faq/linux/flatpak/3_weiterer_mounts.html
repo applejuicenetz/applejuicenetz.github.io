@@ -5,14 +5,12 @@
 </p>
 <ul>
     <li><code>~/appleJuice/</code></li>
-    <li><code>/media</code></li>
-    <li><code>/mnt</code></li>
-    <li><code>/run/media</code></li>
 </ul>
 <p>
-    Weitere Ordner können mit dem folgenden Befehl hinzugefügt werden:
+    Alle anderen Ordner, auch Laufwerke unter <code>/media</code>, <code>/mnt</code> oder <code>/run/media</code>,
+    müssen für den Core freigegeben werden. Das geht mit dem folgenden Befehl:
 </p>
 
 <div class="notification is-small is-info is-light">
-    <i class="fas fa-fw fa-terminal"></i><code>flatpak override --filesystem=/path/to/folder io.github.applejuicenetz.core</code>
+    <i class="fas fa-fw fa-terminal"></i><code>flatpak override --user --filesystem=/path/to/folder io.github.applejuicenetz.core</code>
 </div>
