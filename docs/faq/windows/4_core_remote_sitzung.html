@@ -1,0 +1,17 @@
+<h2 id="core_remote_sitzung">4. Core beendet sich bei Remotedesktop</h2>
+
+<p>
+    Ab Core <code>0.35.185.01</code> kann sich der Core beenden, wenn eine Windows-Sitzung per Remotedesktop
+    von einem anderen Rechner übernommen wird. Die Option <code>-Xrs</code> verhindert das.
+</p>
+
+<ol>
+    <li>Beende den Core und öffne <code>app\appleJuice Core.cfg</code> im Installationsordner mit einem Texteditor, bei Bedarf als Administrator.</li>
+    <li>Füge unter <code>[JavaOptions]</code> die Zeile <code>java-options=-Xrs</code> hinzu.</li>
+    <li>Speichere die Datei und starte den Core erneut.</li>
+</ol>
+
+<div class="notification is-small is-info is-light">
+    <i class="fas fa-fw fa-hand-point-right"></i>
+    Siehe auch <a href="#ram_zuteilung_jpackage">Punkt 1.1</a>. Updates können die Datei überschreiben.
+</div>
