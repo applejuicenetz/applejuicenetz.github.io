@@ -2,12 +2,13 @@
 
 <p>
     Ab Core <code>0.35.185.01</code> kann sich der Core beenden, wenn eine Windows-Sitzung per Remotedesktop
-    von einem anderen Rechner übernommen wird. Die Option <code>-Xrs</code> verhindert das.
+    von einem anderen Rechner übernommen wird. Die Option <code>-Djava.awt.headless=true</code> verhindert das.
+    Der Core läuft dann ohne Fenster und Tray-Symbol.
 </p>
 
 <ol>
     <li>Beende den Core und öffne <code>app\appleJuice Core.cfg</code> im Installationsordner mit einem Texteditor, bei Bedarf als Administrator.</li>
-    <li>Füge unter <code>[JavaOptions]</code> die Zeile <code>java-options=-Xrs</code> hinzu.</li>
+    <li>Füge unter <code>[JavaOptions]</code> die Zeile <code>java-options=-Djava.awt.headless=true</code> hinzu.</li>
     <li>Speichere die Datei und starte den Core erneut.</li>
 </ol>
 
