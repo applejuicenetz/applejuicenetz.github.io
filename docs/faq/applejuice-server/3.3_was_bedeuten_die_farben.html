@@ -1,14 +1,32 @@
-<h3 id="was_bedeuten_die_farben">3.3 Was bedeuten die Farben im Serverwatcher?</h3>
+<h3 id="was_bedeuten_die_farben">3.3 Was bedeuten die Farben in der Web-Oberfläche?</h3>
 
-<dl class="inline-flex">
-    <dt>Dunkelblau</dt>
-    <dd>Zu diesem Server besteht momentan eine direkte Verbindung</dd>
-    <dt>Hellblau</dt>
-    <dd>Im Moment kein direkter Kontakt</dd>
-    <dt>Gelb</dt>
-    <dd>Dein eigener Server</dd>
-    <dt>Grün</dt>
-    <dd>Online</dd>
-    <dt>Rot</dt>
-    <dd>Offline oder kein Kontakt mit dem Server nötig (Der Server verschwindet nach 30 Minuten)</dd>
-</dl>
+<div class="table-container">
+    <table class="table is-fullwidth">
+        <thead>
+            <tr>
+                <th>Anzeige</th>
+                <th>Bedeutung</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th><span class="icon has-text-success" aria-hidden="true"><i class="fas fa-circle"></i></span> Grüner Punkt</th>
+                <td>Zu diesem Server besteht gerade eine offene TCP-Verbindung.</td>
+            </tr>
+            <tr>
+                <th><span class="icon has-text-grey" aria-hidden="true"><i class="fas fa-circle"></i></span> Grauer Punkt</th>
+                <td>Gerade keine offene TCP-Verbindung. Das bedeutet nicht, dass der Server offline ist.</td>
+            </tr>
+            <tr>
+                <th>Farben im Routing-Balken</th>
+                <td>Jede Farbe kennzeichnet einen Server und dessen Anteil am Hash-Raum. Dieselbe Farbe erscheint in Serverliste und Legende.</td>
+            </tr>
+            <tr>
+                <th>Schraffierter Routing-Anteil</th>
+                <td>Der zugehörige Server gilt momentan als inaktiv.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>Verbindungen zwischen Servern sind meist kurz. Viele graue Punkte sind deshalb normal. Die Routing-Anteile beschreiben Hash-Bereiche, nicht Dateimengen oder Traffic.</p>

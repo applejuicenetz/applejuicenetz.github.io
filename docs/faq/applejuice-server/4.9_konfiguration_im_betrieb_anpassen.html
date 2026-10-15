@@ -1,10 +1,6 @@
-<h3 id="konfiguration_im_betrieb_anpassen">4.10 Werte in server.xml OHNE Serverneustart ändern</h3>
+<h3 id="konfiguration_im_betrieb_anpassen">4.9 Wie ändere ich die Konfiguration?</h3>
 
-<p>Ab der Serverversion <code>0.77.0</code> ist es auch möglich, die meisten Werte in der server.xml zu verändern, ohne den Server neu starten zu müssen.
-    <code>port</code> und <code>bindip</code> lassen sich so nicht wirksam
-    ändern. Dazu ist nach wie vor ein Serverneustart erforderlich.
-    <code>ip/dynip</code> wird erst wirksam, wenn im Server die Meldung <span class="tag">check ip</span> (alle 10 Minuten) kommt.
-</p>
-<p>
-    <strong>Ablauf</strong>: Die Werte in der <code>server.xml</code> ändern und speichern. Anschließend im Serverfenster <code>reload</code> eintippen.
-</p>
+<p>Bearbeite die <code>server.json</code> im verwendeten Datenordner und starte den Server anschließend neu. Der Go-Server hat keinen <code>reload</code>-Befehl für die Konfiguration.</p>
+<p>Mit <code>-data</code> oder <code>AJ_DATA_DIR</code> kannst du den Datenordner ausdrücklich wählen. Bei aktivem Tray ist der Standard <code>~/appleJuice/server</code>, ohne Tray das Arbeitsverzeichnis.</p>
+<p>Eine vorhandene <code>server.xml</code> wird einmalig importiert, wenn noch keine <code>server.json</code> existiert. Umgebungsvariablen zur Serverkonfiguration werden nur verwendet, wenn beide Dateien fehlen.</p>
+<p>Der Konsolenbefehl <code>infofile</code> lädt ausschließlich die Whitelist neu, nicht die Serverkonfiguration.</p>

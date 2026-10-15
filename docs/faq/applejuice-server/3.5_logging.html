@@ -1,13 +1,7 @@
 <h3 id="logging">3.5 Wie kann ich die Meldungen mitloggen?</h3>
 
-<p>
-    Indem du die Startanweisung erweiterst.
-</p>
-
-<p>
-    <code>java -Xmx512m -jar ajserver.jar >> aj.txt</code>
-</p>
-
-<p>
-    Dies schreibt die Ausgaben des Servers in die Datei <code>aj.txt</code> im Serververzeichnis.
-</p>
+<p>Die Web-Oberfläche zeigt die letzten 1.000 Logzeilen. Unter Windows gibt es bei aktiviertem Tray zusätzlich ein Logfenster.</p>
+<p>Für eine dauerhafte Datei kannst du den Server unter Linux oder macOS im Terminal starten und die Ausgaben umleiten:</p>
+<pre><code>./ajserver -notray &gt;&gt; aj.txt 2&gt;&amp;1</code></pre>
+<p>Die Datei <code>aj.txt</code> wird im aktuellen Arbeitsverzeichnis angelegt bzw. ergänzt. Mit <code>-notray</code> ist dieses Verzeichnis auch der Standard-Datenordner; mit <code>-data /pfad/zum/datenordner</code> kannst du ihn ausdrücklich festlegen.</p>
+<p>Bei Docker findest du die Ausgaben über <code>docker logs &lt;Containername&gt;</code>.</p>

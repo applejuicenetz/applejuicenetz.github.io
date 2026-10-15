@@ -1,19 +1,5 @@
-<h3 id="nicht_alle_server">4.8 Warum habe ich nur so wenige Server in der Serverliste?</h3>
+<h3 id="nicht_alle_server">4.8 Warum sehe ich nur wenige Verbindungen zu anderen Servern?</h3>
 
-<p>
-    Der Server hat nur zu den Servern Kontakt, die für ihn wichtig sind.
-    Das spart Traffic, denn warum sollten sich 2 Server unterhalten, die sich doch eigentlich nichts zu sagen haben ;)
-</p>
-
-<p>
-    Wenn du keine User auf deinem Server hast, hast du evtl. auch nur einen grünen Server in der Liste.
-    Das ist dann der erste Server in der Hashtable. Zu diesem hast du <strong>immer</strong> Kontakt.
-</p>
-
-<p>
-    Wenn User da sind, hast du zu allen Servern Kontakt, die einen Teil der Hashtable verwalten.
-</p>
-
-<p>
-    Und wenn du selbst ein Teil der Hashtable abbekommen hast, hast du höchstwahrscheinlich auch zu allen anderen Servern Kontakt.
-</p>
+<p>Die Serverliste zeigt bekannte Server, nicht nur offene Verbindungen. Verbindungen werden bei Bedarf für Routing-Tabellen, Quellenanfragen und andere Protokollaufgaben aufgebaut und sind meist kurz.</p>
+<p>Viele graue Punkte bedeuten deshalb nicht, dass andere Server fehlen oder offline sind. Prüfe <code>Last seen</code>, die Routing-Tabelle und das Log, statt dauerhaft offene Verbindungen zu allen Servern zu erwarten.</p>
+<p>Wenn tatsächlich nur der eigene Server in der Liste steht, siehe <a href="#server_isoliert">Punkt 4.7</a>.</p>

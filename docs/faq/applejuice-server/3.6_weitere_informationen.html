@@ -1,18 +1,12 @@
 <h3 id="weitere_informationen">3.6 Wie kann ich noch Informationen vom Server abrufen?</h3>
 
-<p>
-    Einen "direkt auslesbaren" HTTP-Port wie beim Delphiserver gibt es nicht mehr,
-    stattdessen nun eine &uuml;ber das HTTP-Protokoll erreichbare XML-Datei:
-</p>
-<p>
-    <a href="http://localhost:8001/info.xml">http://localhost:8001/info.xml</a>
-
-</p>
-<p>Port und Zugangsdaten sind die des Serverwatchers.</p>
-<p>
-    Wer sich ein wenig mit Programmiersprachen wie z. B. PHP oder Java auskennt, kann auch die HTML-Dateien, die den Serverwatcher bilden, parsen.
-    Zu finden im Unterverzeichnis <code>wwwpath</code>. <strong>Tipp</strong>:
-    Die wichtigsten Infos werden mit den Zeilen <br>
-    <code>&lt;?serverlist?&gt;</code>, <code>&lt;?hashtable?&gt;</code> und <code>&lt;?status?&gt;</code> abgerufen,
-    HTML-Dateien sind entsprechend anpassbar.
-</p>
+<p>Zusätzlich zur Web-Oberfläche stellt der Server folgende HTTP-Endpunkte am <code>webport</code> bereit:</p>
+<ul>
+    <li><code>/info.json</code>: Serverstatus als JSON</li>
+    <li><code>/serverlist.json</code>: bekannte Server als JSON</li>
+    <li><code>/metrics</code>: Messwerte für Prometheus</li>
+    <li><code>/log</code>: letzte Logzeilen als JSON</li>
+    <li><code>/healthz</code>: Health-Check ohne Anmeldung</li>
+</ul>
+<p>Bis auf <code>/healthz</code> benötigen diese Endpunkte HTTP Basic Auth mit <code>webuser</code> und <code>webpw</code> aus der <code>server.json</code>. Beispiel bei lokalem Betrieb: <a href="http://127.0.0.1:8001/info.json">http://127.0.0.1:8001/info.json</a>.</p>
+<p><code>/info.xml</code> gibt es ab <code>0.95.x</code> nicht mehr. Verwende die JSON-Endpunkte statt HTML-Dateien der Web-Oberfläche auszulesen.</p>

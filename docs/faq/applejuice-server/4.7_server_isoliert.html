@@ -1,7 +1,5 @@
-<h3 id="server_isoliert">4.7 Ich sehe im Serverwatcher nur meinen Server</h3>
+<h3 id="server_isoliert">4.7 Ich sehe in der Web-Oberfläche nur meinen Server</h3>
 
-<p>
-    Dein Server ist isoliert und hat zu den anderen Servern im Netz keinen Kontakt!
-    <br>
-    Füge einen Server manuell von der <a href="/serverliste.html">Serverliste</a> über den Serverwatcher hinzu.
-</p>
+<p>Dem Server fehlen bekannte andere Server. Prüfe im Log, ob der Abruf der öffentlichen Serverliste fehlgeschlagen ist oder über <code>APPLEJUICE_SERVERLIST_URL</code> abgeschaltet wurde.</p>
+<p>Du kannst in der Web-Oberfläche unter <code>Servers</code> einen Server aus der <a href="/serverliste/">Serverliste</a> mit Host und Core-Port hinzufügen. Für die Verbindung zwischen Servern wird automatisch der nächste Port verwendet.</p>
+<p>Kommt weiterhin kein Kontakt zustande, prüfe DNS-Auflösung, Firewall und Erreichbarkeit beider Server-Ports. Einzelne graue Verbindungspunkte sind kein Beleg für Isolation; siehe <a href="#was_bedeuten_die_farben">Punkt 3.3</a>.</p>

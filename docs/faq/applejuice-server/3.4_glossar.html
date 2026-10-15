@@ -1,40 +1,46 @@
 <h3 id="glossar">3.4 Glossar</h3>
 
-<dl>
-    <dt><em>H-Time</em></dt>
-    <dd>HashtableTime (Zeit der Erstellung der Hashtable)</dd>
-</dl>
-<dl>
-    <dt><em>I-Time</em></dt>
-    <dd>ClientinformationTime (wer gesperrt ist usw.)</dd>
-</dl>
-<dl>
-    <dt><em>lastseen</em></dt>
-    <dd>lastseen (vor Stunde:Minute:Sekunde zuletzt aktiv gesehen)</dd>
-</dl>
-<dl>
-    <dt><em>References</em></dt>
-    <dd>References (Anzahl der auf diesem Server bekannten Files)</dd>
-</dl>
-<dl>
-    <dt><em>Points</em></dt>
-    <dd>Points (Config/Überlastungspunkte, siehe unten)</dd>
-</dl>
-<ul>
-    <li>maximal 10 Punkte</li>
-    <li>&gt; 0 gute Server</li>
-    <li>&lt; 0 Port nicht gemappt, Server aus oder Server überlastet</li>
-    <li>&lt; 0 verwalten nicht die hashtable</li>
-</ul>
-<dl>
-    <dt><em>Tasks</em></dt>
-    <dd>zu erledigende Aufgaben</dd>
-</dl>
-<ul>
-    <li>Hashtablecontent</li>
-    <li>Quellenanfrage</li>
-    <li>Ping</li>
-    <li>Gesamtuserzahl ermitteln</li>
-    <li>gesperrte Versioneninfo holen</li>
-    <li>Hashtableinfo holen</li>
-</ul>
+<div class="table-container">
+    <table class="table is-fullwidth">
+        <thead>
+            <tr>
+                <th>Begriff</th>
+                <th>Bedeutung</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Routing table / Hashtable</th>
+                <td>Aufteilung des Hash-Raums auf die zuständigen Server. Die angezeigte Zeit ist der Erstellungszeitpunkt der Tabelle.</td>
+            </tr>
+            <tr>
+                <th>I-Time</th>
+                <td>Erstellungszeitpunkt der Whitelist eines Servers. Sie legt erlaubte Core-Builds und das Mindestprotokoll fest.</td>
+            </tr>
+            <tr>
+                <th>Last seen</th>
+                <td>Zeit seit dem letzten Lebenszeichen. Als aktiv gelten Server mit einem Lebenszeichen innerhalb der letzten fünf Minuten.</td>
+            </tr>
+            <tr>
+                <th>Refs</th>
+                <td>Einträge im Dateiindex, die auf diesen Server verweisen. Referenzierte Server werden nicht aus der Liste entfernt.</td>
+            </tr>
+            <tr>
+                <th>Rep</th>
+                <td>Erreichbarkeitsbewertung: Eine erfolgreiche Verbindung bringt 20 Punkte (höchstens 10 insgesamt), ein Fehlversuch kostet 50. Server mit negativer Bewertung erhalten keinen Hash-Bereich.</td>
+            </tr>
+            <tr>
+                <th>Queue</th>
+                <td>Protokollbefehle, die auf die nächste Verbindung zu diesem Server warten.</td>
+            </tr>
+            <tr>
+                <th>Tasks</th>
+                <td>Anzahl der Go-Goroutines im Systembereich. Der Klammerwert zieht offene Verbindungen ab und ist nur ein grober Anhaltspunkt, keine genaue Aufschlüsselung.</td>
+            </tr>
+            <tr>
+                <th>Hash share</th>
+                <td>Anteil am Hash-Raum, nicht Anteil an Dateien oder Traffic.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

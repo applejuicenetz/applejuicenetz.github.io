@@ -1,17 +1,11 @@
 <h3 id="welche_ports">3.2 Welche Ports braucht der Server?</h3>
 
-<p>
-    Der Server nutzt insgesamt drei Ports – zwei für den Serverbetrieb und einen für den Serverwatcher.
-    Alle drei können durch Ändern der <code>server.xml</code> frei gewählt werden.</p>
-<p>
-    <code>&lt;port value="EIN PORT"/&gt;</code> ist der erste TCP-Port. Der zweite Port wird durch „erster Port + 1“ errechnet, z. B. &lt;port value="9855"/&gt; für die Ports <code>9855</code> und <code>9856</code>.
-    Beide TCP-Ports müssen freigegeben werden (Router/Firewall).
-    Der erste Port ist für die Client-Server-Kommunikation, der zweite für die Server-Server-Kommunikation zuständig.
-</p>
-
-<p>
-    <code>&lt;webport&gt;8001&lt;/webport&gt;</code> - ist der Port für den Serverwatcher,
-    der in dem Fall mit <a href="http://127.0.0.1:8001/">http://127.0.0.1:8001</a>
-    aufgerufen werden kann (Server läuft hier lokal auf dem Rechner).
-    Der Port muss nur freigegeben werden, wenn von außen auf den Serverwatcher zugegriffen werden soll.
-</p>
+<p>Der Server nutzt drei TCP-Ports. In der <code>server.json</code> werden zwei davon festgelegt:</p>
+<ul>
+    <li><code>port</code>: Verbindung der Cores zum Server, beispielsweise <code>9855</code>.</li>
+    <li><code>port + 1</code>: Verbindung zwischen Servern, im Beispiel <code>9856</code>. Dieser Port wird automatisch abgeleitet.</li>
+    <li><code>webport</code>: Web-Oberfläche, beispielsweise <code>8001</code>.</li>
+</ul>
+<p>Die beiden Server-Ports müssen für andere Cores bzw. Server über Router und Firewall erreichbar sein.</p>
+<p>Die Web-Oberfläche erreichst du bei lokalem Betrieb mit <code>webport</code> 8001 unter <a href="http://127.0.0.1:8001/">http://127.0.0.1:8001/</a>, sofern die Bind-Adresse dies zulässt.</p>
+<p>Gib den Web-Port nur für benötigte Zugriffe frei. Für Zugriffe über das Internet sollte ein HTTPS-Reverse-Proxy vorgeschaltet werden; der Server selbst verwendet HTTP.</p>

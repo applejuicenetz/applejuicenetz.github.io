@@ -1,5 +1,5 @@
-<h3 id="oom">4.4 OutOfMemory</h3>
+<h3 id="oom">4.4 Der Server benötigt zu viel Speicher oder wird beendet</h3>
 
-<p>Nach einer Weile st&uuml;rzt mein Server mit der Meldung <code>OutOfMemory</code> ab.</p>
-<p>Beim Start wird dann meistens beim Parameter <code>-Xmx128m</code> das letzte "m" vergessen ;)</p>
-<p>Der Server startet dann nicht mit 128, sondern mit 12,8 MB RAM. Eindeutig zu wenig … Im Serverwatcher unter Status kann man den zugewiesenen RAM sehen.</p>
+<p>Prüfe das Serverlog und die Meldungen des Betriebssystems bzw. Containers auf Speichermangel. Beachte auch gesetzte Speicherlimits für den Dienst oder Container.</p>
+<p>Die Web-Oberfläche zeigt unter <code>Memory used</code> den belegten Go-Heap und unter <code>Memory system</code> den von der Go-Laufzeit angeforderten Speicher einschließlich Reserven. Letzteres ist nicht der tatsächliche physische Speicherverbrauch des Prozesses.</p>
+<p>Der Go-Server kennt keinen Java-Parameter <code>-Xmx</code>. <code>GOMEMLIMIT</code> ist ein weiches Speicherziel der Go-Laufzeit, keine feste Obergrenze für den gesamten Prozess.</p>

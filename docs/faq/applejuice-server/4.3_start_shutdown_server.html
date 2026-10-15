@@ -1,32 +1,11 @@
-<h3 id="start_shutdown_server">4.3 Gleich nach dem Start erscheint eine Fehlermeldung und dann "shutdown server"</h3>
+<h3 id="start_shutdown_server">4.3 Der Server beendet sich gleich nach dem Start</h3>
 
-<p>Der Server hat sich selbst beendet. Die Ursache steht in der Fehlermeldung darüber.</p>
-<p>Hier einige Meldungen und ihre Ursachen:</p>
-<dl>
-    <dt><code>Exception in thread "main" java.util.zip.ZipException: Das System kann die angegebene Datei nicht finden</code></dt>
-    <dd>Die Datei ajserver.jar wurde nicht gefunden. Entweder bist du im falschen Verzeichnis oder du hast den Dateinamen falsch geschrieben.</dd>
-</dl>
-<dl>
-    <dt><code>java.io.FileNotFoundException: [...]\server.xml (Das System kann die angegebene Datei nicht finden)</code></dt>
-    <dd>Datei server.xml wurde nicht gefunden. Laut Anleitung muss sie beim ersten Start aus der Beispieldatei umbenannt und angepasst werden. Kann es evtl. sein, dass du die Datei in server.xml.xml
-        umbenannt hast?
-    </dd>
-</dl>
-<dl>
-    <dt><code>java.net.BindException: Address already in use</code></dt>
-    <dd>Ein eingestellter Port ist bereits belegt. Entweder läuft schon ein Server oder die Serverports sind schon durch eine andere Anwendung belegt. Evtl. hast du versucht, den Server per
-        Doppelklick zu starten - in dem Fall im Taskmanager nach <code>javaw.exe</code> suchen und den Prozess beenden.
-    </dd>
-</dl>
-<dl>
-    <dt><code>org.xml.sax.SAXParseException: Zeichenumwandlungsfehler: "Unconvertible UTF-8 chacter beginning with 0xb4" (Zeilenzahl möglicherweise zu niedrig)</code></dt>
-    <dd>Wahrscheinlich sind Sonderzeichen in der XML-Datei. Auch das <code>ß</code> und das <code>&acute;</code> sind Auslöser der Meldung. Rufe die Datei einmal im Browser auf. Der Internet Explorer z. B. markiert
-        die falschen Zeichen.
-    </dd>
-</dl>
-<dl>
-    <dt><code>de.applejuicenet.server.S: error in settings: invalid timeserver</code></dt>
-    <dd>Der Server verwendet als ToD-Timeserver <code>time.applejuicenet.cc</code>. Vermutlich ist der Timeserver selbst zurzeit nicht erreichbar. Meistens ist der Timeserver nach kurzer Zeit aber wieder erreichbar.
-        Wenn es absolut nicht funktionieren will, kann der Server auch mit dem Parameter <code>--usemyNTP</code> gestartet werden, um den Timerserver aus der <code>server.xml</code> zu verwenden.
-    </dd>
-</dl>
+<p>Starte den Server im Terminal und lies die Fehlermeldung. Prüfe insbesondere:</p>
+<ul>
+    <li><strong>Belegter Port:</strong> <code>port</code>, <code>port + 1</code> und <code>webport</code> müssen frei sein. Prüfe, ob bereits eine Instanz läuft.</li>
+    <li><strong>Bind-Adresse:</strong> <code>bindip</code> muss zu einer lokalen Netzwerkschnittstelle passen oder <code>0.0.0.0</code> sein.</li>
+    <li><strong>Konfiguration:</strong> Prüfe die JSON-Syntax und die in der Fehlermeldung genannten Werte in <code>server.json</code>.</li>
+    <li><strong>Datenordner:</strong> Mit <code>-data /pfad/zum/datenordner</code> kannst du den gewünschten Ordner ausdrücklich auswählen. Der Server benötigt dort passende Datei- und Verzeichnisrechte.</li>
+</ul>
+<p>Eine vorhandene <code>server.xml</code> wird nur dann importiert, wenn noch keine <code>server.json</code> existiert. Änderungen an der XML-Datei wirken danach nicht mehr.</p>
+<p>Der Zeitabgleich verwendet NTP. Der Zeitserver wird über <code>timeserver</code> konfiguriert; der alte Java-Parameter <code>--usemyNTP</code> gilt nicht für den Go-Server.</p>

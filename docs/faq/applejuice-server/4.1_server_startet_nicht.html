@@ -1,15 +1,5 @@
 <h3 id="server_startet_nicht">4.1 Beim Serverstart öffnet sich kein Fenster</h3>
 
-<p>
-    Wahrscheinlich hast du versucht, den Server mit einem Doppelklick auf die <code>ajserver.jar</code> zu starten.
-    Der Server ist dann nicht mehr sichtbar. Im Taskmanager erscheint der Server als <code>javaw.exe</code>.
-</p>
-
-<p>
-    Starte den Server bitte so, wie es in der Anleitung steht:
-    Über die Eingabeaufforderung und mit dem dort angegebenen Befehl.
-    Nur so siehst du auch die Meldungen des Servers. Diese sind zur
-    Fehlersuche wichtig, zudem kann nur so der Server mit dem Befehl "exit" auf die richtige Weise beendet werden.
-    Wenn der Server nicht ordnungsgemäß beendet wird, speichert er die Serverliste nicht und ist beim nächsten Start evtl. wieder isoliert.
-    Probleme sind also vorprogrammiert.
-</p>
+<p>Unter Linux und macOS gibt es kein natives Logfenster. Öffne die Web-Oberfläche im Browser, um Status und Log zu sehen.</p>
+<p>Unter Windows öffnet sich bei aktiviertem Tray ein Logfenster. Über <code>Show console</code> im Tray-Menü kannst du es wieder einblenden. Das Schließen-Kreuz blendet es nur aus; <code>Exit</code> im Tray beendet den Server.</p>
+<p>Mit <code>-notray</code> oder <code>AJ_NOTRAY=1</code> läuft der Server ohne Tray und natives Logfenster. Starte ihn zur Fehlersuche im Terminal und prüfe die dortigen Ausgaben. Die Web-Oberfläche bleibt verfügbar, sobald der Server erfolgreich gestartet ist.</p>
