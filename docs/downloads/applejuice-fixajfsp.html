@@ -1,0 +1,35 @@
+---
+layout: page
+title: fixajfsp
+description: appleJuice-Links mit der GUI verknüpfen
+subtitle: appleJuice-Links mit der GUI verknüpfen
+menubar: downloads_menu
+github_repo: fixajfsp
+---
+
+<h1 class="title">{{ page.title }}</h1>
+<p class="subtitle is-6">{{ page.subtitle }}</p>
+<div class="columns is-vcentered aj-badges">
+    <div class="control"><img alt="Aktuelles Release" src="https://img.shields.io/github/v/release/{{ site.github_username }}/{{ page.github_repo }}?label=latest&amp;style={{ site.shields_style }}"></div>
+    <div class="control"><img alt="Downloads" src="https://img.shields.io/github/downloads/{{ site.github_username }}/{{ page.github_repo }}/total?style={{ site.shields_style }}"></div>
+    <div class="control"><img alt="Lizenz" src="https://img.shields.io/github/license/{{ site.github_username }}/{{ page.github_repo }}?style={{ site.shields_style }}"></div>
+</div>
+<div class="content is-medium">
+    <div class="columns">
+        <div class="column">
+            <p>fixajfsp richtet die Windows-Registry für <code>ajfsp://</code>- und <code>web+ajfsp://</code>-Links sowie <code>.ajl</code>-Dateien ein. Besonders praktisch für die <a href="/downloads/applejuice-portable/">Portable-Version</a>, die kein Setup durchläuft.</p><ul><li>Zeigt vorhandene, fehlende und abweichende Registry-Einträge.</li><li>GUI-EXE über <strong>Durchsuchen...</strong> auswählen, beispielsweise <code>GUI\GUI.exe</code>.</li><li>Mit <strong>Registry-Einträge setzen</strong> die Zuordnung einrichten.</li></ul><p>Benötigt Administratorrechte. Nach Verschieben der Portable-Version erneut starten und den neuen Pfad auswählen. Eine benutzerspezifische Zuordnung oder Windows-Standard-App kann die systemweite Registrierung überlagern.</p>
+            <p>Für Windows x64 und ARM64. Eigenständige Go-Anwendung, keine zusätzliche Java-Laufzeit erforderlich.</p>
+        </div>
+        <div class="column is-two-fifths">
+            <a href="https://github.com/{{ site.github_username }}/{{ page.github_repo }}/releases/latest/download/fixajfsp-windows-amd64.exe" class="button is-success is-medium is-block"><i class="fas fa-download"></i>&nbsp; Windows x64</a><br>
+            <a href="https://github.com/{{ site.github_username }}/{{ page.github_repo }}/releases/latest/download/fixajfsp-windows-arm64.exe" class="button is-success is-medium is-block"><i class="fas fa-download"></i>&nbsp; Windows ARM64</a><br>
+            <a href="https://github.com/{{ site.github_username }}/{{ page.github_repo }}/" class="button is-link is-medium is-block" target="_blank"><i class="fas fa-external-link-alt"></i>&nbsp; Quellcode und Anleitung</a>
+            <figure class="image box"><a href="#" class="modal-button" data-target="modal-fixajfsp"><img src="/assets/screenshots/applejuice_fixajfsp.png" alt="fixajfsp unter Windows"></a></figure>
+        </div>
+    </div>
+    <div class="modal" id="modal-fixajfsp">
+        <div class="modal-background"></div>
+        <div class="modal-content"><p class="image"><img src="/assets/screenshots/applejuice_fixajfsp.png" alt="fixajfsp unter Windows"></p></div>
+        <button class="modal-close is-large" aria-label="Schließen"></button>
+    </div>
+</div>

@@ -1,0 +1,35 @@
+---
+layout: page
+title: catch_ajfsp
+description: appleJuice-Links direkt an den Core übergeben
+subtitle: appleJuice-Links direkt an den Core übergeben
+menubar: downloads_menu
+github_repo: catch_ajfsp
+---
+
+<h1 class="title">{{ page.title }}</h1>
+<p class="subtitle is-6">{{ page.subtitle }}</p>
+<div class="columns is-vcentered aj-badges">
+    <div class="control"><img alt="Aktuelles Release" src="https://img.shields.io/github/v/release/{{ site.github_username }}/{{ page.github_repo }}?label=latest&amp;style={{ site.shields_style }}"></div>
+    <div class="control"><img alt="Downloads" src="https://img.shields.io/github/downloads/{{ site.github_username }}/{{ page.github_repo }}/total?style={{ site.shields_style }}"></div>
+    <div class="control"><img alt="Lizenz" src="https://img.shields.io/github/license/{{ site.github_username }}/{{ page.github_repo }}?style={{ site.shields_style }}"></div>
+</div>
+<div class="content is-medium">
+    <div class="columns">
+        <div class="column">
+            <p>catch_ajfsp übergibt <code>ajfsp://</code>- und <code>web+ajfsp://</code>-Links direkt an einen laufenden appleJuice Core. Dafür muss keine JavaGUI geöffnet sein.</p><ul><li>Core-Host, XML-Port und Passwort einstellen und mit <strong>Core testen</strong> prüfen.</li><li>Einstellungen in <code>catch_ajfsp.ini</code> neben der EXE speichern.</li><li><strong>Links an catch_ajfsp übergeben</strong> registriert das Programm für den aktuellen Windows-Benutzer.</li><li>Link anklicken oder ins Fenster einfügen. Dateiname, Größe, Hash und Ergebnis werden angezeigt.</li></ul><p>Keine Administratorrechte erforderlich. Nicht Bestandteil des Windows-Setups. Windows fragt gegebenenfalls nach der Standard-App.</p><p>Die Verbindung verwendet HTTP: nur über ein vertrauenswürdiges Netz oder einen SSH-Tunnel verwenden. Auch der gespeicherte Passworthash ermöglicht Zugriff auf den Core; INI-Datei nicht weitergeben.</p>
+            <p>Für Windows x64 und ARM64. Eigenständige Go-Anwendung, keine zusätzliche Java-Laufzeit erforderlich.</p>
+        </div>
+        <div class="column is-two-fifths">
+            <a href="https://github.com/{{ site.github_username }}/{{ page.github_repo }}/releases/latest/download/catch_ajfsp-windows-amd64.exe" class="button is-success is-medium is-block"><i class="fas fa-download"></i>&nbsp; Windows x64</a><br>
+            <a href="https://github.com/{{ site.github_username }}/{{ page.github_repo }}/releases/latest/download/catch_ajfsp-windows-arm64.exe" class="button is-success is-medium is-block"><i class="fas fa-download"></i>&nbsp; Windows ARM64</a><br>
+            <a href="https://github.com/{{ site.github_username }}/{{ page.github_repo }}/" class="button is-link is-medium is-block" target="_blank"><i class="fas fa-external-link-alt"></i>&nbsp; Quellcode und Anleitung</a>
+            <figure class="image box"><a href="#" class="modal-button" data-target="modal-catch-ajfsp"><img src="/assets/screenshots/applejuice_catch_ajfsp.png" alt="catch_ajfsp unter Windows"></a></figure>
+        </div>
+    </div>
+    <div class="modal" id="modal-catch-ajfsp">
+        <div class="modal-background"></div>
+        <div class="modal-content"><p class="image"><img src="/assets/screenshots/applejuice_catch_ajfsp.png" alt="catch_ajfsp unter Windows"></p></div>
+        <button class="modal-close is-large" aria-label="Schließen"></button>
+    </div>
+</div>
