@@ -77,8 +77,3 @@
     - name: catch_ajfsp
       link: /downloads/applejuice-catch-ajfsp/
       icon: fa-link
-
-    - name: Tools
-      link: /downloads/applejuice-tools/
-      icon_brand: false
-      icon: fa-tools
