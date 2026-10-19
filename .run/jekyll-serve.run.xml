@@ -3,7 +3,7 @@
     <deployment type="docker-image">
       <settings>
         <option name="imageTag" value="jekyll/jekyll:4" />
-        <option name="command" value="bundle exec jekyll serve --host 0.0.0.0 --livereload --livereload-port 35728 --force_polling --incremental" />
+        <option name="command" value="bundle exec jekyll serve --host 0.0.0.0 --livereload --livereload-port 35728 --force_polling" />
         <option name="containerName" value="jekyll-serve" />
         <option name="envVars">
           <list>
