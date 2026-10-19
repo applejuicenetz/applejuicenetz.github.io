@@ -8,6 +8,7 @@
 
     - name: Windows Portable
       link: /downloads/applejuice-portable/
+      hide_overview: true
       description: ohne Setup, mit Java, downloaden und starten
       icon_brand: true
       icon: fa-usb
@@ -31,27 +32,27 @@
       description: der offizielle Client, ohne geht nicht
       icon: fa-atom
 
-- label: Oberflächen
-  items:
     - name: JavaGUI
       link: /downloads/applejuice-java-gui/
       description: das offizielle JavaGUI
       icon_brand: true
       icon: fa-java
 
+- label: Weitere Oberflächen
+  items:
     - name: Apfelmus
       link: /downloads/applejuice-apfelmus-gui/
-      description: weiteres GUI für Windows, macOS und Linux
+      description: GUI für Windows, macOS und Linux
       icon: fa-apple-alt
 
     - name: ApplePulp
       link: /downloads/applejuice-applepulp-gui/
-      description: weiteres Windows GUI
+      description: Windows GUI geschrieben in .NET
       icon: fa-apple-alt
 
     - name: Juicer
       link: /downloads/applejuice-juicer-gui/
-      description: weiteres GUI
+      description: GUI geschrieben in QT4
       icon: fa-apple-alt
 
     - name: Control Center
@@ -65,7 +66,7 @@
       icon_brand: true
       icon: fa-php
 
-- label: Weiteres
+- label: Weitere Tools
   items:
     - name: Collector
       link: /downloads/applejuice-collector/
