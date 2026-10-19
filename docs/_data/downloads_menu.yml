@@ -61,7 +61,7 @@
 
     - name: phpGUI
       link: /downloads/applejuice-php-gui/
-      description: GUI geschrieben in PHP
+      description: GUI geschrieben in PHP und Vue.js
       icon_brand: true
       icon: fa-php
 
