@@ -53,7 +53,7 @@
     - name: Juicer
       link: /downloads/applejuice-juicer-gui/
       description: GUI geschrieben in QT4
-      icon_image: /assets/images/qt4-logo.png
+      icon_image: /assets/images/juicer-logo.png
 
     - name: ApplePulp
       link: /downloads/applejuice-applepulp-gui/
