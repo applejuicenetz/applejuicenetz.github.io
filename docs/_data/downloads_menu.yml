@@ -2,21 +2,25 @@
   items:
     - name: Windows Setup
       link: /downloads/applejuice-windows/
+      description: alle Komponenten als Setup, einfache Installation
       icon_brand: true
       icon: fa-windows
 
     - name: Windows Portable
       link: /downloads/applejuice-portable/
+      description: ohne Setup, mit Java, downloaden und starten
       icon_brand: true
       icon: fa-usb
 
     - name: macOS Apps
       link: /downloads/applejuice-macos/
+      description: native Apps, auch für Apple Silicon
       icon_brand: true
       icon: fa-apple
 
     - name: Linux Pakete
       link: /downloads/applejuice-linux/
+      description: native Apps, fertige Pakete für viele Distributionen
       icon_brand: true
       icon: fa-linux
 
@@ -24,33 +28,40 @@
   items:
     - name: Core
       link: /downloads/applejuice-core/
+      description: der offizielle Client, ohne geht nicht
       icon: fa-atom
 
 - label: Oberflächen
   items:
     - name: JavaGUI
       link: /downloads/applejuice-java-gui/
+      description: das offizielle JavaGUI
       icon_brand: true
       icon: fa-java
 
     - name: Apfelmus
       link: /downloads/applejuice-apfelmus-gui/
+      description: weiteres GUI für Windows, macOS und Linux
       icon: fa-apple-alt
 
     - name: ApplePulp
       link: /downloads/applejuice-applepulp-gui/
+      description: weiteres Windows GUI
       icon: fa-apple-alt
 
     - name: Juicer
       link: /downloads/applejuice-juicer-gui/
+      description: weiteres GUI
       icon: fa-apple-alt
 
     - name: Control Center
       link: /downloads/applejuice-control-center/
+      description: AJCC, moderne Windows-GUI
       icon: fa-apple-alt
 
     - name: phpGUI
       link: /downloads/applejuice-php-gui/
+      description: GUI geschrieben in PHP
       icon_brand: true
       icon: fa-php
 
@@ -58,22 +69,27 @@
   items:
     - name: Collector
       link: /downloads/applejuice-collector/
+      description: Informationen Sammler für den Core
       icon: fa-university
 
     - name: Home Assistant
       link: /downloads/applejuice-home-assistant/
+      description: viele Sensoren für den Core
       icon_brand: true
       icon: fa-home-assistant
 
     - name: Browser Erweiterung
       link: /downloads/applejuice-browser-erweiterung/
+      description: Links ohne Umwege an den Core übergeben
       icon_brand: true
       icon: fa-edge
 
     - name: fixajfsp
       link: /downloads/applejuice-fixajfsp/
+      description: appleJuice-Links mit der GUI verknüpfen
       icon: fa-tools
 
     - name: catch_ajfsp
       link: /downloads/applejuice-catch-ajfsp/
+      description: appleJuice-Links direkt an den Core übergeben
       icon: fa-link
