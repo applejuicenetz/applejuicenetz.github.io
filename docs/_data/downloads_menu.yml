@@ -2,76 +2,70 @@
   items:
     - name: Windows Setup
       link: /downloads/applejuice-windows/
-      description: alle Komponenten als Setup, einfache Installation
-      icon_brand: true
-      icon: fa-windows
+      description: alle Komponenten als Setup
+      icon_image: /assets/images/windows-logo.svg
 
     - name: Windows Portable
       link: /downloads/applejuice-portable/
       hide_overview: true
       description: ohne Setup, mit Java, downloaden und starten
-      icon_brand: true
-      icon: fa-usb
+      icon_image: /assets/images/windows-logo.svg
 
     - name: macOS Apps
       link: /downloads/applejuice-macos/
       description: native Apps, auch für Apple Silicon
-      icon_brand: true
-      icon: fa-apple
+      icon_image: /assets/images/macos-logo.svg
 
     - name: Linux Pakete
       link: /downloads/applejuice-linux/
-      description: native Apps, fertige Pakete für viele Distributionen
-      icon_brand: true
-      icon: fa-linux
+      description: fertige Pakete für viele Distributionen
+      icon_image: /assets/images/linux-logo.svg
 
 - label: appleJuice
   items:
     - name: Core
       link: /downloads/applejuice-core/
       description: der offizielle Client, ohne geht nicht
-      icon: fa-atom
+      icon_image: /assets/images/applejuice-core-logo.svg
 
     - name: JavaGUI
       link: /downloads/applejuice-java-gui/
       description: das offizielle JavaGUI
-      icon_brand: true
-      icon: fa-java
+      icon_image: /assets/images/java-logo.svg
 
 - label: Weitere Oberflächen
   items:
-    - name: Apfelmus
-      link: /downloads/applejuice-apfelmus-gui/
-      description: GUI für Windows, macOS und Linux
-      icon: fa-apple-alt
-
-    - name: ApplePulp
-      link: /downloads/applejuice-applepulp-gui/
-      description: Windows GUI geschrieben in .NET
-      icon: fa-apple-alt
-
-    - name: Juicer
-      link: /downloads/applejuice-juicer-gui/
-      description: GUI geschrieben in QT4
-      icon: fa-apple-alt
+    - name: phpGUI
+      link: /downloads/applejuice-php-gui/
+      description: GUI geschrieben in PHP und Vue.js
+      icon_image: /assets/images/php-vue-logo.svg
 
     - name: Control Center
       link: /downloads/applejuice-control-center/
       description: AJCC, moderne Windows-GUI
-      icon: fa-apple-alt
+      icon_image: /assets/images/ajcc-logo.svg
 
-    - name: phpGUI
-      link: /downloads/applejuice-php-gui/
-      description: GUI geschrieben in PHP und Vue.js
-      icon_brand: true
-      icon: fa-php
+    - name: Apfelmus
+      link: /downloads/applejuice-apfelmus-gui/
+      description: GUI für Windows, macOS und Linux
+      icon_image: /assets/images/apfelmus-logo.png
+
+    - name: Juicer
+      link: /downloads/applejuice-juicer-gui/
+      description: GUI geschrieben in QT4
+      icon_image: /assets/images/qt4-logo.png
+
+    - name: ApplePulp
+      link: /downloads/applejuice-applepulp-gui/
+      description: Windows GUI geschrieben in .NET
+      icon_image: /assets/images/applepulp-logo.png
 
 - label: Weitere Tools
   items:
     - name: Collector
       link: /downloads/applejuice-collector/
       description: Informationen Sammler für den Core
-      icon: fa-university
+      icon_image: /assets/images/collector-logo.svg
 
     - name: Home Assistant
       link: /downloads/applejuice-home-assistant/
@@ -82,8 +76,7 @@
     - name: Browser Erweiterung
       link: /downloads/applejuice-browser-erweiterung/
       description: Links ohne Umwege an den Core übergeben
-      icon_brand: true
-      icon: fa-edge
+      icon_image: /assets/images/browser-logo.svg
 
     - name: fixajfsp
       link: /downloads/applejuice-fixajfsp/
