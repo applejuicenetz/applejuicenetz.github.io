@@ -81,9 +81,9 @@
     - name: fixajfsp
       link: /downloads/applejuice-fixajfsp/
       description: appleJuice-Links mit der GUI verknüpfen
-      icon: fa-tools
+      icon_image: /assets/images/fixajfsp-logo.svg
 
     - name: catch_ajfsp
       link: /downloads/applejuice-catch-ajfsp/
       description: appleJuice-Links direkt an den Core übergeben
-      icon: fa-link
+      icon_image: /assets/images/catch_ajfsp-logo.svg
