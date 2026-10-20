@@ -1,3 +1,21 @@
+- label: appleJuice
+  items:
+    - name: Allgemein
+      link: /faq/
+      icon_image: /assets/images/applejuice-core-logo.svg
+
+    - name: Core
+      link: /faq/applejuice-core/
+      icon_image: /assets/images/applejuice-core-logo.svg
+
+    - name: JavaGUI
+      link: /faq/applejuice-java-gui/
+      icon_image: /assets/images/applejuice-java-gui-logo.png
+
+    - name: Server
+      link: /faq/applejuice-server/
+      icon_image: /assets/images/applejuice-server-logo.svg
+
 - label: Pakete
   items:
     - name: Windows
@@ -16,24 +34,6 @@
       link: /faq/docker/
       icon_brand: true
       icon: fa-docker
-
-- label: appleJuice
-  items:
-    - name: Allgemein
-      link: /faq/
-      icon_image: /assets/images/applejuice-core-logo.svg
-
-    - name: Core
-      link: /faq/applejuice-core/
-      icon_image: /assets/images/applejuice-core-logo.svg
-
-    - name: JavaGUI
-      link: /faq/applejuice-java-gui/
-      icon_image: /assets/images/applejuice-java-gui-logo.png
-
-    - name: Server
-      link: /faq/applejuice-server/
-      icon_image: /assets/images/applejuice-server-logo.svg
 
 - label: Weitere Oberflächen
   items:
