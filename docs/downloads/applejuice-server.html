@@ -1,0 +1,58 @@
+---
+layout: page
+title: appleJuice Server
+description: Vermittlungsstelle
+subtitle: Vermittlungsstelle
+menubar: downloads_menu
+---
+
+<h1 class="title">{{ page.title }}</h1>
+<p class="subtitle is-6">{{ page.subtitle }}</p>
+
+<div class="columns is-vcentered aj-badges">
+    <div class="control">
+        <img alt="Version" src="https://img.shields.io/badge/latest-main-blue?style={{ site.shields_style }}">
+    </div>
+
+    <div class="control">
+        <img alt="Lizenz" src="https://img.shields.io/badge/license-proprietary-blue?color=orange&style={{ site.shields_style }}">
+    </div>
+</div>
+
+<div class="content is-medium">
+    <div class="columns">
+        <div class="column">
+            <p>
+                Der appleJuice Server vermittelt Anfragen zwischen den Cores im appleJuice Netzwerk und prüft, welche Core-Versionen sich verbinden dürfen.
+                Er ist <strong>Closed Source</strong>.
+            </p>
+
+            <div class="notification is-small is-info is-light">
+                <i class="fas fa-fw fa-hand-point-right"></i> Die Serversoftware steht nur einem kleinen Personenkreis zur Verfügung, um die Stabilität des Netzwerkes zu gewährleisten.
+            </div>
+        </div>
+
+        <div class="column is-two-fifths">
+            <a href="/faq/applejuice-server/" class="button is-link is-warning is-medium is-block">
+                <i class="fas fa-question"></i>
+                zur FAQ
+            </a>
+
+            <figure class="image box">
+                <a href="#" class="modal-button" data-target="modal-applejuice-server">
+                    <img src="/assets/screenshots/applejuice_server.png" alt="appleJuice Server">
+                </a>
+            </figure>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-applejuice-server">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <p class="image">
+                <img src="/assets/screenshots/applejuice_server.png" alt="appleJuice Server">
+            </p>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+</div>

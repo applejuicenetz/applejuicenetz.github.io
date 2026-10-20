@@ -33,6 +33,11 @@
       description: das offizielle JavaGUI
       icon_image: /assets/images/applejuice-java-gui-logo.png
 
+    - name: Server
+      link: /downloads/applejuice-server/
+      description: Vermittlungsstelle
+      icon_image: /assets/images/applejuice-server-logo.svg
+
 - label: Weitere Oberflächen
   items:
     - name: phpGUI
