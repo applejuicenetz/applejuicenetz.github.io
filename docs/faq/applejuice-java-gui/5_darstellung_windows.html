@@ -1,0 +1,31 @@
+<h2 id="gui_darstellung_windows">5. JavaGUI wird unter Windows fehlerhaft gezeichnet</h2>
+
+<p>
+    Die Oberfläche flackert, bleibt teilweise leer oder wird verzerrt dargestellt. Abhilfe: Direct3D für Java abschalten.
+</p>
+
+<ol>
+    <li>Beende das JavaGUI vollständig.</li>
+    <li>Öffne den Installationsordner, normalerweise <code>C:\Program Files\appleJuiceNETZ\JavaGUI</code>.</li>
+    <li>Sichere <code>app\appleJuice JavaGUI.cfg</code> und öffne die Datei mit einem Texteditor, bei Bedarf als Administrator.</li>
+    <li>Ergänze unter <code>[JavaOptions]</code> diese beiden Zeilen. Lass alle anderen Zeilen unverändert:
+<pre>java-options=-Dsun.java2d.d3d=false
+java-options=-Dsun.java2d.noddraw=true</pre>
+    </li>
+    <li>Speichere die Datei und starte das JavaGUI erneut.</li>
+</ol>
+
+<p>
+    Beispiel für den Abschnitt:
+</p>
+
+<pre>[JavaOptions]
+java-options=-Djpackage.app-version=0.86.5
+java-options=--enable-native-access=ALL-UNNAMED
+java-options=-Dsun.java2d.d3d=false
+java-options=-Dsun.java2d.noddraw=true</pre>
+
+<div class="notification is-small is-info is-light">
+    <span class="icon"><i class="fas fa-hand-point-right"></i></span>
+    Updates können die Datei überschreiben; prüfe die Einstellung danach erneut.
+</div>
