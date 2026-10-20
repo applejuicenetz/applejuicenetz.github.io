@@ -1,0 +1,17 @@
+<h3 id="error_starting_httpserver">2.17. error starting httpserver</h3>
+
+<ul>
+    <li><strong>Meldung:</strong> <code>error starting httpserver: …</code></li>
+    <li><strong>Problem:</strong> Die GUI kann sich nicht mit dem Core verbinden</li>
+    <li><strong>Ursache:</strong> Der konfigurierte <code>XML-Port</code> des Cores ist bereits in Verwendung</li>
+    <li><strong>Lösung:</strong>
+        <ul>
+            <li>prüfe, ob der Core bereits läuft</li>
+            <li>wähle einen anderen <code>XML-Port</code> (<code>settings.xml</code>, siehe <a href="#wo_liegen_die_konfigurationen">Punkt 11</a>)</li>
+        </ul>
+    </li>
+</ul>
+
+<div class="notification is-small is-info is-light">
+    <i class="fas fa-fw fa-hand-point-right"></i> Für den TCP-Port gilt <a href="#address_already_in_user">2.2</a>.
+</div>

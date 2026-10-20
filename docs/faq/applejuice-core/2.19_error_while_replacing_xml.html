@@ -1,0 +1,10 @@
+<h3 id="error_while_replacing_xml">2.19. error while replacing … .xml</h3>
+
+<ul>
+    <li><strong>Meldung:</strong> <code>error while replacing settings.xml, the new settings stay in settings.xml.new</code>
+        (ebenso für <code>shareinfo.xml</code>, <code>server.xml</code> und <code>shareidx.xml</code>)
+    </li>
+    <li><strong>Problem:</strong> Änderungen konnten nicht in die eigentliche Datei gespeichert werden, sie liegen in der Datei mit der Endung <code>.new</code></li>
+    <li><strong>mögliche Ursache:</strong> fehlende Schreibrechte im Konfigurationsordner, siehe <a href="#wo_liegen_die_konfigurationen">Punkt 11</a></li>
+    <li><strong>Lösung:</strong> Der Benutzer, unter dem der Core läuft, braucht Schreibrechte für den Konfigurationsordner. Korrigiere sie und starte den Core neu.</li>
+</ul>
