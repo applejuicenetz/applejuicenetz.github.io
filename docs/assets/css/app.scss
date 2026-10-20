@@ -280,3 +280,19 @@ dl.inline-flex dd {
     min-width: 0;
   }
 }
+
+// Screenshot-Overlay: Bild proportional einpassen, nie strecken oder abschneiden
+.modal-content:has(> .image) {
+  width: auto;
+  max-width: calc(100vw - 3rem);
+}
+
+.modal-content > .image img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: calc(100vw - 3rem);
+  max-height: calc(100vh - 6rem);
+  margin: 0 auto;
+  object-fit: contain;
+}
