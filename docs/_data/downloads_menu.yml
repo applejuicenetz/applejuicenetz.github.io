@@ -31,7 +31,7 @@
     - name: JavaGUI
       link: /downloads/applejuice-java-gui/
       description: das offizielle JavaGUI
-      icon_image: /assets/images/java-logo.svg
+      icon_image: /assets/images/applejuice-java-gui-logo.png
 
 - label: Weitere Oberflächen
   items:

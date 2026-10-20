@@ -7,7 +7,7 @@
             {% for item in menu.items %}
                 <li>
                     <a href="{{ item.link | relative_url }}" class="{% if item.link == page.url %}is-active{% endif %}">
-                        {% if page.menubar == 'downloads_menu' %}
+                        {% if page.menubar == 'downloads_menu' or page.menubar == 'faq_menu' %}
                             {% if item.icon_image %}
                                 <span class="icon is-small mr-2"><img src="{{ item.icon_image | relative_url }}" width="16" height="16" alt="" aria-hidden="true"></span>
                             {% elsif item.icon %}

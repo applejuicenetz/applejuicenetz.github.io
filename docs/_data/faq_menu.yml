@@ -1,50 +1,76 @@
-- label: appleJuice
-  items:
-    - name: Allgemein
-      link: /faq/
-      icon: fa-question
-
-    - name: appleJuice Core
-      link: /faq/applejuice-core/
-      icon: fa-atom
-
-    - name: appleJuice Collector
-      link: /faq/applejuice-collector/
-      icon: fa-university
-
-    - name: Browser Erweiterung
-      link: /faq/browser-erweiterung/
-      icon: fa-edge
-      icon_brand: true
-
-    - name: appleJuice Server
-      link: /faq/applejuice-server/
-      icon: fa-server
-
-- label: Umgebungen
+- label: Pakete
   items:
     - name: Windows
       link: /faq/windows/
-      icon_brand: true
-      icon: fa-windows
+      icon_image: /assets/images/windows-logo.svg
 
     - name: macOS
       link: /faq/mac/
-      icon_brand: true
-      icon: fa-apple
+      icon_image: /assets/images/macos-logo.svg
 
     - name: Linux
       link: /faq/linux/
-      icon_brand: true
-      icon: fa-linux
+      icon_image: /assets/images/linux-logo.svg
 
     - name: Docker
       link: /faq/docker/
       icon_brand: true
       icon: fa-docker
 
-- label: Browser
+- label: appleJuice
   items:
+    - name: Allgemein
+      link: /faq/
+      icon_image: /assets/images/applejuice-core-logo.svg
+
+    - name: Core
+      link: /faq/applejuice-core/
+      icon_image: /assets/images/applejuice-core-logo.svg
+
+    - name: JavaGUI
+      link: /faq/applejuice-java-gui/
+      icon_image: /assets/images/applejuice-java-gui-logo.png
+
+    - name: Server
+      link: /faq/applejuice-server/
+      icon_image: /assets/images/applejuice-server-logo.svg
+
+- label: Weitere Oberflächen
+  items:
+    - name: phpGUI
+      link: /faq/applejuice-php-gui/
+      icon_image: /assets/images/php-vue-logo.svg
+
+    - name: Apfelmus
+      link: /faq/applejuice-apfelmus-gui/
+      icon_image: /assets/images/apfelmus-logo.png
+
+    - name: Juicer
+      link: /faq/applejuice-juicer-gui/
+      icon_image: /assets/images/juicer-logo.png
+
+    - name: ApplePulp
+      link: /faq/applejuice-applepulp-gui/
+      icon_image: /assets/images/applepulp-logo.png
+
+- label: Weitere Tools
+  items:
+    - name: Collector
+      link: /faq/applejuice-collector/
+      icon_image: /assets/images/collector-logo.svg
+
+    - name: Browser Erweiterung
+      link: /faq/browser-erweiterung/
+      icon_image: /assets/images/browser-logo.svg
+
+    - name: fixajfsp
+      link: /faq/applejuice-fixajfsp/
+      icon_image: /assets/images/fixajfsp-logo.svg
+
+    - name: catch_ajfsp
+      link: /faq/applejuice-catch-ajfsp/
+      icon_image: /assets/images/catch_ajfsp-logo.svg
+
     - name: Firefox und Derivate
       link: /faq/browser-mozilla/
       icon_brand: true
@@ -54,27 +80,3 @@
       link: /faq/browser-chromium/
       icon_brand: true
       icon: fa-chrome
-
-- label: Oberflächen
-  items:
-    - name: JavaGUI
-      link: /faq/applejuice-java-gui/
-      icon_brand: true
-      icon: fa-java
-
-    - name: phpGUI
-      link: /faq/applejuice-php-gui/
-      icon_brand: true
-      icon: fa-php
-
-    - name: Apfelmus GUI
-      link: /faq/applejuice-apfelmus-gui/
-      icon: fa-apple-alt
-
-    - name: ApplePulp GUI
-      link: /faq/applejuice-applepulp-gui/
-      icon: fa-apple-alt
-
-    - name: Juicer GUI
-      link: /faq/applejuice-juicer-gui/
-      icon: fa-apple-alt
