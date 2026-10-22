@@ -1,0 +1,111 @@
+<h3 id="ram_bedarf">1.1. Wie viel RAM braucht der Core?</h3>
+
+<p>
+    Der Bedarf hängt fast nur von der <strong>Größe deines Shares</strong> ab: rund
+    <strong>55&nbsp;MB pro TB</strong>.
+</p>
+
+<div class="notification is-light" id="ram_rechner">
+    <div class="field is-grouped is-grouped-multiline mb-3">
+        <div class="control">
+            <label class="label is-small" for="ram_share">Größe deines Shares</label>
+            <div class="field has-addons mb-0">
+                <div class="control">
+                    <input id="ram_share" class="input" type="number" min="0" step="any" value="10"
+                           inputmode="decimal" style="width:7rem">
+                </div>
+                <div class="control">
+                    <span class="select">
+                        <select id="ram_unit" aria-label="Einheit">
+                            <option value="1">TB</option>
+                            <option value="0.001">GB</option>
+                        </select>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="control">
+            <p class="label is-small mb-1">Core-Version</p>
+            <div role="radiogroup" aria-label="Core-Version" style="line-height:2.5rem">
+                <label class="radio">
+                    <input type="radio" name="ram_version" value="new" checked> ab <code>0.35.187.7</code>
+                </label>
+                <label class="radio ml-4">
+                    <input type="radio" name="ram_version" value="old"> älter
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <div class="columns is-mobile mb-0">
+        <div class="column">
+            <div class="box has-text-centered mb-0">
+                <p class="is-size-6 has-text-grey-dark">Mindestens</p>
+                <p class="title is-4" id="ram_min">–</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="box has-background-success-light has-text-centered mb-0">
+                <p class="is-size-6 has-text-grey-dark">Empfohlen</p>
+                <p class="title is-4" id="ram_rec">–</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ul>
+    <li><strong>Mindestens</strong>: <code style="white-space:nowrap">10&nbsp;MB + 55&nbsp;MB × TB</code>,
+        mit einem Core älter als <code>0.35.187.7</code> das Doppelte.</li>
+    <li><strong>Empfohlen</strong>: <code style="white-space:nowrap">Mindestens × 1,5 + 1,5&nbsp;GB</code>,
+        großzügig aufgerundet. Richtwert, keine Garantie.</li>
+    <li>RAM zuteilen: <a href="#ram_zuteilung">Punkt 1</a>.</li>
+</ul>
+
+<div class="notification is-small is-info is-light">
+    <i class="fas fa-hand-point-right" aria-hidden="true"></i>
+    Ältere Cores brauchen beim Einlesen des Shares doppelt so viel und stürzen bei großen Shares mit
+    <code>OutOfMemoryError</code> ab. Ein Update lohnt sich.
+</div>
+
+<script>
+    (function () {
+        const share = document.getElementById('ram_share');
+        const unit = document.getElementById('ram_unit');
+        const versions = document.querySelectorAll('input[name=ram_version]');
+        const fmt = new Intl.NumberFormat('de-DE', {maximumFractionDigits: 1});
+
+        // großzügig aufrunden: unter 1 GB auf 100 MB, bis 10 GB auf 0,5 GB, darüber auf ganze GB
+        function roundUp(mb) {
+            if (mb < 1024) return Math.ceil(mb / 100) * 100;
+            const gb = mb / 1024;
+            return (gb <= 10 ? Math.ceil(gb * 2) / 2 : Math.ceil(gb)) * 1024;
+        }
+
+        // "Mindestens" noch großzügiger: unter 1 GB auf 250 MB, darüber auf ganze GB
+        function roundUpMin(mb) {
+            return mb < 1024 ? Math.ceil(mb / 250) * 250 : Math.ceil(mb / 1024) * 1024;
+        }
+
+        function size(mb) {
+            return mb >= 1024 ? fmt.format(mb / 1024) + '\u00a0GB' : fmt.format(mb) + '\u00a0MB';
+        }
+
+        function calculate() {
+            const tb = parseFloat(String(share.value).replace(',', '.')) * parseFloat(unit.value);
+            if (!(tb >= 0)) {
+                ['ram_min', 'ram_rec'].forEach(id => document.getElementById(id).textContent = '–');
+                return;
+            }
+            const old = document.querySelector('input[name=ram_version]:checked').value === 'old';
+            const min = 10 + (old ? 110 : 55) * tb;
+            const rec = roundUp(min * 1.5 + 1500);
+            document.getElementById('ram_min').textContent = size(roundUpMin(min));
+            document.getElementById('ram_rec').textContent = size(rec);
+        }
+
+        share.addEventListener('input', calculate);
+        unit.addEventListener('change', calculate);
+        versions.forEach(v => v.addEventListener('change', calculate));
+        calculate();
+    })();
+</script>
