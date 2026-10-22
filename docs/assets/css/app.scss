@@ -280,3 +280,49 @@ dl.inline-flex dd {
   margin: 0 auto;
   object-fit: contain;
 }
+
+/* Einstellungsrechner: Kacheln und Hinweis folgen dem Theme (hell, dunkel, System) */
+#wizard .aj-calc-label {
+  color: var(--bulma-text-weak);
+}
+
+#wizard .aj-calc-result {
+  background-color: var(--bulma-scheme-main-bis);
+  box-shadow: none;
+  border: 1px solid var(--bulma-border);
+}
+
+#wizard .aj-calc-recommended {
+  background-color: hsl(var(--bulma-success-h), var(--bulma-success-s), 90%);
+  border: 2px solid var(--bulma-success);
+}
+
+#wizard .aj-calc-recommended .title,
+#wizard .aj-calc-recommended .aj-calc-label {
+  color: hsl(var(--bulma-success-h), var(--bulma-success-s), 15%);
+}
+
+.theme-dark #wizard .aj-calc-recommended {
+  background-color: hsl(var(--bulma-success-h), var(--bulma-success-s), 22%);
+}
+
+.theme-dark #wizard .aj-calc-recommended .title,
+.theme-dark #wizard .aj-calc-recommended .aj-calc-label {
+  color: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not(.theme-light):not(.theme-dark) #wizard .aj-calc-recommended {
+    background-color: hsl(var(--bulma-success-h), var(--bulma-success-s), 22%);
+  }
+
+  html:not(.theme-light):not(.theme-dark) #wizard .aj-calc-recommended .title,
+  html:not(.theme-light):not(.theme-dark) #wizard .aj-calc-recommended .aj-calc-label {
+    color: #fff;
+  }
+}
+
+#wizard > .notification {
+  background-color: var(--bulma-scheme-main-bis);
+  color: var(--bulma-text);
+}

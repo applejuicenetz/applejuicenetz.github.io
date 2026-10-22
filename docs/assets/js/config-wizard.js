@@ -3,6 +3,7 @@ let wizard = {
     MB_PER_TB: 55,
     MB_BASE: 10,
     fmt: new Intl.NumberFormat('de-DE', {maximumFractionDigits: 1}),
+    fmtSpeed: new Intl.NumberFormat('de-DE', {maximumFractionDigits: 2}),
 
     init: async function () {
         const presetsResponse = await window.fetch('/assets/data/config-wizard.json');
@@ -36,11 +37,12 @@ let wizard = {
         }
     },
 
+    // kbit/s -> MB/s (1 MB = 1024 KB, as the client counts), two decimals at most
     convert: function (kbit) {
         if (!kbit) {
             return '';
         }
-        return Math.round(kbit * 1000 / 8 / 1024);
+        return wizard.fmtSpeed.format(kbit * 1000 / 8 / 1024 / 1024);
     },
 
     // extra RAM in MB for uploads by upload speed in MB/s

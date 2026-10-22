@@ -79,17 +79,17 @@ description: Berechne die optimalen Einstellungen und den RAM-Bedarf für den ap
                 <h2 class="title is-5">2. Im Client eintragen</h2>
                 <div class="columns is-mobile mb-0">
                     <div class="column">
-                        <div class="box has-text-centered mb-0">
-                            <p class="is-size-6 has-text-grey-dark">Download</p>
+                        <div class="box aj-calc-result has-text-centered mb-0">
+                            <p class="is-size-6 aj-calc-label">Download</p>
                             <p class="title is-4"><output id="download_calculated">–</output>
-                                <span class="is-size-6 has-text-grey">KB/s</span></p>
+                                <span class="is-size-6 aj-calc-label">MB/s</span></p>
                         </div>
                     </div>
                     <div class="column">
-                        <div class="box has-text-centered mb-0">
-                            <p class="is-size-6 has-text-grey-dark">Upload</p>
+                        <div class="box aj-calc-result has-text-centered mb-0">
+                            <p class="is-size-6 aj-calc-label">Upload</p>
                             <p class="title is-4"><output id="upload_calculated">–</output>
-                                <span class="is-size-6 has-text-grey">KB/s</span></p>
+                                <span class="is-size-6 aj-calc-label">MB/s</span></p>
                         </div>
                     </div>
                 </div>
@@ -100,14 +100,14 @@ description: Berechne die optimalen Einstellungen und den RAM-Bedarf für den ap
                 <h2 class="title is-5">3. RAM für den Core</h2>
                 <div class="columns is-mobile mb-0">
                     <div class="column">
-                        <div class="box has-text-centered mb-0">
-                            <p class="is-size-6 has-text-grey-dark">Mindestens</p>
+                        <div class="box aj-calc-result has-text-centered mb-0">
+                            <p class="is-size-6 aj-calc-label">Mindestens</p>
                             <p class="title is-4" id="ram_min">–</p>
                         </div>
                     </div>
                     <div class="column">
-                        <div class="box has-background-success-light has-text-centered mb-0">
-                            <p class="is-size-6 has-text-grey-dark">Empfohlen</p>
+                        <div class="box aj-calc-result aj-calc-recommended has-text-centered mb-0">
+                            <p class="is-size-6 aj-calc-label">Empfohlen</p>
                             <p class="title is-4" id="ram_rec">–</p>
                         </div>
                     </div>
@@ -123,7 +123,7 @@ description: Berechne die optimalen Einstellungen und den RAM-Bedarf für den ap
         </div>
     </div>
 
-    <div class="notification is-light">
+    <div class="notification">
         <p>
             <strong>Mindestens</strong> reicht nur für den Leerlauf: <code>10&nbsp;MB + 55&nbsp;MB × TB</code>
             Share, mit einem Core älter als <code>0.35.187.7</code> das Doppelte, auf ganze GB aufgerundet.
