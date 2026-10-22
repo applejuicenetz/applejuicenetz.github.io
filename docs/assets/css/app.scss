@@ -326,3 +326,8 @@ dl.inline-flex dd {
   background-color: var(--bulma-scheme-main-bis);
   color: var(--bulma-text);
 }
+
+/* Pfeiltasten springen in 10er-Schritten, andere Werte (z.B. 16 oder 0,768) bleiben erlaubt */
+#wizard input:-moz-ui-invalid {
+  box-shadow: none;
+}

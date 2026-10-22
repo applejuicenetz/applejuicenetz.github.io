@@ -26,7 +26,7 @@ description: Berechne die optimalen Einstellungen und den RAM-Bedarf für den ap
                         <div class="field">
                             <label class="label" for="download">Download in Mbit/s</label>
                             <div class="control">
-                                <input type="number" id="download" class="input" min="0" step="any"
+                                <input type="number" id="download" class="input" min="0" step="10"
                                        inputmode="decimal" placeholder="z.B. 100"/>
                             </div>
                         </div>
@@ -35,7 +35,7 @@ description: Berechne die optimalen Einstellungen und den RAM-Bedarf für den ap
                         <div class="field">
                             <label class="label" for="upload">Upload in Mbit/s</label>
                             <div class="control">
-                                <input type="number" id="upload" class="input" min="0" step="any"
+                                <input type="number" id="upload" class="input" min="0" step="10"
                                        inputmode="decimal" placeholder="z.B. 20"/>
                             </div>
                         </div>
@@ -93,7 +93,7 @@ description: Berechne die optimalen Einstellungen und den RAM-Bedarf für den ap
                         </div>
                     </div>
                 </div>
-                <p class="help mt-2">Hast du keinen Download, setze das Download-Limit im Client auf <code>0</code>.</p>
+                <p class="mt-3">Hast du schlechten oder keinen Download, setze das Download-Limit im Client auf <code>0</code>.</p>
             </div>
 
             <div class="box">
