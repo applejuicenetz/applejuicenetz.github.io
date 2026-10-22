@@ -11,7 +11,7 @@ let wizard = {
 
         document.getElementById('preset').addEventListener('change', wizard.change, false);
         ['download', 'upload', 'share'].forEach(id => document.getElementById(id).addEventListener('input', wizard.calculate, false));
-        ['share_unit', 'version'].forEach(id => document.getElementById(id).addEventListener('change', wizard.calculate, false));
+        ['share_unit', 'version', 'conservative'].forEach(id => document.getElementById(id).addEventListener('change', wizard.calculate, false));
 
         for (let group = 0; group < presets.length; group++) {
             let optgroup = document.createElement('optgroup');
@@ -83,8 +83,9 @@ let wizard = {
 
     calculate: function () {
         // inputs are in Mbit/s, calculations use kbit/s
-        const download = (parseFloat(String(document.getElementById('download').value).replace(',', '.')) || 0) * 1000;
-        const upload = (parseFloat(String(document.getElementById('upload').value).replace(',', '.')) || 0) * 1000;
+        const factor = document.getElementById('conservative').checked ? 0.8 : 1;
+        const download = (parseFloat(String(document.getElementById('download').value).replace(',', '.')) || 0) * 1000 * factor;
+        const upload = (parseFloat(String(document.getElementById('upload').value).replace(',', '.')) || 0) * 1000 * factor;
         document.getElementById('download_calculated').textContent = wizard.convert(download) || '–';
         document.getElementById('upload_calculated').textContent = wizard.convert(upload) || '–';
 
