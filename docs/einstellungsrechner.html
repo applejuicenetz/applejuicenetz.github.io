@@ -1,66 +1,139 @@
 ---
 layout: page
 title: Einstellungsrechner
-description: Berechne die optimalen Einstellungen für den appleJuice Client
+description: Berechne die optimalen Einstellungen und den RAM-Bedarf für den appleJuice Core
 ---
 
-<form id="wizard">
-    <div class="columns is-centered">
-        <div class="column is-two-thirds-tablet is-half-desktop">
+<form id="wizard" onsubmit="return false">
+    <div class="columns">
+        <div class="column is-half">
             <div class="box">
-                <p class="has-text-centered mb-4">
-                    Wähle deine Internetverbindung aus oder gib deine Bandbreite selbst ein.
-                </p>
-                <dl class="inline-flex">
-                    <dt>
-                        <label for="preset">Internetverbindung</label>
-                    </dt>
-                    <dd>
-                        <select id="preset" class="input">
-                            <option class="has-text-centered" value="custom" autofocus selected>-- custom --</option>
-                        </select>
-                    </dd>
+                <h2 class="title is-5">1. Deine Daten</h2>
 
-                    <dt>
-                        <label for="download">Download in kbit/s</label>
-                    </dt>
-                    <dd>
-                        <input type="number" id="download" class="input has-text-right" step="128"/>
-                    </dd>
+                <div class="field">
+                    <label class="label" for="preset">Internetverbindung</label>
+                    <div class="control">
+                        <div class="select is-fullwidth">
+                            <select id="preset">
+                                <option value="custom" autofocus selected>-- eigene Werte --</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
 
-                    <dt>
-                        <label for="upload">Upload in kbit/s</label>
-                    </dt>
-                    <dd>
-                        <input type="number" id="upload" class="input has-text-right" step="128"/>
-                    </dd>
-                </dl>
+                <div class="columns is-mobile mb-0">
+                    <div class="column">
+                        <div class="field">
+                            <label class="label" for="download">Download in Mbit/s</label>
+                            <div class="control">
+                                <input type="number" id="download" class="input" min="0" step="any"
+                                       inputmode="decimal" placeholder="z.B. 100"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="field">
+                            <label class="label" for="upload">Upload in Mbit/s</label>
+                            <div class="control">
+                                <input type="number" id="upload" class="input" min="0" step="any"
+                                       inputmode="decimal" placeholder="z.B. 20"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                <hr/>
+                <div class="field">
+                    <label class="label" for="share">Größe deines Shares</label>
+                    <div class="field has-addons mb-0">
+                        <div class="control is-expanded">
+                            <input type="number" id="share" class="input" min="0" step="any" value="10"
+                                   inputmode="decimal"/>
+                        </div>
+                        <div class="control">
+                            <div class="select">
+                                <select id="share_unit" aria-label="Einheit">
+                                    <option value="1">TB</option>
+                                    <option value="0.001">GB</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                <p class="has-text-centered mb-4">
-                    <strong>Im Client eintragen</strong>
-                </p>
-                <dl class="inline-flex">
-                    <dt>
-                        <label for="download_calculated">Download in KB/s</label>
-                    </dt>
-                    <dd>
-                        <input type="number" id="download_calculated" class="input has-text-right" readonly/>
-                    </dd>
-
-                    <dt>
-                        <label for="upload_calculated">Upload in KB/s</label>
-                    </dt>
-                    <dd>
-                        <input type="number" id="upload_calculated" class="input has-text-right" readonly/>
-                    </dd>
-                </dl>
-            </div>
-            <div class="notification is-info is-light">
-                Hast du keinen Download, setze das Download-Limit im Client auf <code>0</code>.
+                <div class="field mb-0">
+                    <label class="label" for="version">Core-Version</label>
+                    <div class="control">
+                        <div class="select is-fullwidth">
+                            <select id="version">
+                                <option value="new" selected>ab 0.35.187.7</option>
+                                <option value="old">älter</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <div class="column is-half">
+            <div class="box">
+                <h2 class="title is-5">2. Im Client eintragen</h2>
+                <div class="columns is-mobile mb-0">
+                    <div class="column">
+                        <div class="box has-text-centered mb-0">
+                            <p class="is-size-6 has-text-grey-dark">Download</p>
+                            <p class="title is-4"><output id="download_calculated">–</output>
+                                <span class="is-size-6 has-text-grey">KB/s</span></p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="box has-text-centered mb-0">
+                            <p class="is-size-6 has-text-grey-dark">Upload</p>
+                            <p class="title is-4"><output id="upload_calculated">–</output>
+                                <span class="is-size-6 has-text-grey">KB/s</span></p>
+                        </div>
+                    </div>
+                </div>
+                <p class="help mt-2">Hast du keinen Download, setze das Download-Limit im Client auf <code>0</code>.</p>
+            </div>
+
+            <div class="box">
+                <h2 class="title is-5">3. RAM für den Core</h2>
+                <div class="columns is-mobile mb-0">
+                    <div class="column">
+                        <div class="box has-text-centered mb-0">
+                            <p class="is-size-6 has-text-grey-dark">Mindestens</p>
+                            <p class="title is-4" id="ram_min">–</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="box has-background-success-light has-text-centered mb-0">
+                            <p class="is-size-6 has-text-grey-dark">Empfohlen</p>
+                            <p class="title is-4" id="ram_rec">–</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="field mt-4 mb-0">
+                    <label class="label" for="ram_xmx">Java-Option für den Core</label>
+                    <div class="control">
+                        <input type="text" id="ram_xmx" class="input is-family-monospace" readonly/>
+                    </div>
+                    <p class="help">Einstellen: <a href="/faq/applejuice-core/#ram_zuteilung">FAQ appleJuice Core &middot; Punkt 1</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="notification is-light">
+        <p>
+            <strong>Mindestens</strong> reicht nur für den Leerlauf: <code>10&nbsp;MB + 55&nbsp;MB × TB</code>
+            Share, mit einem Core älter als <code>0.35.187.7</code> das Doppelte, auf ganze GB aufgerundet.
+        </p>
+        <p>
+            <strong>Empfohlen</strong>: <code>Mindestens × 1,5</code> plus Zuschlag für Upload und Download,
+            auf ganze GB aufgerundet. Dein Zuschlag: <span id="ram_up_extra">–</span> für Upload und
+            <span id="ram_down_extra">–</span> für Download. Richtwert, keine Garantie.
+            RAM zuteilen: <a href="/faq/applejuice-core/#ram_zuteilung">FAQ appleJuice Core &middot; Punkt 1</a>.
+        </p>
     </div>
 </form>
 <script src="/assets/js/config-wizard.js"></script>

@@ -240,22 +240,6 @@ dl.inline-flex dd {
   overflow: hidden;
 }
 
-#wizard input, #wizard select {
-  width: 220px !important;
-}
-
-#wizard dt {
-  flex: 0 0 40%;
-}
-
-#wizard dd {
-  flex: 0 0 60%;
-}
-
-#wizard dt, #wizard dd {
-  padding: 5px;
-}
-
 .fab.fa-home-assistant:before {
   content: url('/assets/images/home-assistant-logo.svg');
   display: inline-block;
