@@ -1,0 +1,18 @@
+<h2 id="flatpak_netzwerk">3. Flatpak im Netzwerk erreichbar machen</h2>
+
+<p>
+    Die <a href="/downloads/applejuice-php-gui/">phpGUI</a> als Flatpak lauscht standardmäßig nur auf <code>127.0.0.1:8088</code>.
+    Mit <code>PHPGUI_BIND=0.0.0.0</code> ist sie auch im Netzwerk erreichbar.
+</p>
+
+<pre><code>flatpak override --user \
+    --env=PHPGUI_BIND=0.0.0.0 \
+    --env=CORE_HOST=http://192.168.2.1 \
+    --env=CORE_PORT=9851 \
+    io.github.applejuicenetz.phpgui</code></pre>
+
+<p>
+    Zurücksetzen: <code>flatpak override --user --unset-env=PHPGUI_BIND io.github.applejuicenetz.phpgui</code>
+    <br>
+    Läuft die phpGUI schon, vorher über das Tray-Symbol beenden.
+</p>
