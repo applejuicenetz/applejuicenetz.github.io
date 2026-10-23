@@ -9,29 +9,26 @@ menubar: downloads_menu
 <h1 class="title">{{ page.title }}</h1>
 <p class="subtitle is-6">{{ page.subtitle }}</p>
 
-<div class="columns is-vcentered aj-badges">
-    <div class="control">
-        <img alt="GitHub latest Core release" src="https://img.shields.io/github/v/release/{{ site.github_username }}/core?label=core&style={{ site.shields_style }}">
-    </div>
-
-    <div class="control">
-        <img alt="GitHub latest JavaGUI release" src="https://img.shields.io/github/v/release/{{ site.github_username }}/gui-java?label=GUI&style={{ site.shields_style }}">
-    </div>
-
-    <div class="control">
-        <img alt="GitHub latest Collector release" src="https://img.shields.io/github/v/release/{{ site.github_username }}/core-information-collector?label=Collector&style={{ site.shields_style }}">
-    </div>
-</div>
-
 <div class="content is-medium">
     <div class="columns">
         <div class="column">
             <p>
-                <a href="/downloads/applejuice-core">Core</a>,
-                <a href="/downloads/applejuice-java-gui">JavaGUI</a>
-                und der <a href="/downloads/applejuice-collector">Collector</a>
-                als Flatpak.
+                Diese Komponenten gibt es als <strong>Flatpak</strong>:
             </p>
+
+            <dl class="inline-flex">
+                <dt><img alt="" src="https://img.shields.io/github/v/release/{{ site.github_username }}/core?label=%20"></dt>
+                <dd><a href="/downloads/applejuice-core/">Core</a></dd>
+
+                <dt><img alt="" src="https://img.shields.io/github/v/release/{{ site.github_username }}/gui-java?label=%20"></dt>
+                <dd><a href="/downloads/applejuice-java-gui/">JavaGUI</a></dd>
+
+                <dt><img alt="" src="https://img.shields.io/github/v/tag/{{ site.github_username }}/phpgui?label=%20"></dt>
+                <dd><a href="/downloads/applejuice-php-gui/">phpGUI</a></dd>
+
+                <dt><img alt="" src="https://img.shields.io/github/v/release/{{ site.github_username }}/core-information-collector?label=%20"></dt>
+                <dd><a href="/downloads/applejuice-collector/">Collector</a></dd>
+            </dl>
 
             <p>
                 Falls noch nicht geschehen, muss einmalig <a href="https://flatpak.org/setup/" target="_blank">Flatpak</a> installiert werden.
@@ -47,7 +44,7 @@ menubar: downloads_menu
 
             <figure class="image box">
                 <a href="#" class="modal-button" data-target="modal-applejuice-flatpak">
-                    <img src="/assets/screenshots/applejuice_flatpak.png" alt="appleJuice Core macOS">
+                    <img src="/assets/screenshots/applejuice_flatpak.png" alt="appleJuice Flatpak">
                 </a>
             </figure>
 
