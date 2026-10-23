@@ -39,7 +39,7 @@
   items:
     - name: phpGUI
       link: /faq/applejuice-php-gui/
-      icon_image: /assets/images/php-vue-logo.svg
+      icon_image: /assets/images/phpgui-logo.svg
 
     - name: Apfelmus
       link: /faq/applejuice-apfelmus-gui/

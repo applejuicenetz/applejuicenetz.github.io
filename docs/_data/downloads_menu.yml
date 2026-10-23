@@ -43,7 +43,7 @@
     - name: phpGUI
       link: /downloads/applejuice-php-gui/
       description: GUI geschrieben in PHP und Vue.js
-      icon_image: /assets/images/php-vue-logo.svg
+      icon_image: /assets/images/phpgui-logo.svg
 
     - name: Control Center
       link: /downloads/applejuice-control-center/
