@@ -1,0 +1,19 @@
+<h3 id="error_completing_download">2.19. error completing download</h3>
+
+<ul>
+    <li><strong>Meldung:</strong> <code>error completing download: …</code></li>
+    <li><strong>Problem:</strong> Der Download kann nicht fertiggestellt werden und wird pausiert</li>
+    <li><strong>mögliche Ursachen:</strong>
+        <ul>
+            <li><code>No space left on device</code>: Im Incoming-Ordner fehlt freier Speicherplatz. Beim Fertigstellen wird die Datei kopiert, bevor die Temp-Datei gelöscht wird. Ein Download mit 120 GB braucht daher zusätzlich etwa 120 GB freien Platz im Ziel, auch auf demselben Datenträger.</li>
+            <li><code>AccessDeniedException</code>: fehlende Zugriffsrechte</li>
+            <li><code>download data size mismatch</code>: Die Größe der Temp-Datei stimmt nicht mit der erwarteten Downloadgröße überein.</li>
+            <li><code>cannot save completion record</code>: Die Informationen zum Fertigstellen können nicht im Temp-Ordner gespeichert werden.</li>
+        </ul>
+    </li>
+    <li><strong>Lösung:</strong> Prüfe die vollständige Fehlermeldung hinter dem Doppelpunkt. Schaffe ausreichend freien Speicherplatz oder korrigiere die Zugriffsrechte und setze den Download anschließend fort.</li>
+</ul>
+
+<div class="notification is-small is-info is-light">
+    <i class="fas fa-hand-point-right"></i> Lösche keine Temp-Dateien des Downloads. Sie werden für einen erneuten Versuch benötigt.
+</div>
