@@ -1,0 +1,15 @@
+<h3 id="keine_credits_ursachen">1.2. Keine Credits trotz Upload (weitere Ursachen)</h3>
+
+<p>
+    Der Core vergibt Upload-Credits nur für Peers mit <strong>öffentlicher IP</strong>.
+    Sieht der Core als Absender eine private Adresse, werden keine Credits gutgeschrieben, auch wenn der Upload läuft.
+</p>
+
+<p>Mögliche Ursachen:</p>
+
+<ul>
+    <li>Etwas zwischen Internet und Core ersetzt die IP des Peers, z. B. NAT oder ein Proxy im Router, in der VM oder im Cluster (bei Kubernetes siehe <a href="#keine_credits_kubernetes">Punkt 1.3</a>)</li>
+    <li>Rootless Docker oder Podman: der Core sieht dort immer eine interne IP</li>
+    <li>Der Host hat ein VPN oder ein Netz mit sehr großem Subnetz, der Core hält Peers dann für lokal</li>
+    <li>Der Peer sitzt im eigenen LAN, Uploads ins LAN geben nie Credits</li>
+</ul>
