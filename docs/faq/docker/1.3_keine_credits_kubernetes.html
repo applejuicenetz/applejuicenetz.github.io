@@ -1,0 +1,22 @@
+<h3 id="keine_credits_kubernetes">1.3. Keine Credits trotz Upload (Kubernetes / k3s)</h3>
+
+<p>
+    <code>kube-proxy</code> ersetzt die Quell-IP der Peers durch eine interne IP, der Core vergibt dann keine Credits.
+    Lösung: im Service <code>externalTrafficPolicy: Local</code> setzen.
+</p>
+
+<pre><code>apiVersion: v1
+kind: Service
+metadata:
+  name: applejuice-core
+spec:
+  type: LoadBalancer
+  externalTrafficPolicy: Local
+  selector:
+    app: applejuice-core
+  ports:
+    - name: p2p
+      port: 9850
+      targetPort: p2p
+      protocol: TCP</code></pre>
+

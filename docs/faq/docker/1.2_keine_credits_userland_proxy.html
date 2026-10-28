@@ -1,0 +1,12 @@
+<h3 id="keine_credits_userland_proxy">1.2. Keine Credits trotz Upload (Docker Userland Proxy)</h3>
+
+<p>
+    Der <code>docker-proxy</code> ersetzt die Quell-IP der Peers durch die Bridge-IP, der Core vergibt dann keine Credits.
+    Lösung: den Userland Proxy abschalten.
+</p>
+
+<ol>
+    <li>In <code>/etc/docker/daemon.json</code> eintragen: <code>{"userland-proxy": false}</code></li>
+    <li>Docker neu starten: <code>sudo systemctl restart docker</code></li>
+    <li>Container neu erstellen</li>
+</ol>
