@@ -45,11 +45,6 @@
       description: GUI geschrieben in PHP und Vue.js
       icon_image: /assets/images/phpgui-logo.svg
 
-    - name: Control Center
-      link: /downloads/applejuice-control-center/
-      description: AJCC, moderne Windows-GUI
-      icon_image: /assets/images/ajcc-logo.svg
-
     - name: Apfelmus
       link: /downloads/applejuice-apfelmus-gui/
       description: GUI für Windows, macOS und Linux
